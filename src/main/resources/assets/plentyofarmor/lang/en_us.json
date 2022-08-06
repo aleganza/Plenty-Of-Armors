@@ -3,5 +3,10 @@
 
   "item.plentyofarmor.prova": "Prova",
 
-  "block.plentyofarmor.bloccone": "Bloccone"
+  "block.plentyofarmor.bloccone": "Bloccone",
+
+  "item.plentyofarmor.emerald_helmet": "§aEmerald Helmet",
+  "item.plentyofarmor.emerald_chestplate": "§aEmerald Chestplate",
+  "item.plentyofarmor.emerald_leggings": "§aEmerald Leggings",
+  "item.plentyofarmor.emerald_boots": "§aEmerald Boots"
 }

@@ -1,2 +1,2 @@
-# Plenty-Of-Armor
-Minecraft Mod
+# Plenty Of Armor
+
