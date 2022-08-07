@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "plentyofarmor",
-  "version": "0.0.1",
+  "version": "1.0.0",
 
   "name": "Plenty Of Armor",
   "description": "Add many unique Armor Sets to your gameplay!",
@@ -14,7 +14,7 @@
     "sources": "https://github.com/aleganza/Plenty-Of-Armor"
   },
 
-  "license": "GNU General Public License v2.0",
+  "license": "MIT License",
   "icon": "assets/plentyofarmor/icon.png",
 
   "environment": "*",
