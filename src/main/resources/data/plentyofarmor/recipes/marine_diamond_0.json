@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "H": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "P": {
+      "item": "minecraft:prismarine_crystals"
+    }
+  },
+  "pattern": [
+    "PDP",
+    "DHD",
+    "PDP"
+  ],
+  "result": {
+    "item": "plentyofarmor:marine_diamond",
+    "count": 4
+  }
+}

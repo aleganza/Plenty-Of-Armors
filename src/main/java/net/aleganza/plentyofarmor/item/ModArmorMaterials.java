@@ -13,14 +13,15 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
 
-    // mod armor
-
+    // ---+ MOD ARMOR +---
     EMERALD("emerald", 23, new int[]{2, 5, 7, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.EMERALD});
+    }),
+    MARINE_DIAMOND("marine_diamond", 35, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.MARINE_DIAMOND});
     });
 
-    // default armor
-
+    // ---+ DEFAULT ARMOR +---
     /*
     LEATHER("leather", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.LEATHER});

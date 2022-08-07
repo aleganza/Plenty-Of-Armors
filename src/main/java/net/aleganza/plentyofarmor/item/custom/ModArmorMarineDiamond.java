@@ -14,16 +14,16 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class ModArmorItem extends ArmorItem {
+public class ModArmorMarineDiamond extends ArmorItem {
 
     public static final int effectDuration = 240;
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.EMERALD,
-                            new StatusEffectInstance(StatusEffects.LUCK, effectDuration, 0)).build();
+                    .put(ModArmorMaterials.MARINE_DIAMOND,
+                            new StatusEffectInstance(StatusEffects.CONDUIT_POWER, effectDuration, 0)).build();
 
-    public ModArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorMarineDiamond(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
     }
 
@@ -79,6 +79,13 @@ public class ModArmorItem extends ArmorItem {
     private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
         ArmorItem boots = ((ArmorItem)player.getInventory().getArmorStack(0).getItem());
         ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
+
+        // elytra bug fix
+        try{
+            ((ArmorItem)player.getInventory().getArmorStack(2).getItem()).getMaterial();
+        }catch(Exception e){
+            return false;
+        }
         ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
         ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
 

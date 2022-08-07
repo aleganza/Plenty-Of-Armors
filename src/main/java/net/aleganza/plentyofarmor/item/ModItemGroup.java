@@ -9,5 +9,5 @@ import net.minecraft.util.Identifier;
 public class ModItemGroup {
 
     public static final ItemGroup PLENTYOFARMOR = FabricItemGroupBuilder.build(new Identifier(PlentyOfArmor.MOD_ID, "plentyofarmor"),
-            () -> new ItemStack(ModItems.PROVA));
+            () -> new ItemStack(ModItems.MARINE_DIAMOND));
 }
