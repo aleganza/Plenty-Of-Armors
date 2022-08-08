@@ -3,12 +3,14 @@
   "key": {
     "X": {
       "item": "plentyofarmor:heart_of_the_end"
+    },
+    "D": {
+      "item": "minecraft:diamond_chestplate"
     }
   },
   "pattern": [
-    "X X",
-    "XXX",
-    "XXX"
+    " X ",
+    " D "
   ],
   "result": {
     "item": "plentyofarmor:ender_chestplate"
