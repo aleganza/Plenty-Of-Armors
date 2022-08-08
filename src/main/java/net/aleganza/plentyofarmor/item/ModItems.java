@@ -2,6 +2,7 @@ package net.aleganza.plentyofarmor.item;
 
 import net.aleganza.plentyofarmor.PlentyOfArmor;
 import net.aleganza.plentyofarmor.item.custom.ModArmorEmerald;
+import net.aleganza.plentyofarmor.item.custom.ModArmorMarineDiamond;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
@@ -12,12 +13,17 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
 
     // ---+ ITEMS +---
+
+    // ender set
+    public static final Item HEART_OF_THE_END = registerItem("heart_of_the_end",
+            new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // marine set
     public static final Item MARINE_DIAMOND = registerItem("marine_diamond",
             new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
 
     public static final Item MARINE_DIAMOND_HELMET = registerItem("marine_diamond_helmet",
-            new ModArmorEmerald(ModArmorMaterials.MARINE_DIAMOND, EquipmentSlot.HEAD,
+            new ModArmorMarineDiamond(ModArmorMaterials.MARINE_DIAMOND, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
     public static final Item MARINE_DIAMOND_CHESTPLATE = registerItem("marine_diamond_chestplate",
             new ArmorItem(ModArmorMaterials.MARINE_DIAMOND, EquipmentSlot.CHEST,

@@ -3,14 +3,16 @@
 
   "block.plentyofarmor.bloccone": "Bloccone",
 
-  "item.plentyofarmor.emerald_helmet": "§aEmerald Helmet",
-  "item.plentyofarmor.emerald_chestplate": "§aEmerald Chestplate",
-  "item.plentyofarmor.emerald_leggings": "§aEmerald Leggings",
-  "item.plentyofarmor.emerald_boots": "§aEmerald Boots",
+  "item.plentyofarmor.heart_of_the_end": "§5Heart of The End",
 
   "item.plentyofarmor.marine_diamond": "§3Marine Diamond",
   "item.plentyofarmor.marine_diamond_helmet": "§3Marine Diamond Helmet",
   "item.plentyofarmor.marine_diamond_chestplate": "§3Marine Diamond Chestplate",
   "item.plentyofarmor.marine_diamond_leggings": "§3Marine Diamond Leggings",
-  "item.plentyofarmor.marine_diamond_boots": "§3Marine Diamond Boots"
+  "item.plentyofarmor.marine_diamond_boots": "§3Marine Diamond Boots",
+
+  "item.plentyofarmor.emerald_helmet": "§aEmerald Helmet",
+  "item.plentyofarmor.emerald_chestplate": "§aEmerald Chestplate",
+  "item.plentyofarmor.emerald_leggings": "§aEmerald Leggings",
+  "item.plentyofarmor.emerald_boots": "§aEmerald Boots"
 }

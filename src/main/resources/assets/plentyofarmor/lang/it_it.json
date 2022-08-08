@@ -3,14 +3,16 @@
 
   "block.plentyofarmor.bloccone": "Bloccone",
 
-  "item.plentyofarmor.emerald_helmet": "§aElmo di Smeraldo",
-  "item.plentyofarmor.emerald_chestplate": "§aCorazza di Smeraldo",
-  "item.plentyofarmor.emerald_leggings": "§aGambiere di Smeraldo",
-  "item.plentyofarmor.emerald_boots": "§aStivali di Smeraldo",
+  "item.plentyofarmor.heart_of_the_end": "§5Cuore dell'End",
 
   "item.plentyofarmor.marine_diamond": "§3Diamante Marino",
   "item.plentyofarmor.marine_diamond_helmet": "§3Elmo di Diamante Marino",
   "item.plentyofarmor.marine_diamond_chestplate": "§3Corazza di Diamante Marino",
   "item.plentyofarmor.marine_diamond_leggings": "§3Gambiere di Diamante Marino",
-  "item.plentyofarmor.marine_diamond_boots": "§3Stivali di Diamante Marino"
+  "item.plentyofarmor.marine_diamond_boots": "§3Stivali di Diamante Marino",
+
+  "item.plentyofarmor.emerald_helmet": "§aElmo di Smeraldo",
+  "item.plentyofarmor.emerald_chestplate": "§aCorazza di Smeraldo",
+  "item.plentyofarmor.emerald_leggings": "§aGambiere di Smeraldo",
+  "item.plentyofarmor.emerald_boots": "§aStivali di Smeraldo"
 }

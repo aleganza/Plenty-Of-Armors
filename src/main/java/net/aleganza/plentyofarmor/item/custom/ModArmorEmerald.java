@@ -16,7 +16,7 @@ import java.util.Map;
 
 public class ModArmorEmerald extends ArmorItem {
 
-    public static final int effectDuration = 240;
+    public static final int effectDuration = 400;
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
@@ -58,11 +58,15 @@ public class ModArmorEmerald extends ArmorItem {
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
-                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
+                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier(), false, false, false));
+        }
 
-            // if(new Random().nextFloat() > 0.6f) { // 40% of damaging the armor! Possibly!
-            //     player.getInventory().damageArmor(DamageSource.MAGIC, 1f, new int[]{0, 1, 2, 3});
-            // }
+        // effect repeat issue fix
+        if (player.getActiveStatusEffects().containsKey(mapStatusEffect.getEffectType())) {
+            if (player.getActiveStatusEffects().get(mapStatusEffect.getEffectType()).getDuration() < 221) {
+                player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
+                        effectDuration, 0, false, false, false));
+            }
         }
     }
 
@@ -86,6 +90,7 @@ public class ModArmorEmerald extends ArmorItem {
         }catch(Exception e){
             return false;
         }
+
         ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
         ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
 
