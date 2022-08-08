@@ -2,6 +2,7 @@ package net.aleganza.plentyofarmor.item;
 
 import net.aleganza.plentyofarmor.PlentyOfArmor;
 import net.aleganza.plentyofarmor.item.custom.ModArmorEmerald;
+import net.aleganza.plentyofarmor.item.custom.ModArmorEnder;
 import net.aleganza.plentyofarmor.item.custom.ModArmorMarineDiamond;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
@@ -17,6 +18,19 @@ public class ModItems {
     // ender set
     public static final Item HEART_OF_THE_END = registerItem("heart_of_the_end",
             new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    public static final Item ENDER_HELMET = registerItem("ender_helmet",
+            new ModArmorEnder(ModArmorMaterials.HEART_OF_THE_END, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item ENDER_CHESTPLATE = registerItem("ender_chestplate",
+            new ArmorItem(ModArmorMaterials.HEART_OF_THE_END, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item ENDER_LEGGINGS = registerItem("ender_leggings",
+            new ArmorItem(ModArmorMaterials.HEART_OF_THE_END, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item ENDER_BOOTS = registerItem("ender_boots",
+            new ArmorItem(ModArmorMaterials.HEART_OF_THE_END, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
 
     // marine set
     public static final Item MARINE_DIAMOND = registerItem("marine_diamond",

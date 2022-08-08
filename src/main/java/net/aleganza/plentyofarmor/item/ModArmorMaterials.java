@@ -19,6 +19,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }),
     MARINE_DIAMOND("marine_diamond", 35, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.MARINE_DIAMOND});
+    }),
+    HEART_OF_THE_END("heart_of_the_end", 35, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.HEART_OF_THE_END});
     });
 
     // ---+ DEFAULT ARMOR +---
