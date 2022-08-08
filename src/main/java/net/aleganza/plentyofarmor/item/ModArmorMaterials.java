@@ -14,6 +14,9 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial {
 
     // ---+ MOD ARMOR +---
+    COPPER("copper", 14, new int[]{1, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Items.COPPER_INGOT});
+    }),
     EMERALD("emerald", 23, new int[]{2, 5, 7, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.EMERALD});
     }),

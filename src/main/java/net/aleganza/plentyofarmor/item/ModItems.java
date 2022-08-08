@@ -15,6 +15,20 @@ public class ModItems {
 
     // ---+ ITEMS +---
 
+    // copper set
+    public static final Item COPPER_HELMET = registerItem("copper_helmet",
+            new ModArmorEnder(ModArmorMaterials.COPPER, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item COPPER_CHESTPLATE = registerItem("copper_chestplate",
+            new ArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item COPPER_LEGGINGS = registerItem("copper_leggings",
+            new ArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item COPPER_BOOTS = registerItem("copper_boots",
+            new ArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // ender set
     public static final Item HEART_OF_THE_END = registerItem("heart_of_the_end",
             new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));

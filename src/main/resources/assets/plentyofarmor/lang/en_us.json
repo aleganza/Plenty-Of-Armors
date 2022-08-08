@@ -3,17 +3,22 @@
 
   "block.plentyofarmor.bloccone": "Bloccone",
 
-  "item.plentyofarmor.heart_of_the_end": "§5Heart of The End",
+  "item.plentyofarmor.copper_helmet": "Copper Helmet",
+  "item.plentyofarmor.copper_chestplate": "Copper Chestplate",
+  "item.plentyofarmor.copper_leggings": "Copper Leggings",
+  "item.plentyofarmor.copper_boots": "Copper Boots",
+
+  "item.plentyofarmor.heart_of_the_end": "§3Heart of The End",
   "item.plentyofarmor.ender_helmet": "§3Ender Helmet",
   "item.plentyofarmor.ender_chestplate": "§3Ender Chestplate",
   "item.plentyofarmor.ender_leggings": "§3Ender Leggings",
   "item.plentyofarmor.ender_boots": "§3Ender Boots",
 
-  "item.plentyofarmor.marine_diamond": "§3Marine Diamond",
-  "item.plentyofarmor.marine_diamond_helmet": "§3Marine Diamond Helmet",
-  "item.plentyofarmor.marine_diamond_chestplate": "§3Marine Diamond Chestplate",
-  "item.plentyofarmor.marine_diamond_leggings": "§3Marine Diamond Leggings",
-  "item.plentyofarmor.marine_diamond_boots": "§3Marine Diamond Boots",
+  "item.plentyofarmor.marine_diamond": "§9Marine Diamond",
+  "item.plentyofarmor.marine_diamond_helmet": "§9Marine Diamond Helmet",
+  "item.plentyofarmor.marine_diamond_chestplate": "§9Marine Diamond Chestplate",
+  "item.plentyofarmor.marine_diamond_leggings": "§9Marine Diamond Leggings",
+  "item.plentyofarmor.marine_diamond_boots": "§9Marine Diamond Boots",
 
   "item.plentyofarmor.emerald_helmet": "§aEmerald Helmet",
   "item.plentyofarmor.emerald_chestplate": "§aEmerald Chestplate",
