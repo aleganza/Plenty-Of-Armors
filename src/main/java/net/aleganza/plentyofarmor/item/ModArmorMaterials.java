@@ -14,6 +14,9 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial {
 
     // ---+ MOD ARMOR +---
+    HARDENED_ICE_SHARD("hardened_ice", 23, new int[]{2, 5, 7, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.HARDENED_ICE_SHARD});
+    }),
     COPPER("copper", 14, new int[]{1, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.COPPER_INGOT});
     }),
@@ -23,7 +26,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     MARINE_DIAMOND("marine_diamond", 35, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.MARINE_DIAMOND});
     }),
-    HEART_OF_THE_END("heart_of_the_end", 35, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
+    HEART_OF_THE_END("ender", 35, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.HEART_OF_THE_END});
     });
 

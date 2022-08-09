@@ -15,6 +15,25 @@ public class ModItems {
 
     // ---+ ITEMS +---
 
+    // hardened ice set
+    public static final Item ICE_SHARD = registerItem("ice_shard",
+            new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item HARDENED_ICE_SHARD = registerItem("hardened_ice_shard",
+            new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    public static final Item HARDENED_ICE_HELMET = registerItem("hardened_ice_helmet",
+            new ModArmorEnder(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item HARDENED_ICE_CHESTPLATE = registerItem("hardened_ice_chestplate",
+            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item HARDENED_ICE_LEGGINGS = registerItem("hardened_ice_leggings",
+            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item HARDENED_ICE_BOOTS = registerItem("hardened_ice_boots",
+            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // copper set
     public static final Item COPPER_HELMET = registerItem("copper_helmet",
             new ModArmorEnder(ModArmorMaterials.COPPER, EquipmentSlot.HEAD,
