@@ -16,9 +16,6 @@ public class ModBlocks {
 
     // blocks
 
-    public static final Block BLOCCONE = registerBlock("bloccone",
-        new Block(FabricBlockSettings.of (Material.METAL).strength(6f).requiresTool()), ModItemGroup.PLENTYOFARMOR);
-
     // blocks registration
 
     private static Block registerBlock(String name, Block block, ItemGroup group){
