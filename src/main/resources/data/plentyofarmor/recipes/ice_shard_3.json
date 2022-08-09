@@ -6,7 +6,7 @@
     }
   },
   "pattern": [
-    " X "
+    "X"
   ],
   "result": {
     "item": "plentyofarmor:ice_shard",

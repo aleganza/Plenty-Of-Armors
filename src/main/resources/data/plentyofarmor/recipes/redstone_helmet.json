@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "item": "minecraft:ice"
+      "item": "plentyofarmor:redstone_mixture"
     }
   },
   "pattern": [
-    "X"
+    "XXX",
+    "X X"
   ],
   "result": {
-    "item": "plentyofarmor:ice_shard",
-    "count": 3
+    "item": "plentyofarmor:redstone_helmet"
   }
 }

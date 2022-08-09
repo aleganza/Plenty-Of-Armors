@@ -15,6 +15,23 @@ public class ModItems {
 
     // ---+ ITEMS +---
 
+    // redstone set
+    public static final Item REDSTONE_MIXTURE = registerItem("redstone_mixture",
+            new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    public static final Item REDSTONE_HELMET = registerItem("redstone_helmet",
+            new ModArmorEnder(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item REDSTONE_CHESTPLATE = registerItem("redstone_chestplate",
+            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item REDSTONE_LEGGINGS = registerItem("redstone_leggings",
+            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item REDSTONE_BOOTS = registerItem("redstone_boots",
+            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // hardened ice set
     public static final Item ICE_SHARD = registerItem("ice_shard",
             new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));

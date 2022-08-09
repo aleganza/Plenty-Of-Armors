@@ -1,6 +1,13 @@
 {
   "itemGroup.plentyofarmor.plentyofarmor":"Plenty Of Armor",
 
+  "item.plentyofarmor.redstone_mixture": "Redstone Mixture",
+
+  "item.plentyofarmor.redstone_helmet": "Redstone Helmet",
+  "item.plentyofarmor.redstone_chestplate": "Redstone Chestplate",
+  "item.plentyofarmor.redstone_leggings": "Redstone Leggings",
+  "item.plentyofarmor.redstone_boots": "Redstone Boots",
+
   "item.plentyofarmor.ice_shard": "Ice Shard",
   "item.plentyofarmor.hardened_ice_shard": "§7Hardened Ice Shard",
 
