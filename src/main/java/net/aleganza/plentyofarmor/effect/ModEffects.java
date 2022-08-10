@@ -6,6 +6,7 @@ import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+
 public class ModEffects {
     public static StatusEffect FROST_WALKER;
 

@@ -21,12 +21,10 @@ public class ModArmorHardenedIce extends ArmorItem {
     public static final int effectDuration = 400;
     public static final int amplifier = 0;
 
-
-
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.HARDENED_ICE_SHARD,
-                            new StatusEffectInstance(StatusEffects.ABSORPTION, effectDuration, amplifier)).build();
+                            new StatusEffectInstance(StatusEffects.LUCK, effectDuration, amplifier)).build();
 
     public ModArmorHardenedIce(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -49,8 +47,9 @@ public class ModArmorHardenedIce extends ArmorItem {
 
     private void evaluateArmorEffects(PlayerEntity player) {
         for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
-            ArmorMaterial mapArmorMaterial = entry.getKey();
-            StatusEffectInstance mapStatusEffect = entry.getValue();
+            ArmorMaterial mapArmorMaterial = ModArmorMaterials.HARDENED_ICE_SHARD;
+            StatusEffectInstance mapStatusEffect = new StatusEffectInstance(ModEffects.FROST_WALKER,
+                    effectDuration, amplifier, false, false, false);
 
             if(hasCorrectArmorOn(mapArmorMaterial, player)) {
                 addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
@@ -62,14 +61,14 @@ public class ModArmorHardenedIce extends ArmorItem {
         boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect.getEffectType());
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
-                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier(), false, false, false));
+            player.addStatusEffect(new StatusEffectInstance(ModEffects.FROST_WALKER,
+                    effectDuration, amplifier, false, false, false));
         }
 
         // effect repeat issue fix
-        if (player.getActiveStatusEffects().containsKey(mapStatusEffect.getEffectType())) {
+        if (player.getActiveStatusEffects().containsKey(ModEffects.FROST_WALKER)) {
             if (player.getActiveStatusEffects().get(mapStatusEffect.getEffectType()).getDuration() < 221) {
-                player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
+                player.addStatusEffect(new StatusEffectInstance(ModEffects.FROST_WALKER,
                         effectDuration, amplifier, false, false, false));
             }
         }

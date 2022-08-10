@@ -1,6 +1,5 @@
 package net.aleganza.plentyofarmor.effect;
 
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
@@ -17,12 +16,8 @@ public class FrostWalkerEffect extends StatusEffect {
     public void applyUpdateEffect(LivingEntity pLivingEntity, int pAmplifier) {
         if (!pLivingEntity.world.isClient()) {
 
-            double x = pLivingEntity.getX();
-            double y = pLivingEntity.getY();
-            double z = pLivingEntity.getZ();
-
-            BlockPos pos = pLivingEntity.getBlockPos();
             World world = pLivingEntity.getWorld();
+            BlockPos pos = pLivingEntity.getBlockPos();
             int level = 0;
 
             FrostWalkerEnchantment.freezeWater(pLivingEntity, world, pos, level);
