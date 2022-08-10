@@ -1,7 +1,8 @@
 package net.aleganza.plentyofarmor;
 
-import net.aleganza.plentyofarmor.item.ModItems;
 import net.aleganza.plentyofarmor.block.ModBlocks;
+import net.aleganza.plentyofarmor.effect.ModEffects;
+import net.aleganza.plentyofarmor.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,5 +22,6 @@ public class PlentyOfArmor implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModEffects.registerEffects();
 	}
 }

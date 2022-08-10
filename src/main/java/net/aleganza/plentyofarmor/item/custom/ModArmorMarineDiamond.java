@@ -1,6 +1,7 @@
 package net.aleganza.plentyofarmor.item.custom;
 
 import com.google.common.collect.ImmutableMap;
+import net.aleganza.plentyofarmor.effect.ModEffects;
 import net.aleganza.plentyofarmor.item.ModArmorMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
@@ -17,11 +18,12 @@ import java.util.Map;
 public class ModArmorMarineDiamond extends ArmorItem {
 
     public static final int effectDuration = 400;
+    public static final int amplifier = 0;
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.MARINE_DIAMOND,
-                            new StatusEffectInstance(StatusEffects.CONDUIT_POWER, effectDuration, 0)).build();
+                            new StatusEffectInstance(StatusEffects.CONDUIT_POWER, effectDuration, amplifier)).build();
 
     public ModArmorMarineDiamond(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -65,7 +67,7 @@ public class ModArmorMarineDiamond extends ArmorItem {
         if (player.getActiveStatusEffects().containsKey(mapStatusEffect.getEffectType())) {
             if (player.getActiveStatusEffects().get(mapStatusEffect.getEffectType()).getDuration() < 221) {
                 player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
-                        effectDuration, 0, false, false, false));
+                        effectDuration, amplifier, false, false, false));
             }
         }
     }

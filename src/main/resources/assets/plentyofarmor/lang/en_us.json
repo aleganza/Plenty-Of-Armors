@@ -1,8 +1,9 @@
 {
   "itemGroup.plentyofarmor.plentyofarmor":"Plenty Of Armor",
 
-  "item.plentyofarmor.redstone_mixture": "Redstone Mixture",
+  "effect.plentyofarmor.frost_walker": "Frost Walker",
 
+  "item.plentyofarmor.redstone_mixture": "Redstone Mixture",
   "item.plentyofarmor.redstone_helmet": "Redstone Helmet",
   "item.plentyofarmor.redstone_chestplate": "Redstone Chestplate",
   "item.plentyofarmor.redstone_leggings": "Redstone Leggings",

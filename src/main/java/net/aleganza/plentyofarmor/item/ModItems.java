@@ -3,6 +3,7 @@ package net.aleganza.plentyofarmor.item;
 import net.aleganza.plentyofarmor.PlentyOfArmor;
 import net.aleganza.plentyofarmor.item.custom.ModArmorEmerald;
 import net.aleganza.plentyofarmor.item.custom.ModArmorEnder;
+import net.aleganza.plentyofarmor.item.custom.ModArmorHardenedIce;
 import net.aleganza.plentyofarmor.item.custom.ModArmorMarineDiamond;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
@@ -20,16 +21,16 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
 
     public static final Item REDSTONE_HELMET = registerItem("redstone_helmet",
-            new ModArmorEnder(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.REDSTONE_MIXTURE, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
     public static final Item REDSTONE_CHESTPLATE = registerItem("redstone_chestplate",
-            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.REDSTONE_MIXTURE, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
     public static final Item REDSTONE_LEGGINGS = registerItem("redstone_leggings",
-            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.REDSTONE_MIXTURE, EquipmentSlot.LEGS,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
     public static final Item REDSTONE_BOOTS = registerItem("redstone_boots",
-            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.REDSTONE_MIXTURE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
 
     // hardened ice set
@@ -39,7 +40,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
 
     public static final Item HARDENED_ICE_HELMET = registerItem("hardened_ice_helmet",
-            new ModArmorEnder(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.HEAD,
+            new ModArmorHardenedIce(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
     public static final Item HARDENED_ICE_CHESTPLATE = registerItem("hardened_ice_chestplate",
             new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.CHEST,
@@ -53,7 +54,7 @@ public class ModItems {
 
     // copper set
     public static final Item COPPER_HELMET = registerItem("copper_helmet",
-            new ModArmorEnder(ModArmorMaterials.COPPER, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
     public static final Item COPPER_CHESTPLATE = registerItem("copper_chestplate",
             new ArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.CHEST,

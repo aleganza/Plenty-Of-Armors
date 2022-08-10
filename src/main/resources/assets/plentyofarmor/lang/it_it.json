@@ -1,8 +1,9 @@
 {
   "itemGroup.plentyofarmor.plentyofarmor":"Plenty Of Armor",
 
-  "item.plentyofarmor.redstone_mixture": "Composto di Redstone",
+  "effect.plentyofarmor.frost_walker": "Passo Gelato",
 
+  "item.plentyofarmor.redstone_mixture": "Composto di Redstone",
   "item.plentyofarmor.redstone_helmet": "Elmo di Redstone",
   "item.plentyofarmor.redstone_chestplate": "Corazza di Redstone",
   "item.plentyofarmor.redstone_leggings": "Gambiere di Redstone",

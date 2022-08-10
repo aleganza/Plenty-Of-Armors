@@ -17,11 +17,12 @@ import java.util.Map;
 public class ModArmorEnder extends ArmorItem {
 
     public static final int effectDuration = 400;
+    public static final int amplifier = 0;
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.HEART_OF_THE_END,
-                            new StatusEffectInstance(StatusEffects.SPEED, effectDuration, 0)).build();
+                            new StatusEffectInstance(StatusEffects.SPEED, effectDuration, amplifier)).build();
 
     public ModArmorEnder(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -65,7 +66,7 @@ public class ModArmorEnder extends ArmorItem {
         if (player.getActiveStatusEffects().containsKey(mapStatusEffect.getEffectType())) {
             if (player.getActiveStatusEffects().get(mapStatusEffect.getEffectType()).getDuration() < 221) {
                 player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
-                        effectDuration, 0, false, false, false));
+                        effectDuration, amplifier, false, false, false));
             }
         }
     }

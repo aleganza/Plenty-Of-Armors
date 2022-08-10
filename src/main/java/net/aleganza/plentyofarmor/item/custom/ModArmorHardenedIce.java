@@ -1,9 +1,11 @@
 package net.aleganza.plentyofarmor.item.custom;
 
 import com.google.common.collect.ImmutableMap;
+import net.aleganza.plentyofarmor.effect.ModEffects;
 import net.aleganza.plentyofarmor.item.ModArmorMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,17 +16,19 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class ModArmorEmerald extends ArmorItem {
+public class ModArmorHardenedIce extends ArmorItem {
 
     public static final int effectDuration = 400;
     public static final int amplifier = 0;
 
+
+
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.EMERALD,
-                            new StatusEffectInstance(StatusEffects.LUCK, effectDuration, amplifier)).build();
+                    .put(ModArmorMaterials.HARDENED_ICE_SHARD,
+                            new StatusEffectInstance(StatusEffects.ABSORPTION, effectDuration, amplifier)).build();
 
-    public ModArmorEmerald(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorHardenedIce(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
     }
 
