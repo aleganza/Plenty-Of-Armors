@@ -3,6 +3,11 @@
 
   "effect.plentyofarmor.frost_walker": "Passo Gelato",
 
+  "item.plentyofarmor.lapis_helmet": "Elmo di Lapis",
+  "item.plentyofarmor.lapis_chestplate": "Corazza di Lapis",
+  "item.plentyofarmor.lapis_leggings": "Gambiere di Lapis",
+  "item.plentyofarmor.lapis_boots": "Stivali di Lapis",
+
   "item.plentyofarmor.redstone_mixture": "Composto di Redstone",
   "item.plentyofarmor.redstone_helmet": "Elmo di Redstone",
   "item.plentyofarmor.redstone_chestplate": "Corazza di Redstone",

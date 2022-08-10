@@ -16,6 +16,21 @@ public class ModItems {
 
     // ---+ ITEMS +---
 
+    // lapis set
+    public static final Item LAPIS_HELMET = registerItem("lapis_helmet",
+            new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item LAPIS_CHESTPLATE = registerItem("lapis_chestplate",
+            new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item LAPIS_LEGGINGS = registerItem("lapis_leggings",
+            new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item LAPIS_BOOTS = registerItem("lapis_boots",
+            new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+
     // redstone set
     public static final Item REDSTONE_MIXTURE = registerItem("redstone_mixture",
             new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
