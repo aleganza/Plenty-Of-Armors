@@ -9,13 +9,19 @@ import net.minecraft.util.registry.Registry;
 
 public class ModEffects {
     public static StatusEffect FROST_WALKER;
+    public static StatusEffect HEAT_WALKER;
 
-    public static StatusEffect registerStatusEffect(String name) {
+    public static StatusEffect registerFrostWalker(String name) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(PlentyOfArmor.MOD_ID, name),
                 new FrostWalkerEffect(StatusEffectCategory.NEUTRAL, 3124687));
     }
+    public static StatusEffect registerHeatWalker(String name) {
+        return Registry.register(Registry.STATUS_EFFECT, new Identifier(PlentyOfArmor.MOD_ID, name),
+                new HeatWalkerEffect(StatusEffectCategory.NEUTRAL, 3124687));
+    }
 
     public static void registerEffects() {
-        FROST_WALKER = registerStatusEffect("frost_walker");
+        FROST_WALKER = registerFrostWalker("frost_walker");
+        HEAT_WALKER = registerHeatWalker("heat_walker");
     }
 }

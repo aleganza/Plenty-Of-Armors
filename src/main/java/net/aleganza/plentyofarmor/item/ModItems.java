@@ -16,6 +16,20 @@ public class ModItems {
 
     // ---+ ITEMS +---
 
+    // slime set
+    public static final Item SLIME_HELMET = registerItem("slime_helmet",
+            new ArmorItem(ModArmorMaterials.SLIME, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item SLIME_CHESTPLATE = registerItem("slime_chestplate",
+            new ArmorItem(ModArmorMaterials.SLIME, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item SLIME_LEGGINGS = registerItem("slime_leggings",
+            new ArmorItem(ModArmorMaterials.SLIME, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item SLIME_BOOTS = registerItem("slime_boots",
+            new ArmorItem(ModArmorMaterials.SLIME, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // lapis set
     public static final Item LAPIS_HELMET = registerItem("lapis_helmet",
             new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.HEAD,
@@ -29,7 +43,6 @@ public class ModItems {
     public static final Item LAPIS_BOOTS = registerItem("lapis_boots",
             new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
-
 
     // redstone set
     public static final Item REDSTONE_MIXTURE = registerItem("redstone_mixture",
