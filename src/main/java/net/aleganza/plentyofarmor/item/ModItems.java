@@ -29,6 +29,19 @@ public class ModItems {
     public static final Item SLIME_BOOTS = registerItem("slime_boots",
             new ArmorItem(ModArmorMaterials.SLIME, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    // obsidian set
+    public static final Item OBSIDIAN_HELMET = registerItem("obsidian_helmet",
+            new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item OBSIDIAN_CHESTPLATE = registerItem("obsidian_chestplate",
+            new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item OBSIDIAN_LEGGINGS = registerItem("obsidian_leggings",
+            new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item OBSIDIAN_BOOTS = registerItem("obsidian_boots",
+            new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
 
     // lapis set
     public static final Item LAPIS_HELMET = registerItem("lapis_helmet",

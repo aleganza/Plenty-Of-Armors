@@ -14,8 +14,12 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial {
 
     // ---+ MOD ARMOR +---
+    
     SLIME("slime", 5, new int[]{1, 2, 2, 1}, 9, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.SLIME_BALL});
+    }),  
+    OBSIDIAN("obsidian", 15, new int[]{2, 4, 5, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Items.OBSIDIAN});
     }),
     LAPIS("lapis", 15, new int[]{2, 4, 5, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.LAPIS_LAZULI});
