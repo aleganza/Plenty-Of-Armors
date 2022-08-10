@@ -3,6 +3,11 @@
 
   "effect.plentyofarmor.frost_walker": "Passo Gelato",
 
+  "item.plentyofarmor.obsidian_helmet": "Elmo di Ossidiana",
+  "item.plentyofarmor.obsidian_chestplate": "Corazza di Ossidiana",
+  "item.plentyofarmor.obsidian_leggings": "Gambiere di Ossidiana",
+  "item.plentyofarmor.obsidian_boots": "Stivali di Ossidiana",
+
   "item.plentyofarmor.lapis_helmet": "Elmo di Lapis",
   "item.plentyofarmor.lapis_chestplate": "Corazza di Lapis",
   "item.plentyofarmor.lapis_leggings": "Gambiere di Lapis",
