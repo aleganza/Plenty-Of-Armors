@@ -121,7 +121,7 @@
           "weight": 20
         },
         {
-          "type": "plentyofarmor:item",
+          "type": "minecraft:item",
           "functions": [
             {
               "add": false,

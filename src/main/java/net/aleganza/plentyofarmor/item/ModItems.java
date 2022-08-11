@@ -29,6 +29,7 @@ public class ModItems {
     public static final Item SLIME_BOOTS = registerItem("slime_boots",
             new ArmorItem(ModArmorMaterials.SLIME, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // obsidian set
     public static final Item OBSIDIAN_HELMET = registerItem("obsidian_helmet",
             new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.HEAD,
