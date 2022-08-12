@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "item": "minecraft:elytra"
+    },
+    "P": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "D": {
+      "item": "minecraft:dragon_breath"
+    }
+  },
+  "pattern": [
+    "DPD",
+    "PEP",
+    "DPD"
+  ],
+  "result": {
+    "item": "plentyofarmor:dragon_elytra"
+  }
+}

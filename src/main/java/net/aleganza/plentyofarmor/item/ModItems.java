@@ -8,6 +8,7 @@ import net.aleganza.plentyofarmor.item.custom.ModArmorMarineDiamond;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ElytraItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -15,6 +16,10 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
 
     // ---+ ITEMS +---
+
+    // phantom elytra
+    public static final Item PHANTOM_ELYTRA = registerItem("dragon_elytra",
+            new ElytraItem(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
 
     // slime set
     public static final Item SLIME_HELMET = registerItem("slime_helmet",
