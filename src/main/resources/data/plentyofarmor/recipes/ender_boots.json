@@ -4,13 +4,13 @@
     "X": {
       "item": "plentyofarmor:heart_of_the_end"
     },
-    "D": {
-      "item": "minecraft:diamond_boots"
+    "O": {
+      "item": "plentyofarmor:obsidian_boots"
     }
   },
   "pattern": [
     " X ",
-    " D "
+    " O "
   ],
   "result": {
     "item": "plentyofarmor:ender_boots"
