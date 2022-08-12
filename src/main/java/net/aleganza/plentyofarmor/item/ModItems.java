@@ -17,9 +17,23 @@ public class ModItems {
 
     // ---+ ITEMS +---
 
-    // phantom elytra
-    public static final Item PHANTOM_ELYTRA = registerItem("dragon_elytra",
+    // dragon elytra
+    public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
             new ElytraItem(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    // oak set
+    public static final Item OAK_HELMET = registerItem("oak_helmet",
+            new ArmorItem(ModArmorMaterials.OAK, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item OAK_CHESTPLATE = registerItem("oak_chestplate",
+            new ArmorItem(ModArmorMaterials.OAK, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item OAK_LEGGINGS = registerItem("oak_leggings",
+            new ArmorItem(ModArmorMaterials.OAK, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item OAK_BOOTS = registerItem("oak_boots",
+            new ArmorItem(ModArmorMaterials.OAK, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
 
     // slime set
     public static final Item SLIME_HELMET = registerItem("slime_helmet",

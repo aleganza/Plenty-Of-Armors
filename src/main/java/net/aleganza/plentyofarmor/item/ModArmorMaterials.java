@@ -1,5 +1,6 @@
 package net.aleganza.plentyofarmor.item;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemConvertible;
@@ -14,11 +15,14 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial {
 
     // ---+ MOD ARMOR +---
-    
+
+    OAK("oak", 5, new int[]{1, 1, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Blocks.OAK_PLANKS});
+    }),
     SLIME("slime", 5, new int[]{1, 2, 2, 1}, 9, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.SLIME_BALL});
     }),  
-    OBSIDIAN("obsidian", 15, new int[]{2, 4, 5, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
+    OBSIDIAN("obsidian", 21, new int[]{2, 5, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.OBSIDIAN});
     }),
     LAPIS("lapis", 15, new int[]{2, 4, 5, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
