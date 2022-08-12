@@ -21,6 +21,20 @@ public class ModItems {
     public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
             new ElytraItem(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
 
+    // cactus set
+    public static final Item CACTUS_HELMET = registerItem("cactus_helmet",
+            new ArmorItem(ModArmorMaterials.CACTUS, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item CACTUS_CHESTPLATE = registerItem("cactus_chestplate",
+            new ArmorItem(ModArmorMaterials.CACTUS, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item CACTUS_LEGGINGS = registerItem("cactus_leggings",
+            new ArmorItem(ModArmorMaterials.CACTUS, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item CACTUS_BOOTS = registerItem("cactus_boots",
+            new ArmorItem(ModArmorMaterials.CACTUS, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // oak set
     public static final Item OAK_HELMET = registerItem("oak_helmet",
             new ArmorItem(ModArmorMaterials.OAK, EquipmentSlot.HEAD,

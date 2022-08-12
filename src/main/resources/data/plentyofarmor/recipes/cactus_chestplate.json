@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "minecraft:cactus"
+    }
+  },
+  "pattern": [
+    "X X",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "item": "plentyofarmor:cactus_chestplate"
+  }
+}
