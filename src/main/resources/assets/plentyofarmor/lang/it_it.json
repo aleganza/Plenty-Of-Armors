@@ -2,6 +2,7 @@
   "itemGroup.plentyofarmor.plentyofarmor":"Plenty Of Armor",
 
   "effect.plentyofarmor.frost_walker": "Passo Gelato",
+  "effect.plentyofarmor.fire_walker": "Passo di Fuoco",
 
   "item.plentyofarmor.slime_helmet": "Elmo di Slime",
   "item.plentyofarmor.slime_chestplate": "Corazza di Slime",
@@ -26,7 +27,6 @@
 
   "item.plentyofarmor.ice_shard": "Scheggia di Ghiaccio",
   "item.plentyofarmor.hardened_ice_shard": "§7Scheggia di Ghiaccio Indurita",
-
   "item.plentyofarmor.hardened_ice_helmet": "§7Elmo di Ghiaccio Indurito",
   "item.plentyofarmor.hardened_ice_chestplate": "§7Corazza di Ghiaccio Indurito",
   "item.plentyofarmor.hardened_ice_leggings": "§7Gambiere di Ghiaccio Indurito",

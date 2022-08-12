@@ -2,6 +2,7 @@
   "itemGroup.plentyofarmor.plentyofarmor":"Plenty Of Armor",
 
   "effect.plentyofarmor.frost_walker": "Frost Walker",
+  "effect.plentyofarmor.fire_walker": "Fire Walker",
 
   "item.plentyofarmor.slime_helmet": "Slime Helmet",
   "item.plentyofarmor.slime_chestplate": "Slime Chestplate",
@@ -26,7 +27,6 @@
 
   "item.plentyofarmor.ice_shard": "Ice Shard",
   "item.plentyofarmor.hardened_ice_shard": "§7Hardened Ice Shard",
-
   "item.plentyofarmor.hardened_ice_helmet": "§7Hardened Ice Helmet",
   "item.plentyofarmor.hardened_ice_chestplate": "§7Hardened Ice Chestplate",
   "item.plentyofarmor.hardened_ice_leggings": "§7Hardened Ice Leggings",

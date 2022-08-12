@@ -6,8 +6,8 @@ import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class HeatWalkerEffect extends StatusEffect {
-    public HeatWalkerEffect(StatusEffectCategory statusEffectCategory, int color) {
+public class FireWalkerEffect extends StatusEffect {
+    public FireWalkerEffect(StatusEffectCategory statusEffectCategory, int color) {
         super(statusEffectCategory, color);
     }
 
