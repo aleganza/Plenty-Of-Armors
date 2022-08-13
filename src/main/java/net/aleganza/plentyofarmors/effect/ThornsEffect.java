@@ -24,8 +24,7 @@ public class ThornsEffect extends StatusEffect {
                 if (attacker != null){
                     attacker.damage(DamageSource.thorns(pLivingEntity), pAmplifier + level);
                 }
-            }
-
+            } 
         }
 
         super.applyUpdateEffect(pLivingEntity, pAmplifier);

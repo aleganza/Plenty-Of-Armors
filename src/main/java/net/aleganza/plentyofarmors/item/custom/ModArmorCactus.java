@@ -46,7 +46,7 @@ public class ModArmorCactus extends ArmorItem {
 
     private void evaluateArmorEffects(PlayerEntity player) {
         for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
-            ArmorMaterial mapArmorMaterial = ModArmorMaterials.HARDENED_ICE_SHARD;
+            ArmorMaterial mapArmorMaterial = ModArmorMaterials.CACTUS;
             StatusEffectInstance mapStatusEffect = new StatusEffectInstance(ModEffects.THORNS,
                     effectDuration, amplifier, false, false, false);
 
