@@ -1,6 +1,7 @@
 package net.aleganza.plentyofarmors.effect;
 
 import net.minecraft.block.*;
+import net.minecraft.enchantment.ThornsEnchantment;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;

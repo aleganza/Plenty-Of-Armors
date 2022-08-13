@@ -5,15 +5,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.random.Random;
-import net.minecraft.world.World;
 import net.minecraft.enchantment.ThornsEnchantment;
-import org.jetbrains.annotations.Nullable;
-
-import static net.minecraft.enchantment.ThornsEnchantment.getDamageAmount;
 
 public class ThornsEffect extends StatusEffect {
     public ThornsEffect(StatusEffectCategory statusEffectCategory, int color) {
@@ -24,27 +16,15 @@ public class ThornsEffect extends StatusEffect {
     public void applyUpdateEffect(LivingEntity pLivingEntity, int pAmplifier) {
         if (!pLivingEntity.world.isClient()) {
 
-            /*World world = pLivingEntity.getWorld();
-            BlockPos pos = pLivingEntity.getBlockPos();*/
-
-
-
+            Entity attacker = pLivingEntity.getAttacker();
             int level = 1;
 
-            Random random = pLivingEntity.getRandom();
-
-            /*attacker.damage(DamageSource.thorns(pLivingEntity), 3.0F);*/
-
-            if(pLivingEntity.hurtTime == 9) {
-
-                pLivingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK,
-                        400, 1, false, false, false));
-
-
+            // if hit
+            if (pLivingEntity.hurtTime == 9) {
+                if (attacker != null){
+                    attacker.damage(DamageSource.thorns(pLivingEntity), pAmplifier + level);
+                }
             }
-
-
-            /*attacker.damage(DamageSource.thorns(pLivingEntity), (float)getDamageAmount(level, random));*/
 
         }
 

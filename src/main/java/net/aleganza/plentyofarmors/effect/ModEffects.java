@@ -22,12 +22,12 @@ public class ModEffects {
     }
     public static StatusEffect registerThorns(String name) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
-                new ThornsEffect(StatusEffectCategory.NEUTRAL, 3124687));
+                new ThornsEffect(StatusEffectCategory.BENEFICIAL, 3124687));
     }
 
     public static void registerEffects() {
         FROST_WALKER = registerFrostWalker("frost_walker");
         FIRE_WALKER = registerHeatWalker("fire_walker");
-        THORNS = registerHeatWalker("thorns");
+        THORNS = registerThorns("thorns");
     }
 }

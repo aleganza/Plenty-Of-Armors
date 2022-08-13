@@ -1,10 +1,7 @@
 package net.aleganza.plentyofarmors.item;
 
 import net.aleganza.plentyofarmors.PlentyOfArmors;
-import net.aleganza.plentyofarmors.item.custom.ModArmorEmerald;
-import net.aleganza.plentyofarmors.item.custom.ModArmorEnder;
-import net.aleganza.plentyofarmors.item.custom.ModArmorHardenedIce;
-import net.aleganza.plentyofarmors.item.custom.ModArmorMarineDiamond;
+import net.aleganza.plentyofarmors.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
@@ -23,7 +20,7 @@ public class ModItems {
 
     // cactus set
     public static final Item CACTUS_HELMET = registerItem("cactus_helmet",
-            new ArmorItem(ModArmorMaterials.CACTUS, EquipmentSlot.HEAD,
+            new ModArmorCactus(ModArmorMaterials.CACTUS, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
     public static final Item CACTUS_CHESTPLATE = registerItem("cactus_chestplate",
             new ArmorItem(ModArmorMaterials.CACTUS, EquipmentSlot.CHEST,
