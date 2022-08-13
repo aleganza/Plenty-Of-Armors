@@ -64,5 +64,12 @@
   "item.plentyofarmor.emerald_helmet": "§aElmo di Smeraldo",
   "item.plentyofarmor.emerald_chestplate": "§aCorazza di Smeraldo",
   "item.plentyofarmor.emerald_leggings": "§aGambiere di Smeraldo",
-  "item.plentyofarmor.emerald_boots": "§aStivali di Smeraldo"
+  "item.plentyofarmor.emerald_boots": "§aStivali di Smeraldo",
+
+  "advancements.plentyofarmor.root.title": "Plenty of Armors",
+  "advancements.plentyofarmor.root.description": "Quante armature! Riuscirai ad ottenerle tutte?",
+  "advancements.plentyofarmor.marine_diamond_armor.title": "§9Inaffogabile",
+  "advancements.plentyofarmor.marine_diamond_armor.description": "L'acqua non può ucciderti! ...ma i mob potrebbero",
+  "advancements.plentyofarmor.ender_armor.title": "§3Guerriero finale",
+  "advancements.plentyofarmor.ender_armor.description": "Hai il potere dell'End, usalo con saggezza!"
 }

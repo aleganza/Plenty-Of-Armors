@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "item": "plentyofarmor:ender_chestplate"
+    },
+    "title": {
+      "translate": "advancements.plentyofarmor.ender_armor.title"
+    },
+    "description": {
+      "translate": "advancements.plentyofarmor.ender_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "minecraft:textures/block/stone_bricks.png"
+  },
+    "parent": "plentyofarmor:root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions":{
+          "items":[
+            {
+              "items":[
+                "plentyofarmor:ender_helmet"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmor:ender_chestplate"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmor:ender_leggings"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmor:ender_boots"
+              ]
+            }
+          ]
+        }
+      }
+  }
+}

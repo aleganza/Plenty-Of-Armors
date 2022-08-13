@@ -1,0 +1,37 @@
+{
+  "criteria": {
+    "crafting_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/stone_bricks.png",
+    "description": {
+      "translate": "advancements.plentyofarmor.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:grass_block"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.plentyofarmor.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ]
+}

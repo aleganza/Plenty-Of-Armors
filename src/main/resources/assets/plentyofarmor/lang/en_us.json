@@ -64,5 +64,12 @@
   "item.plentyofarmor.emerald_helmet": "§aEmerald Helmet",
   "item.plentyofarmor.emerald_chestplate": "§aEmerald Chestplate",
   "item.plentyofarmor.emerald_leggings": "§aEmerald Leggings",
-  "item.plentyofarmor.emerald_boots": "§aEmerald Boots"
+  "item.plentyofarmor.emerald_boots": "§aEmerald Boots",
+
+  "advancements.plentyofarmor.root.title": "Plenty of Armors",
+  "advancements.plentyofarmor.root.description": "Plenty of armors! Will you obtain them all?",
+  "advancements.plentyofarmor.marine_diamond_armor.title": "§9Undrownable",
+  "advancements.plentyofarmor.marine_diamond_armor.description": "Water can't kill you! ...but mobs could",
+  "advancements.plentyofarmor.ender_armor.title": "§3End warrior",
+  "advancements.plentyofarmor.ender_armor.title": "You got The End power, use it wisely!"
 }
