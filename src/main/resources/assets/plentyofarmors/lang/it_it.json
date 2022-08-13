@@ -1,0 +1,75 @@
+{
+  "itemGroup.plentyofarmors.plentyofarmors":"Plenty Of Armors",
+
+  "item.plentyofarmors.dragon_elytra": "§dElitre Dragoniche",
+
+  "effect.plentyofarmors.frost_walker": "Passo Gelato",
+  "effect.plentyofarmors.fire_walker": "Passo di Fuoco",
+
+  "item.plentyofarmors.cactus_helmet": "Elmo di Cactus",
+  "item.plentyofarmors.cactus_chestplate": "Corazza di Cactus",
+  "item.plentyofarmors.cactus_leggings": "Gambiere di Cactus",
+  "item.plentyofarmors.cactus_boots": "Stivali di Cactus",
+
+  "item.plentyofarmors.oak_helmet": "Elmo di Quercia",
+  "item.plentyofarmors.oak_chestplate": "Corazza di Quercia",
+  "item.plentyofarmors.oak_leggings": "Gambiere di Quercia",
+  "item.plentyofarmors.oak_boots": "Stivali di Quercia",
+
+  "item.plentyofarmors.slime_helmet": "Elmo di Slime",
+  "item.plentyofarmors.slime_chestplate": "Corazza di Slime",
+  "item.plentyofarmors.slime_leggings": "Gambiere di Slime",
+  "item.plentyofarmors.slime_boots": "Stivali di Slime",
+  
+  "item.plentyofarmors.obsidian_helmet": "Elmo di Ossidiana",
+  "item.plentyofarmors.obsidian_chestplate": "Corazza di Ossidiana",
+  "item.plentyofarmors.obsidian_leggings": "Gambiere di Ossidiana",
+  "item.plentyofarmors.obsidian_boots": "Stivali di Ossidiana",
+
+  "item.plentyofarmors.lapis_helmet": "Elmo di Lapis",
+  "item.plentyofarmors.lapis_chestplate": "Corazza di Lapis",
+  "item.plentyofarmors.lapis_leggings": "Gambiere di Lapis",
+  "item.plentyofarmors.lapis_boots": "Stivali di Lapis",
+
+  "item.plentyofarmors.redstone_mixture": "Composto di Redstone",
+  "item.plentyofarmors.redstone_helmet": "Elmo di Redstone",
+  "item.plentyofarmors.redstone_chestplate": "Corazza di Redstone",
+  "item.plentyofarmors.redstone_leggings": "Gambiere di Redstone",
+  "item.plentyofarmors.redstone_boots": "Stivali di Redstone",
+
+  "item.plentyofarmors.ice_shard": "Scheggia di Ghiaccio",
+  "item.plentyofarmors.hardened_ice_shard": "§7Scheggia di Ghiaccio Indurita",
+  "item.plentyofarmors.hardened_ice_helmet": "§7Elmo di Ghiaccio Indurito",
+  "item.plentyofarmors.hardened_ice_chestplate": "§7Corazza di Ghiaccio Indurito",
+  "item.plentyofarmors.hardened_ice_leggings": "§7Gambiere di Ghiaccio Indurito",
+  "item.plentyofarmors.hardened_ice_boots": "§7Stivali di Ghiaccio Indurito",
+
+  "item.plentyofarmors.copper_helmet": "Elmo di Rame",
+  "item.plentyofarmors.copper_chestplate": "Corazza di Rame",
+  "item.plentyofarmors.copper_leggings": "Gambiere di Rame",
+  "item.plentyofarmors.copper_boots": "Stivali di Rame",
+
+  "item.plentyofarmors.heart_of_the_end": "§3Cuore dell'End",
+  "item.plentyofarmors.ender_helmet": "§3Elmo dell'End",
+  "item.plentyofarmors.ender_chestplate": "§3Corazza dell'End",
+  "item.plentyofarmors.ender_leggings": "§3Gambiere dell'End",
+  "item.plentyofarmors.ender_boots": "§3Stivali dell'End",
+
+  "item.plentyofarmors.marine_diamond": "§9Diamante Marino",
+  "item.plentyofarmors.marine_diamond_helmet": "§9Elmo di Diamante Marino",
+  "item.plentyofarmors.marine_diamond_chestplate": "§9Corazza di Diamante Marino",
+  "item.plentyofarmors.marine_diamond_leggings": "§9Gambiere di Diamante Marino",
+  "item.plentyofarmors.marine_diamond_boots": "§9Stivali di Diamante Marino",
+
+  "item.plentyofarmors.emerald_helmet": "§aElmo di Smeraldo",
+  "item.plentyofarmors.emerald_chestplate": "§aCorazza di Smeraldo",
+  "item.plentyofarmors.emerald_leggings": "§aGambiere di Smeraldo",
+  "item.plentyofarmors.emerald_boots": "§aStivali di Smeraldo",
+
+  "advancements.plentyofarmors.root.title": "Plenty of Armors",
+  "advancements.plentyofarmors.root.description": "Quante armature! Riuscirai ad ottenerle tutte?",
+  "advancements.plentyofarmors.marine_diamond_armor.title": "§9Inaffogabile",
+  "advancements.plentyofarmors.marine_diamond_armor.description": "L'acqua non può ucciderti! ...ma i mob potrebbero",
+  "advancements.plentyofarmors.ender_armor.title": "§3Guerriero finale",
+  "advancements.plentyofarmors.ender_armor.description": "Hai il potere dell'End, usalo con saggezza!"
+}

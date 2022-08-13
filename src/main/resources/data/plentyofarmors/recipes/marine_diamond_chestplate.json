@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "item": "plentyofarmor:marine_diamond"
+      "item": "plentyofarmors:marine_diamond"
     }
   },
   "pattern": [
@@ -11,6 +11,6 @@
     "XXX"
   ],
   "result": {
-    "item": "plentyofarmor:marine_diamond_chestplate"
+    "item": "plentyofarmors:marine_diamond_chestplate"
   }
 }

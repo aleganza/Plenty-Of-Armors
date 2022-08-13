@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "item": "plentyofarmor:redstone_mixture"
+      "item": "plentyofarmors:redstone_mixture"
     }
   },
   "pattern": [
@@ -11,6 +11,6 @@
     "X X"
   ],
   "result": {
-    "item": "plentyofarmor:redstone_leggings"
+    "item": "plentyofarmors:redstone_leggings"
   }
 }

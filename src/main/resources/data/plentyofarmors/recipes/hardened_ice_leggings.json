@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "item": "plentyofarmor:hardened_ice_shard"
+      "item": "plentyofarmors:hardened_ice_shard"
     }
   },
   "pattern": [
@@ -11,6 +11,6 @@
     "X X"
   ],
   "result": {
-    "item": "plentyofarmor:hardened_ice_leggings"
+    "item": "plentyofarmors:hardened_ice_leggings"
   }
 }

@@ -1,20 +1,20 @@
 {
   "display": {
     "icon": {
-      "item": "plentyofarmor:marine_diamond_chestplate"
+      "item": "plentyofarmors:marine_diamond_chestplate"
     },
     "title": {
-      "translate": "advancements.plentyofarmor.marine_diamond_armor.title"
+      "translate": "advancements.plentyofarmors.marine_diamond_armor.title"
     },
     "description": {
-      "translate": "advancements.plentyofarmor.marine_diamond_armor.description"
+      "translate": "advancements.plentyofarmors.marine_diamond_armor.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "background": "minecraft:textures/block/stone_bricks.png"
   },
-    "parent": "plentyofarmor:root",
+    "parent": "plentyofarmors:root",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:inventory_changed",
@@ -22,22 +22,22 @@
           "items":[
             {
               "items":[
-                "plentyofarmor:marine_diamond_helmet"
+                "plentyofarmors:marine_diamond_helmet"
               ]
             },
             {
               "items":[
-                "plentyofarmor:marine_diamond_chestplate"
+                "plentyofarmors:marine_diamond_chestplate"
               ]
             },
             {
               "items":[
-                "plentyofarmor:marine_diamond_leggings"
+                "plentyofarmors:marine_diamond_leggings"
               ]
             },
             {
               "items":[
-                "plentyofarmor:marine_diamond_boots"
+                "plentyofarmors:marine_diamond_boots"
               ]
             }
           ]

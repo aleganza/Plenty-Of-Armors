@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "plentyofarmor",
+  "id": "plentyofarmors",
   "version": "1.0.0",
 
-  "name": "Plenty Of Armor",
+  "name": "Plenty Of Armors",
   "description": "Add many unique Armor Sets to your gameplay!",
   "authors": [
     "aleganza",
@@ -11,20 +11,20 @@
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/aleganza/Plenty-Of-Armor"
+    "sources": "https://github.com/aleganza/Plenty-Of-Armors"
   },
 
   "license": "GNU General Public License v3.0",
-  "icon": "assets/plentyofarmor/icon.png",
+  "icon": "assets/plentyofarmors/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.aleganza.plentyofarmor.PlentyOfArmor"
+      "net.aleganza.plentyofarmors.PlentyOfArmors"
     ]
   },
   "mixins": [
-    "plentyofarmor.mixins.json"
+    "plentyofarmors.mixins.json"
   ],
 
   "depends": {

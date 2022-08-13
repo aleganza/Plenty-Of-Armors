@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "item": "plentyofarmor:heart_of_the_end"
+      "item": "plentyofarmors:heart_of_the_end"
     },
     "O": {
-      "item": "plentyofarmor:obsidian_boots"
+      "item": "plentyofarmors:obsidian_boots"
     }
   },
   "pattern": [
@@ -13,6 +13,6 @@
     " O "
   ],
   "result": {
-    "item": "plentyofarmor:ender_leggings"
+    "item": "plentyofarmors:ender_leggings"
   }
 }
