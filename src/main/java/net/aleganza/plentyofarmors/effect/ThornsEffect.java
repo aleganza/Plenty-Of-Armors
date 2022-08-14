@@ -5,7 +5,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
-import net.minecraft.enchantment.ThornsEnchantment;
+import net.minecraft.enchantment.ProtectionEnchantment;
 
 public class ThornsEffect extends StatusEffect {
     public ThornsEffect(StatusEffectCategory statusEffectCategory, int color) {
@@ -24,7 +24,7 @@ public class ThornsEffect extends StatusEffect {
                 if (attacker != null){
                     attacker.damage(DamageSource.thorns(pLivingEntity), pAmplifier + level);
                 }
-            } 
+            }
         }
 
         super.applyUpdateEffect(pLivingEntity, pAmplifier);
