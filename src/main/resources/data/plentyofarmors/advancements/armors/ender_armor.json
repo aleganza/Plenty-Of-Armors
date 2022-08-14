@@ -11,10 +11,9 @@
     },
     "frame": "task",
     "show_toast": true,
-    "announce_to_chat": true,
-    "background": "minecraft:textures/block/stone_bricks.png"
+    "announce_to_chat": true
   },
-    "parent": "plentyofarmors:root",
+    "parent": "plentyofarmors:armors/root",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:inventory_changed",

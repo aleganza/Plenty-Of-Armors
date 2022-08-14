@@ -14,6 +14,10 @@ public class ModItems {
 
     // ---+ ITEMS +---
 
+    // adv icon (not appearing)
+    public static final Item ADV_ICON = registerItem("adv_icon",
+            new Item(new FabricItemSettings()));
+
     // dragon elytra
     public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
             new ElytraItem(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));

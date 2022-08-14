@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "plentyofarmors:adv_icon"
+    },
+    "title": {
+      "translate": "advancements.plentyofarmors.root.title"
+    },
+    "description": {
+      "translate": "advancements.plentyofarmors.root.description"
+    },
+    "frame": "task",
+    "background": "minecraft:textures/block/stone_bricks.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions":{
+        "items":[
+          {
+            "items": [
+              "minecraft:crafting_table"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

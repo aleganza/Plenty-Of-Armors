@@ -7,6 +7,8 @@
   "effect.plentyofarmors.fire_walker": "Fire Walker",
   "effect.plentyofarmors.thorns": "Thorns",
 
+  "item.plentyofarmors.adv_icon": "adv_icon",
+
   "item.plentyofarmors.cactus_helmet": "Cactus Helmet",
   "item.plentyofarmors.cactus_chestplate": "Cactus Chestplate",
   "item.plentyofarmors.cactus_leggings": "Cactus Leggings",
@@ -72,5 +74,5 @@
   "advancements.plentyofarmors.marine_diamond_armor.title": "§9Undrownable",
   "advancements.plentyofarmors.marine_diamond_armor.description": "Water can't kill you! ...but mobs could",
   "advancements.plentyofarmors.ender_armor.title": "§3End warrior",
-  "advancements.plentyofarmors.ender_armor.title": "You got The End power, use it wisely!"
+  "advancements.plentyofarmors.ender_armor.description": "You got The End power, use it wisely!"
 }
