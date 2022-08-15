@@ -14,13 +14,30 @@ public class ModItems {
 
     // ---+ ITEMS +---
 
-    // adv icon (not appearing)
+    // adv icon
     public static final Item ADV_ICON = registerItem("adv_icon",
             new Item(new FabricItemSettings()));
 
     // dragon elytra
     public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
             new ElytraItem(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    // stardusite set
+    public static final Item STARDUSITE_INGOT = registerItem("stardusite_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    public static final Item STARDUSITE_HELMET = registerItem("stardusite_helmet",
+            new ModArmorStardusite1(ModArmorMaterials.STARDUSITE, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item STARDUSITE_CHESTPLATE = registerItem("stardusite_chestplate",
+            new ModArmorStardusite2(ModArmorMaterials.STARDUSITE, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item STARDUSITE_LEGGINGS = registerItem("stardusite_leggings",
+            new ArmorItem(ModArmorMaterials.STARDUSITE, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item STARDUSITE_BOOTS = registerItem("stardusite_boots",
+            new ArmorItem(ModArmorMaterials.STARDUSITE, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
 
     // cactus set
     public static final Item CACTUS_HELMET = registerItem("cactus_helmet",

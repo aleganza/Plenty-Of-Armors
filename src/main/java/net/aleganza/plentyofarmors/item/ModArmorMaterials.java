@@ -16,10 +16,12 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     // ---+ MOD ARMOR +---
 
+    STARDUSITE("stardusite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.STARDUSITE_INGOT});
+    }),
     CACTUS("cactus", 5, new int[]{1, 1, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Blocks.CACTUS});
     }),
-
     OAK("oak", 5, new int[]{1, 1, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Blocks.OAK_PLANKS});
     }),

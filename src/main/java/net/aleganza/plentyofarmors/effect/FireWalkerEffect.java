@@ -19,6 +19,7 @@ public class FireWalkerEffect extends StatusEffect {
             BlockPos pos = pLivingEntity.getBlockPos();
             int level = 0;
 
+
             ModLibs.solidifyLava(pLivingEntity, world, pos, level);
         }
 

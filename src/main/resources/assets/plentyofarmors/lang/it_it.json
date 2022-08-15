@@ -9,6 +9,12 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
+  "item.plentyofarmors.stardusite_ingot": "§eLingotto di Stardusite",
+  "item.plentyofarmors.stardusite_helmet": "§eElmo di Stardusite",
+  "item.plentyofarmors.stardusite_chestplate": "§eCorazza di Stardusite",
+  "item.plentyofarmors.stardusite_leggings": "§eGambiere di Stardusite",
+  "item.plentyofarmors.stardusite_boots": "§eStivali di Stardusite",
+
   "item.plentyofarmors.cactus_helmet": "Elmo di Cactus",
   "item.plentyofarmors.cactus_chestplate": "Corazza di Cactus",
   "item.plentyofarmors.cactus_leggings": "Gambiere di Cactus",

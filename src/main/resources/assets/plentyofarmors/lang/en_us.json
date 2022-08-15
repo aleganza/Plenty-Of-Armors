@@ -9,6 +9,12 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
+  "item.plentyofarmors.stardusite_ingot": "§eStardusite Ingot",
+  "item.plentyofarmors.stardusite_helmet": "§eStardusite Helmet",
+  "item.plentyofarmors.stardusite_chestplate": "§eStardusite Chestplate",
+  "item.plentyofarmors.stardusite_leggings": "§eStardusite Leggings",
+  "item.plentyofarmors.stardusite_boots": "§eStardusite Boots",
+
   "item.plentyofarmors.cactus_helmet": "Cactus Helmet",
   "item.plentyofarmors.cactus_chestplate": "Cactus Chestplate",
   "item.plentyofarmors.cactus_leggings": "Cactus Leggings",
