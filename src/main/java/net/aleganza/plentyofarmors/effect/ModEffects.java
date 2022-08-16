@@ -14,15 +14,15 @@ public class ModEffects {
 
     public static StatusEffect registerFrostWalker(String name) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
-                new FrostWalkerEffect(StatusEffectCategory.NEUTRAL, 3124687));
+                new FrostWalkerEffect(StatusEffectCategory.NEUTRAL, 0x5fb2d9));
     }
     public static StatusEffect registerHeatWalker(String name) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
-                new FireWalkerEffect(StatusEffectCategory.NEUTRAL, 3124687));
+                new FireWalkerEffect(StatusEffectCategory.NEUTRAL, 0x9e3c28));
     }
     public static StatusEffect registerThorns(String name) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
-                new ThornsEffect(StatusEffectCategory.BENEFICIAL, 3124687));
+                new ThornsEffect(StatusEffectCategory.BENEFICIAL, 0x289e33));
     }
 
     public static void registerEffects() {
