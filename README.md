@@ -20,28 +20,28 @@ Bored of the same old armors? Well you're in the right place! **Plenty of Armors
 ### 🌳 Wood Sets
 
 <p align="center"> 
-	<img width="100%" src="https://raw.githubusercontent.com/aleganza/Plenty-Of-Armors/main/src/main/resources/assets/plentyofarmors/other/wood.jpg"> 
+	<img width="100%" src="https://raw.githubusercontent.com/aleganza/Plenty-Of-Armors/main/src/main/resources/assets/plentyofarmors/other/wood.png"> 
 	<p align="center"> 
 </p>
 
 ### 🌑 Minerals Sets
 
 <p align="center"> 
-	<img width="100%" src="https://raw.githubusercontent.com/aleganza/Plenty-Of-Armors/main/src/main/resources/assets/plentyofarmors/other/minerals.jpg"> 
+	<img width="100%" src="https://raw.githubusercontent.com/aleganza/Plenty-Of-Armors/main/src/main/resources/assets/plentyofarmors/other/minerals.png"> 
 	<p align="center"> 
 </p>
 
 ###  💫 Unique Sets
 
 <p align="center"> 
-	<img width="100%" src="https://raw.githubusercontent.com/aleganza/Plenty-Of-Armors/main/src/main/resources/assets/plentyofarmors/other/unique.jpg"> 
+	<img width="100%" src="https://raw.githubusercontent.com/aleganza/Plenty-Of-Armors/main/src/main/resources/assets/plentyofarmors/other/unique.png"> 
 	<p align="center"> 
 </p>
 
 ###  🗿 Other Cool Sets
 
 <p align="center"> 
-	<img width="100%" src="https://raw.githubusercontent.com/aleganza/Plenty-Of-Armors/main/src/main/resources/assets/plentyofarmors/other/other.jpg"> 
+	<img width="100%" src="https://raw.githubusercontent.com/aleganza/Plenty-Of-Armors/main/src/main/resources/assets/plentyofarmors/other/other.png"> 
 	<p align="center"> 
 </p>
 
