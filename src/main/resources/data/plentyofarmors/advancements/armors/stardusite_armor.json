@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "item": "plentyofarmors:stardusite_chestplate"
+    },
+    "title": {
+      "translate": "advancements.plentyofarmors.stardusite_armor.title"
+    },
+    "description": {
+      "translate": "advancements.plentyofarmors.stardusite_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+    "parent": "plentyofarmors:armors/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions":{
+          "items":[
+            {
+              "items":[
+                "plentyofarmors:stardusite_helmet"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:stardusite_chestplate"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:stardusite_leggings"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:stardusite_boots"
+              ]
+            }
+          ]
+        }
+      }
+  }
+}
