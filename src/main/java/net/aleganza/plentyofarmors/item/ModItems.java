@@ -70,7 +70,7 @@ public class ModItems {
 
     // crimson set
     public static final Item CRIMSON_HELMET = registerItem("crimson_helmet",
-            new ArmorItem(ModArmorMaterials.CRIMSON, EquipmentSlot.HEAD,
+            new ModArmorCrimson(ModArmorMaterials.CRIMSON, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
     public static final Item CRIMSON_CHESTPLATE = registerItem("crimson_chestplate",
             new ArmorItem(ModArmorMaterials.CRIMSON, EquipmentSlot.CHEST,
@@ -84,7 +84,7 @@ public class ModItems {
 
     // warped set
     public static final Item WARPED_HELMET = registerItem("warped_helmet",
-            new ArmorItem(ModArmorMaterials.WARPED, EquipmentSlot.HEAD,
+            new ModArmorWarped(ModArmorMaterials.WARPED, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
     public static final Item WARPED_CHESTPLATE = registerItem("warped_chestplate",
             new ArmorItem(ModArmorMaterials.WARPED, EquipmentSlot.CHEST,
