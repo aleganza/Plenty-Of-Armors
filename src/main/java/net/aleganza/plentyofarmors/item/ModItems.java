@@ -19,11 +19,10 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     // dragon elytra
-    public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
-            new ElytraItem(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    /*public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
+            new ElytraItem(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));*/
 
     // quartz set
-
     public static final Item QUARTZ_HELMET = registerItem("quartz_helmet",
             new ModArmorStardusite1(ModArmorMaterials.QUARTZ, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
