@@ -16,7 +16,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     // ---+ MOD ARMOR +---
 
-    QUARTZ("quartz", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0F, 0.1F, () -> {
+    QUARTZ("quartz", 15, new int[]{1, 4, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.QUARTZ});
     }),
     STARDUSITE("stardusite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
