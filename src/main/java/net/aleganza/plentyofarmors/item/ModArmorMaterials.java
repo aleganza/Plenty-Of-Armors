@@ -16,7 +16,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     // ---+ MOD ARMOR +---
 
-    QUARTZ("quartz", 15, new int[]{1, 4, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F, 0.0F, () -> {
+    QUARTZ("quartz", 15, new int[]{1, 4, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.QUARTZ});
     }),
     STARDUSITE("stardusite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
@@ -25,10 +25,10 @@ public enum ModArmorMaterials implements ArmorMaterial {
     CACTUS("cactus", 5, new int[]{1, 1, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Blocks.CACTUS});
     }),
-    CRIMSON("crimson", 5, new int[]{1, 1, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
+    CRIMSON("crimson", 7, new int[]{1, 2, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.CRIMSON_PLANKS});
     }),
-    WARPED("warped", 5, new int[]{1, 1, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
+    WARPED("warped", 7, new int[]{1, 2, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.WARPED_PLANKS});
     }),
     MANGROVE("mangrove", 5, new int[]{1, 1, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
