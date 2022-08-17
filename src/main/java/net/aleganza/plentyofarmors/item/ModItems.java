@@ -22,6 +22,21 @@ public class ModItems {
     public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
             new ElytraItem(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
 
+    // quartz set
+
+    public static final Item QUARTZ_HELMET = registerItem("quartz_helmet",
+            new ModArmorStardusite1(ModArmorMaterials.QUARTZ, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item QUARTZ_CHESTPLATE = registerItem("quartz_chestplate",
+            new ModArmorStardusite2(ModArmorMaterials.QUARTZ, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item QUARTZ_LEGGINGS = registerItem("quartz_leggings",
+            new ArmorItem(ModArmorMaterials.QUARTZ, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item QUARTZ_BOOTS = registerItem("quartz_boots",
+            new ArmorItem(ModArmorMaterials.QUARTZ, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // stardusite set
     public static final Item STARDUSITE_INGOT = registerItem("stardusite_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
