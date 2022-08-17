@@ -68,6 +68,118 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.CACTUS, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
 
+    // crimson set
+    public static final Item CRIMSON_HELMET = registerItem("crimson_helmet",
+            new ArmorItem(ModArmorMaterials.CRIMSON, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item CRIMSON_CHESTPLATE = registerItem("crimson_chestplate",
+            new ArmorItem(ModArmorMaterials.CRIMSON, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item CRIMSON_LEGGINGS = registerItem("crimson_leggings",
+            new ArmorItem(ModArmorMaterials.CRIMSON, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item CRIMSON_BOOTS = registerItem("crimson_boots",
+            new ArmorItem(ModArmorMaterials.CRIMSON, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    // warped set
+    public static final Item WARPED_HELMET = registerItem("warped_helmet",
+            new ArmorItem(ModArmorMaterials.WARPED, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item WARPED_CHESTPLATE = registerItem("warped_chestplate",
+            new ArmorItem(ModArmorMaterials.WARPED, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item WARPED_LEGGINGS = registerItem("warped_leggings",
+            new ArmorItem(ModArmorMaterials.WARPED, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item WARPED_BOOTS = registerItem("warped_boots",
+            new ArmorItem(ModArmorMaterials.WARPED, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    // mangrove set
+    public static final Item MANGROVE_HELMET = registerItem("mangrove_helmet",
+            new ArmorItem(ModArmorMaterials.MANGROVE, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item MANGROVE_CHESTPLATE = registerItem("mangrove_chestplate",
+            new ArmorItem(ModArmorMaterials.MANGROVE, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item MANGROVE_LEGGINGS = registerItem("mangrove_leggings",
+            new ArmorItem(ModArmorMaterials.MANGROVE, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item MANGROVE_BOOTS = registerItem("mangrove_boots",
+            new ArmorItem(ModArmorMaterials.MANGROVE, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    // dark oak set
+    public static final Item DARK_OAK_HELMET = registerItem("dark_oak_helmet",
+            new ArmorItem(ModArmorMaterials.DARK_OAK, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item DARK_OAK_CHESTPLATE = registerItem("dark_oak_chestplate",
+            new ArmorItem(ModArmorMaterials.DARK_OAK, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item DARK_OAK_LEGGINGS = registerItem("dark_oak_leggings",
+            new ArmorItem(ModArmorMaterials.DARK_OAK, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item DARK_OAK_BOOTS = registerItem("dark_oak_boots",
+            new ArmorItem(ModArmorMaterials.DARK_OAK, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    // jungle set
+    public static final Item JUNGLE_HELMET = registerItem("jungle_helmet",
+            new ArmorItem(ModArmorMaterials.JUNGLE, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item JUNGLE_CHESTPLATE = registerItem("jungle_chestplate",
+            new ArmorItem(ModArmorMaterials.JUNGLE, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item JUNGLE_LEGGINGS = registerItem("jungle_leggings",
+            new ArmorItem(ModArmorMaterials.JUNGLE, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item JUNGLE_BOOTS = registerItem("jungle_boots",
+            new ArmorItem(ModArmorMaterials.JUNGLE, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    // birch set
+    public static final Item BIRCH_HELMET = registerItem("birch_helmet",
+            new ArmorItem(ModArmorMaterials.BIRCH, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item BIRCH_CHESTPLATE = registerItem("birch_chestplate",
+            new ArmorItem(ModArmorMaterials.BIRCH, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item BIRCH_LEGGINGS = registerItem("birch_leggings",
+            new ArmorItem(ModArmorMaterials.BIRCH, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item BIRCH_BOOTS = registerItem("birch_boots",
+            new ArmorItem(ModArmorMaterials.BIRCH, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    // spruce set
+    public static final Item SPRUCE_HELMET = registerItem("spruce_helmet",
+            new ArmorItem(ModArmorMaterials.SPRUCE, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item SPRUCE_CHESTPLATE = registerItem("spruce_chestplate",
+            new ArmorItem(ModArmorMaterials.SPRUCE, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item SPRUCE_LEGGINGS = registerItem("spruce_leggings",
+            new ArmorItem(ModArmorMaterials.SPRUCE, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item SPRUCE_BOOTS = registerItem("spruce_boots",
+            new ArmorItem(ModArmorMaterials.SPRUCE, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    // acacia set
+    public static final Item ACACIA_HELMET = registerItem("acacia_helmet",
+            new ArmorItem(ModArmorMaterials.ACACIA, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item ACACIA_CHESTPLATE = registerItem("acacia_chestplate",
+            new ArmorItem(ModArmorMaterials.ACACIA, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item ACACIA_LEGGINGS = registerItem("acacia_leggings",
+            new ArmorItem(ModArmorMaterials.ACACIA, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item ACACIA_BOOTS = registerItem("acacia_boots",
+            new ArmorItem(ModArmorMaterials.ACACIA, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // oak set
     public static final Item OAK_HELMET = registerItem("oak_helmet",
             new ArmorItem(ModArmorMaterials.OAK, EquipmentSlot.HEAD,
