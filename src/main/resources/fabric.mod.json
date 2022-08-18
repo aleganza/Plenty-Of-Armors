@@ -14,7 +14,7 @@
     "sources": "https://github.com/aleganza/Plenty-Of-Armors"
   },
 
-  "license": "GNU Lesser General Public License v3.0",
+  "license": "GNU Lesser General Public License v2.1",
   "icon": "assets/plentyofarmors/icon.png",
 
   "environment": "*",
