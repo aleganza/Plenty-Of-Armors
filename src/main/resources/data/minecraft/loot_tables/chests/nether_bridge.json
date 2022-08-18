@@ -33,7 +33,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "plentyofarmor:stardusite:ingot",
+          "name": "plentyofarmors:stardusite:ingot",
           "weight": 1
         },
         {
