@@ -9,6 +9,12 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
+  "item.plentyofarmors.amethyst_gem": "§dGemma di Ametista",
+  "item.plentyofarmors.amethyst_helmet": "§dElmo di Ametista",
+  "item.plentyofarmors.amethyst_chestplate": "§dCorazza di Ametista",
+  "item.plentyofarmors.amethyst_leggings": "§dGambiere di Ametista",
+  "item.plentyofarmors.amethyst_boots": "§dStivali di Ametista",
+
   "item.plentyofarmors.crying_obsidian_helmet": "Elmo di Ossidiana Piangente",
   "item.plentyofarmors.crying_obsidian_chestplate": "Corazza di Ossidiana Piangente",
   "item.plentyofarmors.crying_obsidian_leggings": "Gambiere di Ossidiana Piangente",

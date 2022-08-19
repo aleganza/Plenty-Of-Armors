@@ -22,6 +22,23 @@ public class ModItems {
     /*public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
             new ElytraItem(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));*/
 
+    // amethyst set
+    public static final Item AMETHYST_GEM = registerItem("amethyst_gem",
+            new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
+    public static final Item AMETHYST_HELMET = registerItem("amethyst_helmet",
+            new ModArmorAmethyst(ModArmorMaterials.AMETHYST, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item AMETHYST_CHESTPLATE = registerItem("amethyst_chestplate",
+            new ArmorItem(ModArmorMaterials.AMETHYST, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item AMETHYST_LEGGINGS = registerItem("amethyst_leggings",
+            new ArmorItem(ModArmorMaterials.AMETHYST, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item AMETHYST_BOOTS = registerItem("amethyst_boots",
+            new ArmorItem(ModArmorMaterials.AMETHYST, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // crying obsidian set
     public static final Item CRYING_OBSIDIAN_HELMET = registerItem("crying_obsidian_helmet",
             new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, EquipmentSlot.HEAD,
