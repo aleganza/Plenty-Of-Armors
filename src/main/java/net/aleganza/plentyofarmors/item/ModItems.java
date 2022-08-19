@@ -22,12 +22,26 @@ public class ModItems {
     /*public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
             new ElytraItem(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));*/
 
+    // crying obsidian set
+    public static final Item CRYING_OBSIDIAN_HELMET = registerItem("crying_obsidian_helmet",
+            new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item CRYING_OBSIDIAN_CHESTPLATE = registerItem("crying_obsidian_chestplate",
+            new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item CRYING_OBSIDIAN_LEGGINGS = registerItem("crying_obsidian_leggings",
+            new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item CRYING_OBSIDIAN_BOOTS = registerItem("crying_obsidian_boots",
+            new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // quartz set
     public static final Item QUARTZ_HELMET = registerItem("quartz_helmet",
-            new ModArmorStardusite1(ModArmorMaterials.QUARTZ, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.QUARTZ, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
     public static final Item QUARTZ_CHESTPLATE = registerItem("quartz_chestplate",
-            new ModArmorStardusite2(ModArmorMaterials.QUARTZ, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.QUARTZ, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
     public static final Item QUARTZ_LEGGINGS = registerItem("quartz_leggings",
             new ArmorItem(ModArmorMaterials.QUARTZ, EquipmentSlot.LEGS,

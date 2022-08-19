@@ -16,6 +16,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     // ---+ MOD ARMOR +---
 
+    CRYING_OBSIDIAN("crying_obsidian", 21, new int[]{2, 5, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Items.CRYING_OBSIDIAN});
+    }),
     QUARTZ("quartz", 15, new int[]{1, 4, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.QUARTZ});
     }),
