@@ -14,17 +14,17 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class ModArmorAmethyst extends ArmorItem {
+public class ModArmorNetherBrick extends ArmorItem {
 
     public static final int effectDuration = 400;
-    public static final int amplifier = 1;
+    public static final int amplifier = 0;
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.AMETHYST,
-                            new StatusEffectInstance(StatusEffects.LUCK, effectDuration, amplifier)).build();
+                    .put(ModArmorMaterials.NETHER_BRICK,
+                            new StatusEffectInstance(StatusEffects.SLOWNESS, effectDuration, amplifier)).build();
 
-    public ModArmorAmethyst(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorNetherBrick(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
     }
 

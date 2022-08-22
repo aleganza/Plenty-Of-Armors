@@ -22,6 +22,20 @@ public class ModItems {
     /*public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
             new ElytraItem(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));*/
 
+    // nether brick set
+    public static final Item NETHER_BRICK_HELMET = registerItem("nether_brick_helmet",
+            new ModArmorNetherBrick(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item NETHER_BRICK_CHESTPLATE = registerItem("nether_brick_chestplate",
+            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item NETHER_BRICK_LEGGINGS = registerItem("nether_brick_leggings",
+            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item NETHER_BRICK_BOOTS = registerItem("nether_brick_boots",
+            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // amethyst set
     public static final Item AMETHYST_GEM = registerItem("amethyst_gem",
             new Item(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));

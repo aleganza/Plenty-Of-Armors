@@ -9,6 +9,11 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
+  "item.plentyofarmors.nether_brick_helmet": "Nether Brick Helmet",
+  "item.plentyofarmors.nether_brick_chestplate": "Nether Brick Chestplate",
+  "item.plentyofarmors.nether_brick_leggings": "Nether Brick Leggings",
+  "item.plentyofarmors.nether_brick_boots": "Nether Brick Boots",
+
   "item.plentyofarmors.amethyst_gem": "§dAmethyst Gem",
   "item.plentyofarmors.amethyst_helmet": "§dAmethyst Helmet",
   "item.plentyofarmors.amethyst_chestplate": "§dAmethyst Chestplate",

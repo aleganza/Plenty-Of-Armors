@@ -9,6 +9,11 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
+  "item.plentyofarmors.nether_brick_helmet": "Elmo di Mattone del Nether",
+  "item.plentyofarmors.nether_brick_chestplate": "Corazza di Mattone del Nether",
+  "item.plentyofarmors.nether_brick_leggings": "Gambiere di Mattone del Nether",
+  "item.plentyofarmors.nether_brick_boots": "Stivali di Mattone del Nether",
+
   "item.plentyofarmors.amethyst_gem": "§dGemma di Ametista",
   "item.plentyofarmors.amethyst_helmet": "§dElmo di Ametista",
   "item.plentyofarmors.amethyst_chestplate": "§dCorazza di Ametista",
