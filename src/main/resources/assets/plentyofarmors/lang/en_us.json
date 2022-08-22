@@ -9,6 +9,11 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
+  "item.plentyofarmors.brick_helmet": "Brick Helmet",
+  "item.plentyofarmors.brick_chestplate": "Brick Chestplate",
+  "item.plentyofarmors.brick_leggings": "Brick Leggings",
+  "item.plentyofarmors.brick_boots": "Brick Boots",
+
   "item.plentyofarmors.nether_brick_helmet": "Nether Brick Helmet",
   "item.plentyofarmors.nether_brick_chestplate": "Nether Brick Chestplate",
   "item.plentyofarmors.nether_brick_leggings": "Nether Brick Leggings",

@@ -22,6 +22,20 @@ public class ModItems {
     /*public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
             new ElytraItem(new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));*/
 
+    // brick set
+    public static final Item BRICK_HELMET = registerItem("brick_helmet",
+            new ModArmorBrick(ModArmorMaterials.BRICK, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item BRICK_CHESTPLATE = registerItem("brick_chestplate",
+            new ArmorItem(ModArmorMaterials.BRICK, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item BRICK_LEGGINGS = registerItem("brick_leggings",
+            new ArmorItem(ModArmorMaterials.BRICK, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+    public static final Item BRICK_BOOTS = registerItem("brick_boots",
+            new ArmorItem(ModArmorMaterials.BRICK, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.PLENTYOFARMOR)));
+
     // nether brick set
     public static final Item NETHER_BRICK_HELMET = registerItem("nether_brick_helmet",
             new ModArmorNetherBrick(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.HEAD,
