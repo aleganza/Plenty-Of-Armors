@@ -15,6 +15,10 @@ Bored of the same old armors? Well you're in the right place! **Plenty of Armors
 * Custom advancements;
 * Custom effects applied when full armor sets are equipped.
 
+<p align="center"> 
+	<img width="100%" src="https://i.imgur.com/WEth0Gp.png"> 
+</p>
+
 ## 🧾 Armors List:
 
 ### 🌳 Wood Sets
