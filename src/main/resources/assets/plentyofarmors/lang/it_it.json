@@ -1,11 +1,12 @@
 {
   "itemGroup.plentyofarmors.plentyofarmors":"Plenty Of Armors",
 
-  "item.plentyofarmors.dragon_elytra": "§dElitre Dragoniche",
+/*  "item.plentyofarmors.dragon_elytra": "§dElitre Dragoniche",*/
 
   "effect.plentyofarmors.frost_walker": "Passo Gelato",
   "effect.plentyofarmors.fire_walker": "Passo di Fuoco",
   "effect.plentyofarmors.thorns": "Spine",
+  "effect.plentyofarmors.swift_sneak": "Passo Felpato",
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
