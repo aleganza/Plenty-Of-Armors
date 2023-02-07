@@ -1,7 +1,6 @@
 package net.aleganza.plentyofarmors.effect;
 
 import net.minecraft.block.*;
-import net.minecraft.enchantment.ThornsEnchantment;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
@@ -27,7 +26,7 @@ public class ModLibs {
                         BlockState blockState3 = world.getBlockState(blockPos2);
                         if (blockState3.getMaterial() == Material.LAVA && (Integer)blockState3.get(FluidBlock.LEVEL) == 0 && blockState.canPlaceAt(world, blockPos2) && world.canPlace(blockState, blockPos2, ShapeContext.absent())) {
                             world.setBlockState(blockPos2, blockState);
-                            world.createAndScheduleBlockTick(blockPos2, Blocks.BLACKSTONE, MathHelper.nextInt(entity.getRandom(), 60, 120));
+                            world.scheduleBlockTick(blockPos2, Blocks.BLACKSTONE, MathHelper.nextInt(entity.getRandom(), 60, 120));
                         }
                     }
                 }
