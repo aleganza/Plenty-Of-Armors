@@ -24,6 +24,20 @@ public class ModItems {
     /*public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
             new ElytraItem(new FabricItemSettings()));*/
 
+    // echo shard set
+    public static final Item ECHO_SHARD_HELMET = registerItem("echo_shard_helmet",
+            new ModArmorBrick(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.HEAD,
+                    new FabricItemSettings()));
+    public static final Item ECHO_SHARD_CHESTPLATE = registerItem("echo_shard_chestplate",
+            new ArmorItem(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.CHEST,
+                    new FabricItemSettings()));
+    public static final Item ECHO_SHARD_LEGGINGS = registerItem("echo_shard_leggings",
+            new ArmorItem(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.LEGS,
+                    new FabricItemSettings()));
+    public static final Item ECHO_SHARD_BOOTS = registerItem("echo_shard_boots",
+            new ArmorItem(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.FEET,
+                    new FabricItemSettings()));
+
     // brick set
     public static final Item BRICK_HELMET = registerItem("brick_helmet",
             new ModArmorBrick(ModArmorMaterials.BRICK, EquipmentSlot.HEAD,
@@ -400,6 +414,11 @@ public class ModItems {
 
     // 1.19.3
     public static void addItemsToItemsGroup() {
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_BOOTS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_LEGGINGS);
+
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, BRICK_BOOTS);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, BRICK_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, BRICK_HELMET);
