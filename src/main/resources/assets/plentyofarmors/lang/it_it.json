@@ -10,10 +10,10 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
-  "item.plentyofarmors.echo_shard_helmet": "Elmo di Risonanza",
-  "item.plentyofarmors.echo_shard_chestplate": "Corazza di Risonanza",
-  "item.plentyofarmors.echo_shard_leggings": "Gambiere di Risonanza",
-  "item.plentyofarmors.echo_shard_boots": "Stivali di Risonanza",
+  "item.plentyofarmors.echo_shard_helmet": "§3Elmo di Risonanza",
+  "item.plentyofarmors.echo_shard_chestplate": "§3Corazza di Risonanza",
+  "item.plentyofarmors.echo_shard_leggings": "§3Gambiere di Risonanza",
+  "item.plentyofarmors.echo_shard_boots": "§3Stivali di Risonanza",
 
   "item.plentyofarmors.brick_helmet": "Elmo di Mattone",
   "item.plentyofarmors.brick_chestplate": "Corazza di Mattone",
