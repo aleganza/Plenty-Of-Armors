@@ -82,7 +82,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     HARDENED_ICE_SHARD("hardened_ice", 23, new int[]{2, 5, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.HARDENED_ICE_SHARD});
     }),
-    COPPER("copper", 14, new int[]{2, 4, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
+    COPPER("copper", 13, new int[]{2, 4, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.COPPER_INGOT});
     }),
     EMERALD("emerald", 23, new int[]{2, 5, 7, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F, () -> {
