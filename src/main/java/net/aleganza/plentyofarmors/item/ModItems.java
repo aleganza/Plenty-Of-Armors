@@ -26,8 +26,11 @@ public class ModItems {
 
     // echo shard set
     public static final Item ECHO_SHARD_HELMET = registerItem("echo_shard_helmet",
-            new ModArmorEchoShard(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.HEAD,
                     new FabricItemSettings()));
+    /* public static final Item ECHO_SHARD_HELMET = registerItem("echo_shard_helmet",
+            new ModArmorEchoShard(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.HEAD,
+                    new FabricItemSettings()));*/
     public static final Item ECHO_SHARD_CHESTPLATE = registerItem("echo_shard_chestplate",
             new ArmorItem(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.CHEST,
                     new FabricItemSettings()));
