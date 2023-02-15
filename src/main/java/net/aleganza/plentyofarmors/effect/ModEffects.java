@@ -12,7 +12,8 @@ public class ModEffects {
     public static StatusEffect FROST_WALKER;
     public static StatusEffect FIRE_WALKER;
     public static StatusEffect THORNS;
-    public static StatusEffect SWIFT_SNEAK;
+    /*public static StatusEffect SWIFT_SNEAK;*/
+    public static StatusEffect XP_ENHANCER;
 
     public static StatusEffect registerFrostWalker(String name) {
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
@@ -26,15 +27,20 @@ public class ModEffects {
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
                 new ThornsEffect(StatusEffectCategory.BENEFICIAL, 0x289e33));
     }
-    public static StatusEffect registerSwiftSneak(String name) {
+    /*public static StatusEffect registerSwiftSneak(String name) {
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
-                new SwiftSneakEffect(StatusEffectCategory.BENEFICIAL, 0x289e33));
+                new SwiftSneakEffect(StatusEffectCategory.NEUTRAL, 0x065769));
+    }*/
+    public static StatusEffect registerXPEnhancer(String name) {
+        return Registry.register(Registries.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
+                new XPEnhancerEffect(StatusEffectCategory.BENEFICIAL, 0xf6f121));
     }
 
     public static void registerEffects() {
         FROST_WALKER = registerFrostWalker("frost_walker");
         FIRE_WALKER = registerHeatWalker("fire_walker");
         THORNS = registerThorns("thorns");
-        SWIFT_SNEAK = registerSwiftSneak("swift_sneak");
+        /*SWIFT_SNEAK = registerSwiftSneak("swift_sneak");*/
+        XP_ENHANCER = registerXPEnhancer("xp_enhancer");
     }
 }

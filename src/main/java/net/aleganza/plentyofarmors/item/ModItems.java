@@ -301,7 +301,7 @@ public class ModItems {
 
     // lapis set
     public static final Item LAPIS_HELMET = registerItem("lapis_helmet",
-            new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.HEAD,
+            new ModArmorLapis(ModArmorMaterials.LAPIS, EquipmentSlot.HEAD,
                     new FabricItemSettings()));
     public static final Item LAPIS_CHESTPLATE = registerItem("lapis_chestplate",
             new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.CHEST,

@@ -14,7 +14,7 @@ public class ModItemGroup {
 
     public static void registerItemGroup() {
         PLENTYOFARMOR = FabricItemGroup.builder(new Identifier(PlentyOfArmors.MOD_ID, "plentyofarmors"))
-                .displayName(Text.literal("Plenty Of Armors Item Group"))
+                .displayName(Text.literal("Plenty Of Armors"))
                 .icon(() -> new ItemStack(ModItems.ADV_ICON)).build();
     }
 }

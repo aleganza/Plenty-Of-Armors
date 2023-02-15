@@ -15,17 +15,17 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class ModArmorEchoShard extends ArmorItem {
+public class ModArmorLapis extends ArmorItem {
 
     public static final int effectDuration = 400;
-    public static final int amplifier = 2;
+    public static final int amplifier = 0;
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.ECHO_SHARD,
+                    .put(ModArmorMaterials.LAPIS,
                             new StatusEffectInstance(StatusEffects.LUCK, effectDuration, amplifier)).build();
 
-    public ModArmorEchoShard(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorLapis(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
     }
 
@@ -46,8 +46,8 @@ public class ModArmorEchoShard extends ArmorItem {
 
     private void evaluateArmorEffects(PlayerEntity player) {
         for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
-            ArmorMaterial mapArmorMaterial = ModArmorMaterials.ECHO_SHARD;
-            StatusEffectInstance mapStatusEffect = new StatusEffectInstance(ModEffects.SWIFT_SNEAK,
+            ArmorMaterial mapArmorMaterial = ModArmorMaterials.LAPIS;
+            StatusEffectInstance mapStatusEffect = new StatusEffectInstance(ModEffects.XP_ENHANCER,
                     effectDuration, amplifier, false, false, false);
 
             if(hasCorrectArmorOn(mapArmorMaterial, player)) {
@@ -60,14 +60,14 @@ public class ModArmorEchoShard extends ArmorItem {
         boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect.getEffectType());
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addStatusEffect(new StatusEffectInstance(ModEffects.SWIFT_SNEAK,
+            player.addStatusEffect(new StatusEffectInstance(ModEffects.XP_ENHANCER,
                     effectDuration, amplifier, false, false, false));
         }
 
         // effect repeat issue fix
-        if (player.getActiveStatusEffects().containsKey(ModEffects.SWIFT_SNEAK)) {
+        if (player.getActiveStatusEffects().containsKey(ModEffects.XP_ENHANCER)) {
             if (player.getActiveStatusEffects().get(mapStatusEffect.getEffectType()).getDuration() < 221) {
-                player.addStatusEffect(new StatusEffectInstance(ModEffects.SWIFT_SNEAK,
+                player.addStatusEffect(new StatusEffectInstance(ModEffects.XP_ENHANCER,
                         effectDuration, amplifier, false, false, false));
             }
         }

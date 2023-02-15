@@ -22,6 +22,5 @@ public class PlentyOfArmors implements ModInitializer {
 		ModItemGroup.registerItemGroup();
 		ModItems.registerModItems();
 		ModEffects.registerEffects();
-
 	}
 }
