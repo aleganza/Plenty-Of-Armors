@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "X": {
-      "item": "minecraft:echo_shard_planks"
+      "item": "minecraft:echo_shard"
     }
   },
   "pattern": [
