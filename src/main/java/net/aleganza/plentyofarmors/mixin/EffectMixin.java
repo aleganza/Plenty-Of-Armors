@@ -3,29 +3,30 @@ package net.aleganza.plentyofarmors.mixin;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(ClientPlayerEntity.class)
+@Mixin(ServerPlayerEntity.class)
 public class EffectMixin {
     @Shadow
     @Final
     protected MinecraftClient client;
 
-    @Inject(method = "setExperience", at = @At("TAIL"))
-    public void setExperience1(float progress, int total, int level, CallbackInfo info) {
+    @Inject(method = "setExperienceLevel", at = @At("TAIL"))
+    public void setExperienceLevel1(int level, CallbackInfo info) {
         ClientPlayerEntity player = client.player;
+
         int currentLevel = player.experienceLevel;
 
         if (level > currentLevel) {
             player.addExperienceLevels(1);
-            player.sendMessage(Text.literal(progress + " " + total + " " + level));
+            player.sendMessage(Text.literal(String.valueOf(level)));
         }
     }
 
