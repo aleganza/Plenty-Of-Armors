@@ -10,23 +10,22 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(ServerPlayerEntity.class)
+@Mixin(ClientPlayerEntity.class)
 public class EffectMixin {
-    @Shadow
-    @Final
-    protected MinecraftClient client;
+    @Final @Shadow protected MinecraftClient client;
 
-    @Inject(method = "setExperienceLevel", at = @At("TAIL"))
-    public void setExperienceLevel1(int level, CallbackInfo info) {
+    @Inject(method = "setExperience", at = @At("HEAD"))
+    public void setExperience(float progress, int total, int level, CallbackInfo info) {
         ClientPlayerEntity player = client.player;
 
         int currentLevel = player.experienceLevel;
+        player.sendMessage(Text.literal(String.valueOf(level)));
 
         if (level > currentLevel) {
-            player.addExperienceLevels(1);
-            player.sendMessage(Text.literal(String.valueOf(level)));
+            player.sendMessage(Text.literal("I leveled up to level " + level));
         }
     }
 
@@ -55,6 +54,4 @@ public class EffectMixin {
 
         return total;
     }*/
-
-
 }
