@@ -10,6 +10,11 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
+  "item.plentyofarmors.reinforced_iron_helmet": "Elmo di Ferro Rinforzato",
+  "item.plentyofarmors.reinforced_iron_chestplate": "Corazza di Ferro Rinforzato",
+  "item.plentyofarmors.reinforced_iron_leggings": "Gambiere di Ferro Rinforzato",
+  "item.plentyofarmors.reinforced_iron_boots": "Stivali di Ferro Rinforzato",
+
   "item.plentyofarmors.echo_shard_helmet": "§3Elmo di Risonanza",
   "item.plentyofarmors.echo_shard_chestplate": "§3Corazza di Risonanza",
   "item.plentyofarmors.echo_shard_leggings": "§3Gambiere di Risonanza",

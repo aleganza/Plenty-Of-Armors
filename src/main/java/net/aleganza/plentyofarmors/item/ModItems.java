@@ -24,6 +24,20 @@ public class ModItems {
     /*public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
             new ElytraItem(new FabricItemSettings()));*/
 
+    // reinforced iron set
+    public static final Item REINFORCED_IRON_HELMET = registerItem("reinforced_iron_helmet",
+            new ModArmorReinforcedIron(ModArmorMaterials.REINFORCED_IRON, EquipmentSlot.HEAD,
+                    new FabricItemSettings()));
+    public static final Item REINFORCED_IRON_CHESTPLATE = registerItem("reinforced_iron_chestplate",
+            new ArmorItem(ModArmorMaterials.REINFORCED_IRON, EquipmentSlot.CHEST,
+                    new FabricItemSettings()));
+    public static final Item REINFORCED_IRON_LEGGINGS = registerItem("reinforced_iron_leggings",
+            new ArmorItem(ModArmorMaterials.REINFORCED_IRON, EquipmentSlot.LEGS,
+                    new FabricItemSettings()));
+    public static final Item REINFORCED_IRON_BOOTS = registerItem("reinforced_iron_boots",
+            new ArmorItem(ModArmorMaterials.REINFORCED_IRON, EquipmentSlot.FEET,
+                    new FabricItemSettings()));
+
     // echo shard set
     public static final Item ECHO_SHARD_HELMET = registerItem("echo_shard_helmet",
             new ArmorItem(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.HEAD,
@@ -417,6 +431,11 @@ public class ModItems {
 
     // 1.19.3
     public static void addItemsToItemsGroup() {
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, REINFORCED_IRON_BOOTS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, REINFORCED_IRON_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, REINFORCED_IRON_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, REINFORCED_IRON_LEGGINGS);
+
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_BOOTS);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_HELMET);

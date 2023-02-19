@@ -10,6 +10,11 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
+  "item.plentyofarmors.reinforced_iron_helmet": "Reinforced_Iron Helmet",
+  "item.plentyofarmors.reinforced_iron_chestplate": "Reinforced_Iron Chestplate",
+  "item.plentyofarmors.reinforced_iron_leggings": "Reinforced_Iron Leggings",
+  "item.plentyofarmors.reinforced_iron_boots": "Reinforced_Iron Boots",
+
   "item.plentyofarmors.echo_shard_helmet": "§3Echo Helmet",
   "item.plentyofarmors.echo_shard_chestplate": "§3Echo Chestplate",
   "item.plentyofarmors.echo_shard_leggings": "§3Echo Leggings",
