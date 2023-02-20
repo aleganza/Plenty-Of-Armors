@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ClientPlayerEntity.class)
 public class EffectMixin {
-    @Final @Shadow protected MinecraftClient client;
+    /*@Final @Shadow protected MinecraftClient client;
 
     @Inject(method = "setExperience", at = @At("HEAD"))
     public void setExperience(float progress, int total, int level, CallbackInfo info) {
@@ -27,7 +27,7 @@ public class EffectMixin {
         if (level > currentLevel) {
             player.sendMessage(Text.literal("I leveled up to level " + level));
         }
-    }
+    }*/
 
     /*@Inject(at = @At("HEAD"), method = "setExperience")
     public void setExperience1(float progress, int total, int level, CallbackInfo info) {
