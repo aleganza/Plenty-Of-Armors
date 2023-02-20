@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "EffectMixin"
+    "EffectMixin",
+    "BouncingMixin"
   ],
   "injectors": {
     "defaultRequire": 1
