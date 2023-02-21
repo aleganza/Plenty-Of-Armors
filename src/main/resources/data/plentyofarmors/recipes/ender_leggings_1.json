@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "plentyofarmors:heart_of_the_end"
+    },
+    "O": {
+      "item": "plentyofarmors:crying_obsidian_leggings"
+    }
+  },
+  "pattern": [
+    " X ",
+    " O "
+  ],
+  "result": {
+    "item": "plentyofarmors:ender_leggings"
+  }
+}
