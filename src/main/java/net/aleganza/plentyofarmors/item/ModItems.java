@@ -21,6 +21,9 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     // phantom set
+    public static final Item HARDENED_PHANTOM_MEMBRANE = registerItem("hardened_phantom_membrane",
+            new Item(new FabricItemSettings()));
+
     public static final Item PHANTOM_HELMET = registerItem("phantom_helmet",
             new ModArmorPhantom(ModArmorMaterials.PHANTOM, EquipmentSlot.HEAD,
                     new FabricItemSettings()));
@@ -441,6 +444,7 @@ public class ModItems {
 
     // 1.19.3
     public static void addItemsToItemsGroup() {
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, HARDENED_PHANTOM_MEMBRANE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, PHANTOM_HELMET);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, PHANTOM_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, PHANTOM_LEGGINGS);
