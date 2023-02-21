@@ -15,7 +15,10 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial {
 
     // ---+ MOD ARMOR +---
-    REINFORCED_IRON("reinforced_iron", 25, new int[]{3, 5, 7, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 0.0F, 0.1F, () -> {
+    PHANTOM("phantom", 21, new int[]{2, 5, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Items.PHANTOM_MEMBRANE});
+    }),
+    REINFORCED_IRON("reinforced_iron", 25, new int[]{3, 5, 7, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.1F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.ECHO_SHARD});
     }),
     ECHO_SHARD("echo_shard", 35, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {

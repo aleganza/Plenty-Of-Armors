@@ -20,7 +20,7 @@ public class EffectMixin {
     @Inject(method = "setExperience", at = @At("HEAD"))
     public void setExperience(float progress, int total, int level, CallbackInfo info) {
         ClientPlayerEntity player = client.player;
-
+        client-
         int currentLevel = player.experienceLevel;
         player.sendMessage(Text.literal(String.valueOf(level)));
 

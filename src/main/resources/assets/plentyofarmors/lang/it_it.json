@@ -8,6 +8,11 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
+  "item.plentyofarmors.phantom_helmet": "§9Elmo di Phantom",
+  "item.plentyofarmors.phantom_chestplate": "§9Corazza di Phantom",
+  "item.plentyofarmors.phantom_leggings": "§9Gambiere di Phantom",
+  "item.plentyofarmors.phantom_boots": "§9Stivali di Phantom",
+
   "item.plentyofarmors.reinforced_iron_helmet": "Elmo di Ferro Rinforzato",
   "item.plentyofarmors.reinforced_iron_chestplate": "Corazza di Ferro Rinforzato",
   "item.plentyofarmors.reinforced_iron_leggings": "Gambiere di Ferro Rinforzato",

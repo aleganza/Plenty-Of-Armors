@@ -8,6 +8,11 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
+  "item.plentyofarmors.phantom_helmet": "§9Phantom Helmet",
+  "item.plentyofarmors.phantom_chestplate": "§9Phantom Chestplate",
+  "item.plentyofarmors.phantom_leggings": "§9Phantom Leggings",
+  "item.plentyofarmors.phantom_boots": "§9Phantom Boots",
+
   "item.plentyofarmors.reinforced_iron_helmet": "Reinforced Iron Helmet",
   "item.plentyofarmors.reinforced_iron_chestplate": "Reinforced Iron Chestplate",
   "item.plentyofarmors.reinforced_iron_leggings": "Reinforced Iron Leggings",

@@ -19,33 +19,25 @@ public class BouncingEffect extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity pLivingEntity, int pAmplifier) {
         if (!pLivingEntity.world.isClient()) {
-            // bounce
-            Vec3d vec3d = pLivingEntity.getVelocity();
-            if (vec3d.y < 0.0) {
-                if (pLivingEntity.isOnGround()) {
-                    double d = 1.0;
-                    pLivingEntity.setVelocity(vec3d.x, -vec3d.y * d, vec3d.z);
-                    pLivingEntity.velocityModified = true;
-                    pLivingEntity.sendMessage(Text.literal(String.valueOf(vec3d.y)));
-
-                }
-            }
-
-            World world = pLivingEntity.getWorld();
-            BlockPos pos = pLivingEntity.getBlockPos();
-            BlockState state = pLivingEntity.getBlockStateAtPos();
+            /*Vec3d vec3d = pLivingEntity.getVelocity();*/
+            bounce(pLivingEntity);
+            double d = Math.abs(pLivingEntity.getVelocity().y);
         }
 
         super.applyUpdateEffect(pLivingEntity, pAmplifier);
     }
 
-    /*private static void bounce(Entity entity) {
-        Vec3d vec3d = entity.getVelocity();
+    private static void bounce(LivingEntity pLivingEntity) {
+        Vec3d vec3d = pLivingEntity.getVelocity();
         if (vec3d.y < 0.0) {
-            double d = entity instanceof LivingEntity ? 1.0 : 0.8;
-            entity.setVelocity(vec3d.x, -vec3d.y * d, vec3d.z);
+            /*double d = 1.0;
+            pLivingEntity.setVelocity(vec3d.x, -vec3d.y * d, vec3d.z);
+            pLivingEntity.velocityModified = true;*/
+            /*pLivingEntity.sendMessage(Text.literal("bounce"));*/
+        } else {
+            pLivingEntity.sendMessage(Text.literal("not bounce"));
         }
-    }*/
+    }
 
     @Override
     public boolean canApplyUpdateEffect(int pDuration, int pAmplifier) {

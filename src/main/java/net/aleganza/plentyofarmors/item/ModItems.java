@@ -20,9 +20,19 @@ public class ModItems {
     public static final Item ADV_ICON = registerItem("adv_icon",
             new Item(new FabricItemSettings()));
 
-    // dragon elytra
-    /*public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
-            new ElytraItem(new FabricItemSettings()));*/
+    // phantom set
+    public static final Item PHANTOM_HELMET = registerItem("phantom_helmet",
+            new ModArmorPhantom(ModArmorMaterials.PHANTOM, EquipmentSlot.HEAD,
+                    new FabricItemSettings()));
+    public static final Item PHANTOM_CHESTPLATE = registerItem("phantom_chestplate",
+            new ArmorItem(ModArmorMaterials.PHANTOM, EquipmentSlot.CHEST,
+                    new FabricItemSettings()));
+    public static final Item PHANTOM_LEGGINGS = registerItem("phantom_leggings",
+            new ArmorItem(ModArmorMaterials.PHANTOM, EquipmentSlot.LEGS,
+                    new FabricItemSettings()));
+    public static final Item PHANTOM_BOOTS = registerItem("phantom_boots",
+            new ArmorItem(ModArmorMaterials.PHANTOM, EquipmentSlot.FEET,
+                    new FabricItemSettings()));
 
     // reinforced iron set
     public static final Item REINFORCED_IRON_HELMET = registerItem("reinforced_iron_helmet",
@@ -431,146 +441,151 @@ public class ModItems {
 
     // 1.19.3
     public static void addItemsToItemsGroup() {
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, REINFORCED_IRON_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, REINFORCED_IRON_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, PHANTOM_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, PHANTOM_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, PHANTOM_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, PHANTOM_BOOTS);
+
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, REINFORCED_IRON_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, REINFORCED_IRON_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, REINFORCED_IRON_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, REINFORCED_IRON_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ECHO_SHARD_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, BRICK_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, BRICK_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, BRICK_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, BRICK_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, BRICK_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, BRICK_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, NETHER_BRICK_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, NETHER_BRICK_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, NETHER_BRICK_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, NETHER_BRICK_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, NETHER_BRICK_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, NETHER_BRICK_BOOTS);
 
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, AMETHYST_GEM);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, AMETHYST_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, AMETHYST_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, AMETHYST_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, AMETHYST_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, AMETHYST_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, AMETHYST_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CRYING_OBSIDIAN_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CRYING_OBSIDIAN_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, CRYING_OBSIDIAN_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CRYING_OBSIDIAN_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, CRYING_OBSIDIAN_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CRYING_OBSIDIAN_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, QUARTZ_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, QUARTZ_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, QUARTZ_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, QUARTZ_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, QUARTZ_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, QUARTZ_BOOTS);
 
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, STARDUSITE_INGOT);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, STARDUSITE_BOOTS);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, STARDUSITE_HELMET);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, STARDUSITE_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, STARDUSITE_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, STARDUSITE_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CACTUS_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CACTUS_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, CACTUS_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CACTUS_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, CACTUS_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CACTUS_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CRIMSON_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CRIMSON_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, CRIMSON_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CRIMSON_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, CRIMSON_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CRIMSON_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, WARPED_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, WARPED_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, WARPED_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, WARPED_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, WARPED_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, WARPED_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, MANGROVE_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, MANGROVE_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, MANGROVE_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, MANGROVE_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, MANGROVE_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, MANGROVE_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, DARK_OAK_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, DARK_OAK_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, DARK_OAK_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, DARK_OAK_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, DARK_OAK_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, DARK_OAK_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, JUNGLE_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, JUNGLE_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, JUNGLE_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, JUNGLE_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, JUNGLE_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, JUNGLE_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, BIRCH_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, BIRCH_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, BIRCH_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, BIRCH_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, BIRCH_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, BIRCH_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, SPRUCE_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, SPRUCE_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, SPRUCE_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, SPRUCE_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, SPRUCE_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, SPRUCE_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ACACIA_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ACACIA_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, ACACIA_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ACACIA_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, ACACIA_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ACACIA_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, OAK_LEGGINGS);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, OAK_HELMET);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, OAK_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, OAK_LEGGINGS);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, OAK_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, SLIME_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, SLIME_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, SLIME_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, SLIME_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, SLIME_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, SLIME_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, OBSIDIAN_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, OBSIDIAN_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, OBSIDIAN_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, OBSIDIAN_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, OBSIDIAN_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, OBSIDIAN_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, LAPIS_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, LAPIS_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, LAPIS_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, LAPIS_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, LAPIS_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, LAPIS_BOOTS);
 
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, REDSTONE_MIXTURE);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, REDSTONE_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, REDSTONE_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, REDSTONE_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, REDSTONE_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, REDSTONE_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, REDSTONE_BOOTS);
 
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, ICE_SHARD);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, HARDENED_ICE_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, HARDENED_ICE_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, HARDENED_ICE_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, HARDENED_ICE_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, HARDENED_ICE_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, HARDENED_ICE_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, COPPER_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, COPPER_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, COPPER_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, COPPER_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, COPPER_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, COPPER_BOOTS);
 
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, HEART_OF_THE_END);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ENDER_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ENDER_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, ENDER_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ENDER_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, ENDER_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ENDER_BOOTS);
 
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, MARINE_DIAMOND);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, MARINE_DIAMOND_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, MARINE_DIAMOND_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, MARINE_DIAMOND_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, MARINE_DIAMOND_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, MARINE_DIAMOND_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, MARINE_DIAMOND_BOOTS);
 
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, EMERALD_BOOTS);
-        addToItemGroup(ModItemGroup.PLENTYOFARMOR, EMERALD_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, EMERALD_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, EMERALD_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, EMERALD_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, EMERALD_BOOTS);
     }
 
     // 1.19.3
