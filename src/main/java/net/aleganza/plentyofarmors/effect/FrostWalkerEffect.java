@@ -18,9 +18,8 @@ public class FrostWalkerEffect extends StatusEffect {
 
             World world = pLivingEntity.getWorld();
             BlockPos pos = pLivingEntity.getBlockPos();
-            int level = 0;
 
-            FrostWalkerEnchantment.freezeWater(pLivingEntity, world, pos, level);
+            FrostWalkerEnchantment.freezeWater(pLivingEntity, world, pos, pAmplifier);
         }
 
         super.applyUpdateEffect(pLivingEntity, pAmplifier);

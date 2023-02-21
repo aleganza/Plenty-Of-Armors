@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "plentyofarmors:ice_shard"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SDS",
+    " S "
+  ],
+  "result": {
+    "item": "plentyofarmors:frozen_diamond",
+    "count": 1
+  }
+}

@@ -4,9 +4,14 @@
   "effect.plentyofarmors.frost_walker": "Frost Walker",
   "effect.plentyofarmors.fire_walker": "Fire Walker",
   "effect.plentyofarmors.thorns": "Thorns",
-  "effect.plentyofarmors.swift_sneak": "Swift Sneak",
 
   "item.plentyofarmors.adv_icon": "adv_icon",
+
+  "item.plentyofarmors.frozen_diamond": "§bFrozen Diamond",
+  "item.plentyofarmors.frozen_diamond_helmet": "§bFrozen Diamond Helmet",
+  "item.plentyofarmors.frozen_diamond_chestplate": "§bFrozen Diamond Chestplate",
+  "item.plentyofarmors.frozen_diamond_leggings": "§bFrozen Diamond Leggings",
+  "item.plentyofarmors.frozen_diamond_boots": "§bFrozen Diamond Boots",
 
   "item.plentyofarmors.hardened_phantom_membrane": "Hardened Phantom Membrane",
   "item.plentyofarmors.phantom_helmet": "§9Phantom Helmet",

@@ -20,6 +20,23 @@ public class ModItems {
     public static final Item ADV_ICON = registerItem("adv_icon",
             new Item(new FabricItemSettings()));
 
+    // frozen diamond set
+    public static final Item FROZEN_DIAMOND = registerItem("frozen_diamond",
+            new Item(new FabricItemSettings()));
+
+    public static final Item FROZEN_DIAMOND_HELMET = registerItem("frozen_diamond_helmet",
+            new ModArmorFrozenDiamond(ModArmorMaterials.FROZEN_DIAMOND, EquipmentSlot.HEAD,
+                    new FabricItemSettings()));
+    public static final Item FROZEN_DIAMOND_CHESTPLATE = registerItem("frozen_diamond_chestplate",
+            new ArmorItem(ModArmorMaterials.FROZEN_DIAMOND, EquipmentSlot.CHEST,
+                    new FabricItemSettings()));
+    public static final Item FROZEN_DIAMOND_LEGGINGS = registerItem("frozen_diamond_leggings",
+            new ArmorItem(ModArmorMaterials.FROZEN_DIAMOND, EquipmentSlot.LEGS,
+                    new FabricItemSettings()));
+    public static final Item FROZEN_DIAMOND_BOOTS = registerItem("frozen_diamond_boots",
+            new ArmorItem(ModArmorMaterials.FROZEN_DIAMOND, EquipmentSlot.FEET,
+                    new FabricItemSettings()));
+
     // phantom set
     public static final Item HARDENED_PHANTOM_MEMBRANE = registerItem("hardened_phantom_membrane",
             new Item(new FabricItemSettings()));
@@ -444,6 +461,12 @@ public class ModItems {
 
     // 1.19.3
     public static void addItemsToItemsGroup() {
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, FROZEN_DIAMOND);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, FROZEN_DIAMOND_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, FROZEN_DIAMOND_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, FROZEN_DIAMOND_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, FROZEN_DIAMOND_BOOTS);
+
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, HARDENED_PHANTOM_MEMBRANE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, PHANTOM_HELMET);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, PHANTOM_CHESTPLATE);
