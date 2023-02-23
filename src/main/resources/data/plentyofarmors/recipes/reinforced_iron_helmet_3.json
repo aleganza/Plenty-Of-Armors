@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "A": {
+      "item": "minecraft:iron_helmet"
+    },
+    "C": {
+      "item": "minecraft:charcoal"
+    }
+  },
+  "pattern": [
+    "ICI",
+    "IAI",
+    "CIC"
+  ],
+  "result": {
+    "item": "plentyofarmors:reinforced_iron_helmet"
+  }
+}

@@ -5,15 +5,18 @@
       "item": "minecraft:iron_ingot"
     },
     "A": {
-      "item": "minecraft:iron_boots"
+      "item": "minecraft:iron_leggings"
+    },
+    "C": {
+      "item": "minecraft:coal"
     }
   },
   "pattern": [
-    "III",
+    "ICI",
     "IAI",
-    "III"
+    "CIC"
   ],
   "result": {
-    "item": "plentyofarmors:reinforced_iron_boots"
+    "item": "plentyofarmors:reinforced_iron_leggings"
   }
 }
