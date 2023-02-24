@@ -150,6 +150,11 @@
   "item.plentyofarmors.ender_leggings": "§3Gambiere dell'End",
   "item.plentyofarmors.ender_boots": "§3Stivali dell'End",
 
+  "item.plentyofarmors.ender_netherite_helmet": "§5Elmo Ender-Netherite",
+  "item.plentyofarmors.ender_netherite_chestplate": "§5Corazza Ender-Netherite",
+  "item.plentyofarmors.ender_netherite_leggings": "§5Gambiere Ender-Netherite",
+  "item.plentyofarmors.ender_netherite_boots": "§5Stivali Ender-Netherite",
+
   "item.plentyofarmors.marine_diamond": "§9Diamante Marino",
   "item.plentyofarmors.marine_diamond_helmet": "§9Elmo di Diamante Marino",
   "item.plentyofarmors.marine_diamond_chestplate": "§9Corazza di Diamante Marino",
@@ -169,8 +174,16 @@
   "advancements.plentyofarmors.ender_armor.description": "Hai il potere dell'End, usalo con saggezza!",
   "advancements.plentyofarmors.stardusite_armor.title": "§eIl potere delle stelle",
   "advancements.plentyofarmors.stardusite_armor.description": "Per aspera ad astra",
-  "advancements.plentyofarmors.ender_netherite_armor.title": "§3Fra i due mondi",
+  "advancements.plentyofarmors.ender_netherite_armor.title": "§5ENE§r §3Fra i due mondi §5NEN§r",
   "advancements.plentyofarmors.ender_netherite_armor.description": "Il potere dell'End non ti bastava?",
-  "advancements.plentyofarmors.echo_armor.title": "§3",
-  "advancements.plentyofarmors.echo_armor.description": "Il potere dell'End non ti bastava?"
+  "advancements.plentyofarmors.echo_armor.title": "§0Soldato Oscuro",
+  "advancements.plentyofarmors.echo_armor.description": "Al Warden non piacerà.",
+  "advancements.plentyofarmors.hardened_ice_armor.title": "§bUomo dei ghiacci",
+  "advancements.plentyofarmors.hardened_ice_armor.description": "Un po' di freddo non fermerà la tua impresa",
+  "advancements.plentyofarmors.frozen_diamond_armor.title": "§3Fresco",
+  "advancements.plentyofarmors.frozen_diamond_armor.description": "Che stile!",
+  "advancements.plentyofarmors.phantom_armor.title": "§3Predatore della notte",
+  "advancements.plentyofarmors.phantom_armor.description": "La caccia ha inizio.",
+  "advancements.plentyofarmors.amethyst.title": "§dPrezioso",
+  "advancements.plentyofarmors.amethyst_armor.description": "Sicuro di volerla usare per combattere...?"
 }

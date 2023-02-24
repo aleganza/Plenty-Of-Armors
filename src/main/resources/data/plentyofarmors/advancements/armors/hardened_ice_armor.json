@@ -1,19 +1,19 @@
 {
   "display": {
     "icon": {
-      "item": "plentyofarmors:ender_netherite_chestplate"
+      "item": "plentyofarmors:hardened_ice_chestplate"
     },
     "title": {
-      "translate": "advancements.plentyofarmors.ender_netherite_armor.title"
+      "translate": "advancements.plentyofarmors.hardened_ice_armor.title"
     },
     "description": {
-      "translate": "advancements.plentyofarmors.ender_netherite_armor.description"
+      "translate": "advancements.plentyofarmors.hardened_ice_armor.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true
   },
-    "parent": "plentyofarmors:armors/ender_armor",
+    "parent": "plentyofarmors:armors/root",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:inventory_changed",
@@ -21,22 +21,22 @@
           "items":[
             {
               "items":[
-                "plentyofarmors:ender_netherite_helmet"
+                "plentyofarmors:hardened_ice_helmet"
               ]
             },
             {
               "items":[
-                "plentyofarmors:ender_netherite_chestplate"
+                "plentyofarmors:hardened_ice_chestplate"
               ]
             },
             {
               "items":[
-                "plentyofarmors:ender_netherite_leggings"
+                "plentyofarmors:hardened_ice_leggings"
               ]
             },
             {
               "items":[
-                "plentyofarmors:ender_netherite_boots"
+                "plentyofarmors:hardened_ice_boots"
               ]
             }
           ]

@@ -1,19 +1,19 @@
 {
   "display": {
     "icon": {
-      "item": "plentyofarmors:ender_netherite_chestplate"
+      "item": "plentyofarmors:amethyst_chestplate"
     },
     "title": {
-      "translate": "advancements.plentyofarmors.ender_netherite_armor.title"
+      "translate": "advancements.plentyofarmors.amethyst_armor.title"
     },
     "description": {
-      "translate": "advancements.plentyofarmors.ender_netherite_armor.description"
+      "translate": "advancements.plentyofarmors.amethyst_armor.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true
   },
-    "parent": "plentyofarmors:armors/ender_armor",
+    "parent": "plentyofarmors:armors/root",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:inventory_changed",
@@ -21,22 +21,22 @@
           "items":[
             {
               "items":[
-                "plentyofarmors:ender_netherite_helmet"
+                "plentyofarmors:amethyst_helmet"
               ]
             },
             {
               "items":[
-                "plentyofarmors:ender_netherite_chestplate"
+                "plentyofarmors:amethyst_chestplate"
               ]
             },
             {
               "items":[
-                "plentyofarmors:ender_netherite_leggings"
+                "plentyofarmors:amethyst_leggings"
               ]
             },
             {
               "items":[
-                "plentyofarmors:ender_netherite_boots"
+                "plentyofarmors:amethyst_boots"
               ]
             }
           ]
