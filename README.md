@@ -5,7 +5,7 @@
 <br>
 
 <center>
-	<img width="32px" src="https://img.shields.io/github/v/release/aleganza/Plenty-Of-Armors?color=1F8DA9">
+	<img src="https://img.shields.io/github/v/release/aleganza/Plenty-Of-Armors?color=1F8DA9">
 </center>
 
 Bored of the same old armors? Well you're in the right place! **Plenty of Armors** adds many unique sets and items while maintaining vanilla look and mechanics.
