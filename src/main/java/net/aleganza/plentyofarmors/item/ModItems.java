@@ -20,6 +20,20 @@ public class ModItems {
     public static final Item ADV_ICON = registerItem("adv_icon",
             new Item(new FabricItemSettings()));
 
+    // ender netherite set
+    public static final Item ENDER_NETHERITE_HELMET = registerItem("ender_netherite_helmet",
+            new ModArmorEnderNetherite1(ModArmorMaterials.ENDER_NETHERITE, EquipmentSlot.HEAD,
+                    new FabricItemSettings()));
+    public static final Item ENDER_NETHERITE_CHESPLATE = registerItem("ender_netherite_chestplate",
+            new ModArmorEnderNetherite2(ModArmorMaterials.ENDER_NETHERITE, EquipmentSlot.CHEST,
+                    new FabricItemSettings()));
+    public static final Item ENDER_NETHERITE_LEGGINGS = registerItem("ender_netherite_leggings",
+            new ArmorItem(ModArmorMaterials.ENDER_NETHERITE, EquipmentSlot.LEGS,
+                    new FabricItemSettings()));
+    public static final Item ENDER_NETHERITE_BOOTS = registerItem("ender_netherite_boots",
+            new ArmorItem(ModArmorMaterials.ENDER_NETHERITE, EquipmentSlot.FEET,
+                    new FabricItemSettings()));
+
     // frozen diamond set
     public static final Item FROZEN_DIAMOND = registerItem("frozen_diamond",
             new Item(new FabricItemSettings()));
@@ -461,6 +475,11 @@ public class ModItems {
 
     // 1.19.3
     public static void addItemsToItemsGroup() {
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ENDER_NETHERITE_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ENDER_NETHERITE_CHESPLATE);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ENDER_NETHERITE_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, ENDER_NETHERITE_BOOTS);
+
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, FROZEN_DIAMOND);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, FROZEN_DIAMOND_HELMET);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, FROZEN_DIAMOND_CHESTPLATE);

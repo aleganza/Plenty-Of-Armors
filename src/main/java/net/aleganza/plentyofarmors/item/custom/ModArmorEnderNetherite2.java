@@ -1,7 +1,6 @@
 package net.aleganza.plentyofarmors.item.custom;
 
 import com.google.common.collect.ImmutableMap;
-import net.aleganza.plentyofarmors.effect.ModEffects;
 import net.aleganza.plentyofarmors.item.ModArmorMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
@@ -15,17 +14,17 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class ModArmorFrozenDiamond extends ArmorItem {
+public class ModArmorEnderNetherite2 extends ArmorItem {
 
     public static final int effectDuration = 400;
-    public static final int amplifier = 1;
+    public static final int amplifier = 0;
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.FROZEN_DIAMOND,
-                            new StatusEffectInstance(StatusEffects.LUCK, effectDuration, amplifier)).build();
+                    .put(ModArmorMaterials.ENDER_NETHERITE,
+                            new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, effectDuration, amplifier)).build();
 
-    public ModArmorFrozenDiamond(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorEnderNetherite2(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
     }
 
@@ -46,9 +45,8 @@ public class ModArmorFrozenDiamond extends ArmorItem {
 
     private void evaluateArmorEffects(PlayerEntity player) {
         for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
-            ArmorMaterial mapArmorMaterial = ModArmorMaterials.FROZEN_DIAMOND;
-            StatusEffectInstance mapStatusEffect = new StatusEffectInstance(ModEffects.FROST_WALKER,
-                    effectDuration, amplifier, false, false, false);
+            ArmorMaterial mapArmorMaterial = entry.getKey();
+            StatusEffectInstance mapStatusEffect = entry.getValue();
 
             if(hasCorrectArmorOn(mapArmorMaterial, player)) {
                 addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
@@ -60,14 +58,14 @@ public class ModArmorFrozenDiamond extends ArmorItem {
         boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect.getEffectType());
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addStatusEffect(new StatusEffectInstance(ModEffects.FROST_WALKER,
-                    effectDuration, amplifier, false, false, false));
+            player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
+                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier(), false, false, false));
         }
 
         // effect repeat issue fix
-        if (player.getActiveStatusEffects().containsKey(ModEffects.FROST_WALKER)) {
+        if (player.getActiveStatusEffects().containsKey(mapStatusEffect.getEffectType())) {
             if (player.getActiveStatusEffects().get(mapStatusEffect.getEffectType()).getDuration() < 221) {
-                player.addStatusEffect(new StatusEffectInstance(ModEffects.FROST_WALKER,
+                player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
                         effectDuration, amplifier, false, false, false));
             }
         }
