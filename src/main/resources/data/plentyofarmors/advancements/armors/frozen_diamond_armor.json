@@ -7,7 +7,7 @@
       "translate": "advancements.plentyofarmors.frozen_diamond_armor.title"
     },
     "description": {
-      "translate": "advancements.plentyofarmors.echo_armor.description"
+      "translate": "advancements.plentyofarmors.frozen_diamond_armor.description"
     },
     "frame": "task",
     "show_toast": true,
