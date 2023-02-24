@@ -168,5 +168,7 @@
   "advancements.plentyofarmors.ender_armor.title": "§3End warrior",
   "advancements.plentyofarmors.ender_armor.description": "You got The End power, use it wisely!",
   "advancements.plentyofarmors.stardusite_armor.title": "§eStars Power",
-  "advancements.plentyofarmors.stardusite_armor.description": "Per aspera ad astra"
+  "advancements.plentyofarmors.stardusite_armor.description": "Per aspera ad astra",
+  "advancements.plentyofarmors.ender_netherite_armor.title": "§3Best of both worlds",
+  "advancements.plentyofarmors.ender_netherite_armor.description": "The End power wasn't enough for you?"
 }
