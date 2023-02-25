@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "plentyofarmors:echo_chestplate"
+      "item": "plentyofarmors:echo_shard_chestplate"
     },
     "title": {
-      "translate": "advancements.plentyofarmors.echo_armor.title"
+      "translate": "advancements.plentyofarmors.echo_shard_armor.title"
     },
     "description": {
-      "translate": "advancements.plentyofarmors.echo_armor.description"
+      "translate": "advancements.plentyofarmors.echo_shard_armor.description"
     },
     "frame": "task",
     "show_toast": true,
@@ -21,22 +21,22 @@
           "items":[
             {
               "items":[
-                "plentyofarmors:echo_helmet"
+                "plentyofarmors:echo_shard_helmet"
               ]
             },
             {
               "items":[
-                "plentyofarmors:echo_chestplate"
+                "plentyofarmors:echo_shard_chestplate"
               ]
             },
             {
               "items":[
-                "plentyofarmors:echo_leggings"
+                "plentyofarmors:echo_shard_leggings"
               ]
             },
             {
               "items":[
-                "plentyofarmors:echo_boots"
+                "plentyofarmors:echo_shard_boots"
               ]
             }
           ]
