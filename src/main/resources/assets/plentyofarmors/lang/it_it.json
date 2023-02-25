@@ -7,6 +7,11 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
+  "item.plentyofarmors.ender_netherite_helmet": "§3Elmo di Netherite dell'End",
+  "item.plentyofarmors.ender_netherite_chestplate": "§3Corazza di Netherite dell'End",
+  "item.plentyofarmors.ender_netherite_leggings": "§3Gambiere di Netherite dell'End",
+  "item.plentyofarmors.ender_netherite_boots": "§3Stivali di Netherite dell'End",
+
   "item.plentyofarmors.frozen_diamond": "§bDiamante Ghiacciato",
   "item.plentyofarmors.frozen_diamond_helmet": "§bElmo di Diamante Ghiacciato",
   "item.plentyofarmors.frozen_diamond_chestplate": "§bCorazza di Diamante Ghiacciato",
@@ -115,7 +120,7 @@
   "item.plentyofarmors.slime_chestplate": "Corazza di Slime",
   "item.plentyofarmors.slime_leggings": "Gambiere di Slime",
   "item.plentyofarmors.slime_boots": "Stivali di Slime",
-  
+
   "item.plentyofarmors.obsidian_helmet": "Elmo di Ossidiana",
   "item.plentyofarmors.obsidian_chestplate": "Corazza di Ossidiana",
   "item.plentyofarmors.obsidian_leggings": "Gambiere di Ossidiana",
@@ -150,11 +155,6 @@
   "item.plentyofarmors.ender_leggings": "§3Gambiere dell'End",
   "item.plentyofarmors.ender_boots": "§3Stivali dell'End",
 
-  "item.plentyofarmors.ender_netherite_helmet": "§5Elmo Ender-Netherite",
-  "item.plentyofarmors.ender_netherite_chestplate": "§5Corazza Ender-Netherite",
-  "item.plentyofarmors.ender_netherite_leggings": "§5Gambiere Ender-Netherite",
-  "item.plentyofarmors.ender_netherite_boots": "§5Stivali Ender-Netherite",
-
   "item.plentyofarmors.marine_diamond": "§9Diamante Marino",
   "item.plentyofarmors.marine_diamond_helmet": "§9Elmo di Diamante Marino",
   "item.plentyofarmors.marine_diamond_chestplate": "§9Corazza di Diamante Marino",
@@ -174,16 +174,16 @@
   "advancements.plentyofarmors.ender_armor.description": "Hai il potere dell'End, usalo con saggezza!",
   "advancements.plentyofarmors.stardusite_armor.title": "§eIl potere delle stelle",
   "advancements.plentyofarmors.stardusite_armor.description": "Per aspera ad astra",
-  "advancements.plentyofarmors.ender_netherite_armor.title": "§5Fra i due mondi",
+  "advancements.plentyofarmors.ender_netherite_armor.title": "§3Fra i due mondi",
   "advancements.plentyofarmors.ender_netherite_armor.description": "Il potere dell'End non ti bastava?",
-  "advancements.plentyofarmors.echo_armor.title": "§0Soldato Oscuro",
-  "advancements.plentyofarmors.echo_armor.description": "Al Warden non piacerà.",
-  "advancements.plentyofarmors.hardened_ice_armor.title": "§bUomo dei ghiacci",
+  "advancements.plentyofarmors.echo_shard_armor.title": "§3Soldato Oscuro",
+  "advancements.plentyofarmors.echo_shard_armor.description": "Al Warden non piacerà.",
+  "advancements.plentyofarmors.hardened_ice_armor.title": "§7Uomo dei ghiacci",
   "advancements.plentyofarmors.hardened_ice_armor.description": "Un po' di freddo non fermerà la tua impresa",
-  "advancements.plentyofarmors.frozen_diamond_armor.title": "§3Fresco",
+  "advancements.plentyofarmors.frozen_diamond_armor.title": "§bFresco",
   "advancements.plentyofarmors.frozen_diamond_armor.description": "Che stile!",
-  "advancements.plentyofarmors.phantom_armor.title": "§1Predatore della notte",
+  "advancements.plentyofarmors.phantom_armor.title": "§9Predatore della notte",
   "advancements.plentyofarmors.phantom_armor.description": "La caccia ha inizio.",
-  "advancements.plentyofarmors.amethyst.title": "§dPrezioso",
+  "advancements.plentyofarmors.amethyst_armor.title": "§dPrezioso",
   "advancements.plentyofarmors.amethyst_armor.description": "Sicuro di volerla usare per combattere...?"
 }

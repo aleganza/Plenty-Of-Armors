@@ -7,6 +7,11 @@
 
   "item.plentyofarmors.adv_icon": "adv_icon",
 
+  "item.plentyofarmors.ender_netherite_helmet": "§3Ender Netherite Helmet",
+  "item.plentyofarmors.ender_netherite_chestplate": "§3Ender Netherite Chestplate",
+  "item.plentyofarmors.ender_netherite_leggings": "§3Ender Netherite Leggings",
+  "item.plentyofarmors.ender_netherite_boots": "§3Ender Netherite Boots",
+
   "item.plentyofarmors.frozen_diamond": "§bFrozen Diamond",
   "item.plentyofarmors.frozen_diamond_helmet": "§bFrozen Diamond Helmet",
   "item.plentyofarmors.frozen_diamond_chestplate": "§bFrozen Diamond Chestplate",
@@ -150,11 +155,6 @@
   "item.plentyofarmors.ender_leggings": "§3Ender Leggings",
   "item.plentyofarmors.ender_boots": "§3Ender Boots",
 
-  "item.plentyofarmors.ender_netherite_helmet": "§5Ender-Netherite Helmet",
-  "item.plentyofarmors.ender_netherite_chestplate": "§5Ender-Netherite Chestplate",
-  "item.plentyofarmors.ender_netherite_leggings": "§5Ender-Netherite Leggings",
-  "item.plentyofarmors.ender_netherite_boots": "§5Ender-Netherite Boots",
-
   "item.plentyofarmors.marine_diamond": "§9Marine Diamond",
   "item.plentyofarmors.marine_diamond_helmet": "§9Marine Diamond Helmet",
   "item.plentyofarmors.marine_diamond_chestplate": "§9Marine Diamond Chestplate",
@@ -174,15 +174,15 @@
   "advancements.plentyofarmors.ender_armor.description": "You got The End power, use it wisely!",
   "advancements.plentyofarmors.stardusite_armor.title": "§eStars Power",
   "advancements.plentyofarmors.stardusite_armor.description": "Per aspera ad astra",
-  "advancements.plentyofarmors.ender_netherite_armor.title": "§5Best of both worlds",
+  "advancements.plentyofarmors.ender_netherite_armor.title": "§3Best of both worlds",
   "advancements.plentyofarmors.ender_netherite_armor.description": "The End power wasn't enough for you?",
-  "advancements.plentyofarmors.echo_armor.title": "§0Dark Soldier",
-  "advancements.plentyofarmors.echo_armor.description": "Warden won't like it.",
-  "advancements.plentyofarmors.hardened_ice_armor.title": "§bIce man",
+  "advancements.plentyofarmors.echo_shard_armor.title": "§3Dark Soldier",
+  "advancements.plentyofarmors.echo_shard_armor.description": "Warden won't like it.",
+  "advancements.plentyofarmors.hardened_ice_armor.title": "§7Ice man",
   "advancements.plentyofarmors.hardened_ice_armor.description": "A little cold won't stop your travel",
-  "advancements.plentyofarmors.frozen_diamond_armor.title": "§3Iced out",
+  "advancements.plentyofarmors.frozen_diamond_armor.title": "§bIced out",
   "advancements.plentyofarmors.frozen_diamond_armor.description": "You got some style there!",
-  "advancements.plentyofarmors.phantom_armor.title": "§1Night stalker",
+  "advancements.plentyofarmors.phantom_armor.title": "§9Night stalker",
   "advancements.plentyofarmors.phantom_armor.description": "The hunt begins.",
   "advancements.plentyofarmors.amethyst_armor.title": "§dPrecious",
   "advancements.plentyofarmors.amethyst_armor.description": "Sure about using it to fight...?"
