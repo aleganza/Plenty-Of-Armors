@@ -26,7 +26,7 @@ public class ModLibs {
                         BlockState blockState3 = world.getBlockState(blockPos2);
                         if (blockState3.getMaterial() == Material.LAVA && (Integer)blockState3.get(FluidBlock.LEVEL) == 0 && blockState.canPlaceAt(world, blockPos2) && world.canPlace(blockState, blockPos2, ShapeContext.absent())) {
                             world.setBlockState(blockPos2, blockState);
-                            world.scheduleBlockTick(blockPos2, Blocks.BLACKSTONE, MathHelper.nextInt(entity.getRandom(), 60, 120));
+                            world.createAndScheduleBlockTick(blockPos2, Blocks.BLACKSTONE, MathHelper.nextInt(entity.getRandom(), 60, 120));
                         }
                     }
                 }
