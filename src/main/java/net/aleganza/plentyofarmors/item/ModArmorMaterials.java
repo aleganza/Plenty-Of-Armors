@@ -15,7 +15,7 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial {
 
     // ---+ MOD ARMOR +---
-    ENDER_NETHERITE("ender_netherite", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
+    ENDER_NETHERITE("ender_netherite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 1.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.NETHERITE_CHESTPLATE});
     }),
     FROZEN_DIAMOND("frozen_diamond", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
