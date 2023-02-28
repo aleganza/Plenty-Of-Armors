@@ -10,7 +10,7 @@
 	<img src="https://img.shields.io/badge/modloader-Fabric-%23DBD0B4"> 
 </a>
 <a href="https://github.com/aleganza/Plenty-Of-Armors"> 
-	<img src="https://img.shields.io/github/v/release/aleganza/Plenty-Of-Armors?color=%231F96B1&style=flat-square"> 
+	<img src="https://img.shields.io/github/v/release/aleganza/Plenty-Of-Armors?style=flat-square"> 
 </a>
 <a href="https://www.curseforge.com/minecraft/mc-mods/plenty-of-armors"> 
 	<img src="https://cf.way2muchnoise.eu/661930.svg" alt="many downloads"> 
