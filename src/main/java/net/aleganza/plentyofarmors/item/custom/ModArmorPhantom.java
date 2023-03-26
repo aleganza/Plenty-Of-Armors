@@ -81,17 +81,25 @@ public class ModArmorPhantom extends ArmorItem {
                 && !leggings.isEmpty() && !boots.isEmpty();
     }
 
-    private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
-        ArmorItem boots = ((ArmorItem)player.getInventory().getArmorStack(0).getItem());
-        ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
+    private boolean doesArmorHaveMaterial(ArmorMaterial material, PlayerEntity player) {
+        for (int i=0; i<4; i++) {
+            try{
+                ((ArmorItem)player.getInventory().getArmorStack(i).getItem()).getMaterial();
+            }catch(Exception e){
+                return false;
+            }
+        }
 
-        // elytra bug fix
-        try{
-            ((ArmorItem)player.getInventory().getArmorStack(2).getItem()).getMaterial();
-        }catch(Exception e){
+        return true;
+    }
+
+    private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
+        if (!doesArmorHaveMaterial(material, player)) {
             return false;
         }
 
+        ArmorItem boots = ((ArmorItem)player.getInventory().getArmorStack(0).getItem());
+        ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
         ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
         ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
 
