@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "plentyofarmors",
-  "version": "1.1.1",
+  "version": "1.1.2",
 
   "name": "Plenty Of Armors",
   "description": "Add many unique Armor Sets to your gameplay!",
@@ -10,7 +10,7 @@
     "rickorso"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/plenty-of-armors",
     "sources": "https://github.com/aleganza/Plenty-Of-Armors"
   },
 
