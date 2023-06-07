@@ -25,7 +25,7 @@ public class ModArmorCactus extends ArmorItem {
                     .put(ModArmorMaterials.CACTUS,
                             new StatusEffectInstance(StatusEffects.LUCK, effectDuration, amplifier)).build();
 
-    public ModArmorCactus(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorCactus(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

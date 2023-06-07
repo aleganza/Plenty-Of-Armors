@@ -24,7 +24,7 @@ public class ModArmorCrimson extends ArmorItem {
                     .put(ModArmorMaterials.CRIMSON,
                             new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, effectDuration, amplifier)).build();
 
-    public ModArmorCrimson(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorCrimson(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

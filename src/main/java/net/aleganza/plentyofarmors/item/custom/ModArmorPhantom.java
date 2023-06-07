@@ -24,7 +24,7 @@ public class ModArmorPhantom extends ArmorItem {
                     .put(ModArmorMaterials.PHANTOM,
                             new StatusEffectInstance(StatusEffects.NIGHT_VISION, effectDuration, amplifier)).build();
 
-    public ModArmorPhantom(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorPhantom(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

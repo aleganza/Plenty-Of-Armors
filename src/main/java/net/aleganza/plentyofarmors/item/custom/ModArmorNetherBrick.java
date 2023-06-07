@@ -24,7 +24,7 @@ public class ModArmorNetherBrick extends ArmorItem {
                     .put(ModArmorMaterials.NETHER_BRICK,
                             new StatusEffectInstance(StatusEffects.SLOWNESS, effectDuration, amplifier)).build();
 
-    public ModArmorNetherBrick(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorNetherBrick(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

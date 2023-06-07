@@ -25,7 +25,7 @@ public class ModArmorStardusite1 extends ArmorItem {
                     .put(ModArmorMaterials.STARDUSITE,
                             new StatusEffectInstance(StatusEffects.LUCK, effectDuration, amplifier)).build();
 
-    public ModArmorStardusite1(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorStardusite1(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

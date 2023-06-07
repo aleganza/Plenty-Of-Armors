@@ -24,7 +24,7 @@ public class ModArmorBrick extends ArmorItem {
                     .put(ModArmorMaterials.BRICK,
                             new StatusEffectInstance(StatusEffects.SLOWNESS, effectDuration, amplifier)).build();
 
-    public ModArmorBrick(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorBrick(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

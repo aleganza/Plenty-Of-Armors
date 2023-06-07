@@ -14,7 +14,7 @@ public class FrostWalkerEffect extends StatusEffect {
 
     @Override
     public void applyUpdateEffect(LivingEntity pLivingEntity, int pAmplifier) {
-        if (!pLivingEntity.world.isClient()) {
+        if (!pLivingEntity.getWorld().isClient()) {
 
             World world = pLivingEntity.getWorld();
             BlockPos pos = pLivingEntity.getBlockPos();

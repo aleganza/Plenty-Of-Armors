@@ -18,7 +18,7 @@ public class BouncingEffect extends StatusEffect {
 
     @Override
     public void applyUpdateEffect(LivingEntity pLivingEntity, int pAmplifier) {
-        if (!pLivingEntity.world.isClient()) {
+        if (!pLivingEntity.getWorld().isClient()) {
             /*Vec3d vec3d = pLivingEntity.getVelocity();*/
             bounce(pLivingEntity);
             double d = Math.abs(pLivingEntity.getVelocity().y);

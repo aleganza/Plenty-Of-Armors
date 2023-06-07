@@ -25,7 +25,7 @@ public class ModArmorMarineDiamond extends ArmorItem {
                     .put(ModArmorMaterials.MARINE_DIAMOND,
                             new StatusEffectInstance(StatusEffects.CONDUIT_POWER, effectDuration, amplifier)).build();
 
-    public ModArmorMarineDiamond(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorMarineDiamond(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

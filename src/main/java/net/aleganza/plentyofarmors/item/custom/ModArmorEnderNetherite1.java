@@ -24,7 +24,7 @@ public class ModArmorEnderNetherite1 extends ArmorItem {
                     .put(ModArmorMaterials.ENDER_NETHERITE,
                             new StatusEffectInstance(StatusEffects.SPEED, effectDuration, amplifier)).build();
 
-    public ModArmorEnderNetherite1(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorEnderNetherite1(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

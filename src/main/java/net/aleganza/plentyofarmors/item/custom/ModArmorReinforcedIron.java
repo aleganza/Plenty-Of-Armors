@@ -24,7 +24,7 @@ public class ModArmorReinforcedIron extends ArmorItem {
                     .put(ModArmorMaterials.REINFORCED_IRON,
                             new StatusEffectInstance(StatusEffects.SLOWNESS, effectDuration, amplifier)).build();
 
-    public ModArmorReinforcedIron(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorReinforcedIron(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

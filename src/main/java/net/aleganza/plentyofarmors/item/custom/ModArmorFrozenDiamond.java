@@ -25,7 +25,7 @@ public class ModArmorFrozenDiamond extends ArmorItem {
                     .put(ModArmorMaterials.FROZEN_DIAMOND,
                             new StatusEffectInstance(StatusEffects.LUCK, effectDuration, amplifier)).build();
 
-    public ModArmorFrozenDiamond(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorFrozenDiamond(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

@@ -24,7 +24,7 @@ public class ModArmorWarped extends ArmorItem {
                     .put(ModArmorMaterials.WARPED,
                             new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, effectDuration, amplifier)).build();
 
-    public ModArmorWarped(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorWarped(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

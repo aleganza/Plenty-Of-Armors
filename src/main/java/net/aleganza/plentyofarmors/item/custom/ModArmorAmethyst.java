@@ -24,7 +24,7 @@ public class ModArmorAmethyst extends ArmorItem {
                     .put(ModArmorMaterials.AMETHYST,
                             new StatusEffectInstance(StatusEffects.LUCK, effectDuration, amplifier)).build();
 
-    public ModArmorAmethyst(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorAmethyst(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

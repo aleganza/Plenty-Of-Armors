@@ -23,7 +23,7 @@ public class ModArmorStardusite2 extends ArmorItem {
                     .put(ModArmorMaterials.STARDUSITE,
                             new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, effectDuration, amplifier)).build();
 
-    public ModArmorStardusite2(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorStardusite2(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

@@ -24,7 +24,7 @@ public class ModArmorEnder extends ArmorItem {
                     .put(ModArmorMaterials.HEART_OF_THE_END,
                             new StatusEffectInstance(StatusEffects.SPEED, effectDuration, amplifier)).build();
 
-    public ModArmorEnder(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorEnder(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

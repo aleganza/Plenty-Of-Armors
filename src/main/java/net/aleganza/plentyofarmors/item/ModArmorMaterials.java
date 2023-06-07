@@ -2,6 +2,7 @@ package net.aleganza.plentyofarmors.item;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
@@ -152,12 +153,26 @@ public enum ModArmorMaterials implements ArmorMaterial {
         this.repairIngredientSupplier = new Lazy(repairIngredientSupplier);
     }
 
-    public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()] * this.durabilityMultiplier;
+    public int getDurability(ArmorItem.Type slot) {
+        int type = -1;
+
+        if(slot.getEquipmentSlot() == EquipmentSlot.HEAD) type = 0;
+        if(slot.getEquipmentSlot() == EquipmentSlot.CHEST) type = 1;
+        if(slot.getEquipmentSlot() == EquipmentSlot.LEGS) type = 2;
+        if(slot.getEquipmentSlot() == EquipmentSlot.FEET) type = 3;
+
+        return BASE_DURABILITY[type] * this.durabilityMultiplier;
     }
 
-    public int getProtectionAmount(EquipmentSlot slot) {
-        return this.protectionAmounts[slot.getEntitySlotId()];
+    public int getProtection(ArmorItem.Type slot) {
+        int type = -1;
+
+        if(slot.getEquipmentSlot() == EquipmentSlot.HEAD) type = 0;
+        if(slot.getEquipmentSlot() == EquipmentSlot.CHEST) type = 1;
+        if(slot.getEquipmentSlot() == EquipmentSlot.LEGS) type = 2;
+        if(slot.getEquipmentSlot() == EquipmentSlot.FEET) type = 3;
+
+        return this.protectionAmounts[type];
     }
 
     public int getEnchantability() {

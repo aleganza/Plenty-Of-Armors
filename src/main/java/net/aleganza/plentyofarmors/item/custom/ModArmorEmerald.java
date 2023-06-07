@@ -24,7 +24,7 @@ public class ModArmorEmerald extends ArmorItem {
                     .put(ModArmorMaterials.EMERALD,
                             new StatusEffectInstance(StatusEffects.LUCK, effectDuration, amplifier)).build();
 
-    public ModArmorEmerald(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorEmerald(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

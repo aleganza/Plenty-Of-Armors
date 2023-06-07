@@ -25,7 +25,7 @@ public class ModArmorHardenedIce extends ArmorItem {
                     .put(ModArmorMaterials.HARDENED_ICE_SHARD,
                             new StatusEffectInstance(StatusEffects.LUCK, effectDuration, amplifier)).build();
 
-    public ModArmorHardenedIce(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorHardenedIce(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

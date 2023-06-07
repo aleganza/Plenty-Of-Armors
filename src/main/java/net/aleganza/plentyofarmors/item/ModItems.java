@@ -10,6 +10,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
@@ -22,16 +23,16 @@ public class ModItems {
 
     // ender netherite set
     public static final Item ENDER_NETHERITE_HELMET = registerItem("ender_netherite_helmet",
-            new ModArmorEnderNetherite1(ModArmorMaterials.ENDER_NETHERITE, EquipmentSlot.HEAD,
+            new ModArmorEnderNetherite1(ModArmorMaterials.ENDER_NETHERITE, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item ENDER_NETHERITE_CHESPLATE = registerItem("ender_netherite_chestplate",
-            new ModArmorEnderNetherite2(ModArmorMaterials.ENDER_NETHERITE, EquipmentSlot.CHEST,
+            new ModArmorEnderNetherite2(ModArmorMaterials.ENDER_NETHERITE, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item ENDER_NETHERITE_LEGGINGS = registerItem("ender_netherite_leggings",
-            new ArmorItem(ModArmorMaterials.ENDER_NETHERITE, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.ENDER_NETHERITE, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item ENDER_NETHERITE_BOOTS = registerItem("ender_netherite_boots",
-            new ArmorItem(ModArmorMaterials.ENDER_NETHERITE, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.ENDER_NETHERITE, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // frozen diamond set
@@ -39,16 +40,16 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item FROZEN_DIAMOND_HELMET = registerItem("frozen_diamond_helmet",
-            new ModArmorFrozenDiamond(ModArmorMaterials.FROZEN_DIAMOND, EquipmentSlot.HEAD,
+            new ModArmorFrozenDiamond(ModArmorMaterials.FROZEN_DIAMOND, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item FROZEN_DIAMOND_CHESTPLATE = registerItem("frozen_diamond_chestplate",
-            new ArmorItem(ModArmorMaterials.FROZEN_DIAMOND, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.FROZEN_DIAMOND, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item FROZEN_DIAMOND_LEGGINGS = registerItem("frozen_diamond_leggings",
-            new ArmorItem(ModArmorMaterials.FROZEN_DIAMOND, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.FROZEN_DIAMOND, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item FROZEN_DIAMOND_BOOTS = registerItem("frozen_diamond_boots",
-            new ArmorItem(ModArmorMaterials.FROZEN_DIAMOND, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.FROZEN_DIAMOND, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // phantom set
@@ -56,75 +57,75 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item PHANTOM_HELMET = registerItem("phantom_helmet",
-            new ModArmorPhantom(ModArmorMaterials.PHANTOM, EquipmentSlot.HEAD,
+            new ModArmorPhantom(ModArmorMaterials.PHANTOM, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item PHANTOM_CHESTPLATE = registerItem("phantom_chestplate",
-            new ArmorItem(ModArmorMaterials.PHANTOM, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.PHANTOM, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item PHANTOM_LEGGINGS = registerItem("phantom_leggings",
-            new ArmorItem(ModArmorMaterials.PHANTOM, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.PHANTOM, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item PHANTOM_BOOTS = registerItem("phantom_boots",
-            new ArmorItem(ModArmorMaterials.PHANTOM, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.PHANTOM, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // reinforced iron set
     public static final Item REINFORCED_IRON_HELMET = registerItem("reinforced_iron_helmet",
-            new ModArmorReinforcedIron(ModArmorMaterials.REINFORCED_IRON, EquipmentSlot.HEAD,
+            new ModArmorReinforcedIron(ModArmorMaterials.REINFORCED_IRON, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item REINFORCED_IRON_CHESTPLATE = registerItem("reinforced_iron_chestplate",
-            new ArmorItem(ModArmorMaterials.REINFORCED_IRON, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.REINFORCED_IRON, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item REINFORCED_IRON_LEGGINGS = registerItem("reinforced_iron_leggings",
-            new ArmorItem(ModArmorMaterials.REINFORCED_IRON, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.REINFORCED_IRON, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item REINFORCED_IRON_BOOTS = registerItem("reinforced_iron_boots",
-            new ArmorItem(ModArmorMaterials.REINFORCED_IRON, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.REINFORCED_IRON, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // echo shard set
     public static final Item ECHO_SHARD_HELMET = registerItem("echo_shard_helmet",
-            new ArmorItem(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.ECHO_SHARD, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     /* public static final Item ECHO_SHARD_HELMET = registerItem("echo_shard_helmet",
-            new ModArmorEchoShard(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.HEAD,
+            new ModArmorEchoShard(ModArmorMaterials.ECHO_SHARD, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));*/
     public static final Item ECHO_SHARD_CHESTPLATE = registerItem("echo_shard_chestplate",
-            new ArmorItem(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.ECHO_SHARD, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item ECHO_SHARD_LEGGINGS = registerItem("echo_shard_leggings",
-            new ArmorItem(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.ECHO_SHARD, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item ECHO_SHARD_BOOTS = registerItem("echo_shard_boots",
-            new ArmorItem(ModArmorMaterials.ECHO_SHARD, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.ECHO_SHARD, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // brick set
     public static final Item BRICK_HELMET = registerItem("brick_helmet",
-            new ModArmorBrick(ModArmorMaterials.BRICK, EquipmentSlot.HEAD,
+            new ModArmorBrick(ModArmorMaterials.BRICK, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item BRICK_CHESTPLATE = registerItem("brick_chestplate",
-            new ArmorItem(ModArmorMaterials.BRICK, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.BRICK, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item BRICK_LEGGINGS = registerItem("brick_leggings",
-            new ArmorItem(ModArmorMaterials.BRICK, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.BRICK, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item BRICK_BOOTS = registerItem("brick_boots",
-            new ArmorItem(ModArmorMaterials.BRICK, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.BRICK, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // nether brick set
     public static final Item NETHER_BRICK_HELMET = registerItem("nether_brick_helmet",
-            new ModArmorNetherBrick(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.HEAD,
+            new ModArmorNetherBrick(ModArmorMaterials.NETHER_BRICK, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item NETHER_BRICK_CHESTPLATE = registerItem("nether_brick_chestplate",
-            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.NETHER_BRICK, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item NETHER_BRICK_LEGGINGS = registerItem("nether_brick_leggings",
-            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.NETHER_BRICK, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item NETHER_BRICK_BOOTS = registerItem("nether_brick_boots",
-            new ArmorItem(ModArmorMaterials.NETHER_BRICK, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.NETHER_BRICK, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // amethyst set
@@ -132,44 +133,44 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item AMETHYST_HELMET = registerItem("amethyst_helmet",
-            new ModArmorAmethyst(ModArmorMaterials.AMETHYST, EquipmentSlot.HEAD,
+            new ModArmorAmethyst(ModArmorMaterials.AMETHYST, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item AMETHYST_CHESTPLATE = registerItem("amethyst_chestplate",
-            new ArmorItem(ModArmorMaterials.AMETHYST, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item AMETHYST_LEGGINGS = registerItem("amethyst_leggings",
-            new ArmorItem(ModArmorMaterials.AMETHYST, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item AMETHYST_BOOTS = registerItem("amethyst_boots",
-            new ArmorItem(ModArmorMaterials.AMETHYST, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.AMETHYST, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // crying obsidian set
     public static final Item CRYING_OBSIDIAN_HELMET = registerItem("crying_obsidian_helmet",
-            new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item CRYING_OBSIDIAN_CHESTPLATE = registerItem("crying_obsidian_chestplate",
-            new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item CRYING_OBSIDIAN_LEGGINGS = registerItem("crying_obsidian_leggings",
-            new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item CRYING_OBSIDIAN_BOOTS = registerItem("crying_obsidian_boots",
-            new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.CRYING_OBSIDIAN, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // quartz set
     public static final Item QUARTZ_HELMET = registerItem("quartz_helmet",
-            new ArmorItem(ModArmorMaterials.QUARTZ, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.QUARTZ, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item QUARTZ_CHESTPLATE = registerItem("quartz_chestplate",
-            new ArmorItem(ModArmorMaterials.QUARTZ, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.QUARTZ, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item QUARTZ_LEGGINGS = registerItem("quartz_leggings",
-            new ArmorItem(ModArmorMaterials.QUARTZ, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.QUARTZ, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item QUARTZ_BOOTS = registerItem("quartz_boots",
-            new ArmorItem(ModArmorMaterials.QUARTZ, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.QUARTZ, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // stardusite set
@@ -177,198 +178,198 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item STARDUSITE_HELMET = registerItem("stardusite_helmet",
-            new ModArmorStardusite1(ModArmorMaterials.STARDUSITE, EquipmentSlot.HEAD,
+            new ModArmorStardusite1(ModArmorMaterials.STARDUSITE, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item STARDUSITE_CHESTPLATE = registerItem("stardusite_chestplate",
-            new ModArmorStardusite2(ModArmorMaterials.STARDUSITE, EquipmentSlot.CHEST,
+            new ModArmorStardusite2(ModArmorMaterials.STARDUSITE, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item STARDUSITE_LEGGINGS = registerItem("stardusite_leggings",
-            new ArmorItem(ModArmorMaterials.STARDUSITE, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.STARDUSITE, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item STARDUSITE_BOOTS = registerItem("stardusite_boots",
-            new ArmorItem(ModArmorMaterials.STARDUSITE, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.STARDUSITE, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // cactus set
     public static final Item CACTUS_HELMET = registerItem("cactus_helmet",
-            new ModArmorCactus(ModArmorMaterials.CACTUS, EquipmentSlot.HEAD,
+            new ModArmorCactus(ModArmorMaterials.CACTUS, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item CACTUS_CHESTPLATE = registerItem("cactus_chestplate",
-            new ArmorItem(ModArmorMaterials.CACTUS, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.CACTUS, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item CACTUS_LEGGINGS = registerItem("cactus_leggings",
-            new ArmorItem(ModArmorMaterials.CACTUS, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.CACTUS, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item CACTUS_BOOTS = registerItem("cactus_boots",
-            new ArmorItem(ModArmorMaterials.CACTUS, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.CACTUS, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // crimson set
     public static final Item CRIMSON_HELMET = registerItem("crimson_helmet",
-            new ModArmorCrimson(ModArmorMaterials.CRIMSON, EquipmentSlot.HEAD,
+            new ModArmorCrimson(ModArmorMaterials.CRIMSON, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item CRIMSON_CHESTPLATE = registerItem("crimson_chestplate",
-            new ArmorItem(ModArmorMaterials.CRIMSON, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.CRIMSON, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item CRIMSON_LEGGINGS = registerItem("crimson_leggings",
-            new ArmorItem(ModArmorMaterials.CRIMSON, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.CRIMSON, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item CRIMSON_BOOTS = registerItem("crimson_boots",
-            new ArmorItem(ModArmorMaterials.CRIMSON, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.CRIMSON, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // warped set
     public static final Item WARPED_HELMET = registerItem("warped_helmet",
-            new ModArmorWarped(ModArmorMaterials.WARPED, EquipmentSlot.HEAD,
+            new ModArmorWarped(ModArmorMaterials.WARPED, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item WARPED_CHESTPLATE = registerItem("warped_chestplate",
-            new ArmorItem(ModArmorMaterials.WARPED, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.WARPED, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item WARPED_LEGGINGS = registerItem("warped_leggings",
-            new ArmorItem(ModArmorMaterials.WARPED, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.WARPED, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item WARPED_BOOTS = registerItem("warped_boots",
-            new ArmorItem(ModArmorMaterials.WARPED, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.WARPED, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // mangrove set
     public static final Item MANGROVE_HELMET = registerItem("mangrove_helmet",
-            new ArmorItem(ModArmorMaterials.MANGROVE, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.MANGROVE, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item MANGROVE_CHESTPLATE = registerItem("mangrove_chestplate",
-            new ArmorItem(ModArmorMaterials.MANGROVE, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.MANGROVE, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item MANGROVE_LEGGINGS = registerItem("mangrove_leggings",
-            new ArmorItem(ModArmorMaterials.MANGROVE, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.MANGROVE, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item MANGROVE_BOOTS = registerItem("mangrove_boots",
-            new ArmorItem(ModArmorMaterials.MANGROVE, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.MANGROVE, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // dark oak set
     public static final Item DARK_OAK_HELMET = registerItem("dark_oak_helmet",
-            new ArmorItem(ModArmorMaterials.DARK_OAK, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.DARK_OAK, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item DARK_OAK_CHESTPLATE = registerItem("dark_oak_chestplate",
-            new ArmorItem(ModArmorMaterials.DARK_OAK, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.DARK_OAK, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item DARK_OAK_LEGGINGS = registerItem("dark_oak_leggings",
-            new ArmorItem(ModArmorMaterials.DARK_OAK, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.DARK_OAK, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item DARK_OAK_BOOTS = registerItem("dark_oak_boots",
-            new ArmorItem(ModArmorMaterials.DARK_OAK, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.DARK_OAK, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // jungle set
     public static final Item JUNGLE_HELMET = registerItem("jungle_helmet",
-            new ArmorItem(ModArmorMaterials.JUNGLE, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.JUNGLE, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item JUNGLE_CHESTPLATE = registerItem("jungle_chestplate",
-            new ArmorItem(ModArmorMaterials.JUNGLE, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.JUNGLE, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item JUNGLE_LEGGINGS = registerItem("jungle_leggings",
-            new ArmorItem(ModArmorMaterials.JUNGLE, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.JUNGLE, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item JUNGLE_BOOTS = registerItem("jungle_boots",
-            new ArmorItem(ModArmorMaterials.JUNGLE, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.JUNGLE, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // birch set
     public static final Item BIRCH_HELMET = registerItem("birch_helmet",
-            new ArmorItem(ModArmorMaterials.BIRCH, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.BIRCH, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item BIRCH_CHESTPLATE = registerItem("birch_chestplate",
-            new ArmorItem(ModArmorMaterials.BIRCH, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.BIRCH, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item BIRCH_LEGGINGS = registerItem("birch_leggings",
-            new ArmorItem(ModArmorMaterials.BIRCH, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.BIRCH, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item BIRCH_BOOTS = registerItem("birch_boots",
-            new ArmorItem(ModArmorMaterials.BIRCH, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.BIRCH, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // spruce set
     public static final Item SPRUCE_HELMET = registerItem("spruce_helmet",
-            new ArmorItem(ModArmorMaterials.SPRUCE, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.SPRUCE, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item SPRUCE_CHESTPLATE = registerItem("spruce_chestplate",
-            new ArmorItem(ModArmorMaterials.SPRUCE, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.SPRUCE, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item SPRUCE_LEGGINGS = registerItem("spruce_leggings",
-            new ArmorItem(ModArmorMaterials.SPRUCE, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.SPRUCE, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item SPRUCE_BOOTS = registerItem("spruce_boots",
-            new ArmorItem(ModArmorMaterials.SPRUCE, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.SPRUCE, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // acacia set
     public static final Item ACACIA_HELMET = registerItem("acacia_helmet",
-            new ArmorItem(ModArmorMaterials.ACACIA, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.ACACIA, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item ACACIA_CHESTPLATE = registerItem("acacia_chestplate",
-            new ArmorItem(ModArmorMaterials.ACACIA, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.ACACIA, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item ACACIA_LEGGINGS = registerItem("acacia_leggings",
-            new ArmorItem(ModArmorMaterials.ACACIA, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.ACACIA, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item ACACIA_BOOTS = registerItem("acacia_boots",
-            new ArmorItem(ModArmorMaterials.ACACIA, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.ACACIA, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // oak set
     public static final Item OAK_HELMET = registerItem("oak_helmet",
-            new ArmorItem(ModArmorMaterials.OAK, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.OAK, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item OAK_CHESTPLATE = registerItem("oak_chestplate",
-            new ArmorItem(ModArmorMaterials.OAK, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.OAK, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item OAK_LEGGINGS = registerItem("oak_leggings",
-            new ArmorItem(ModArmorMaterials.OAK, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.OAK, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item OAK_BOOTS = registerItem("oak_boots",
-            new ArmorItem(ModArmorMaterials.OAK, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.OAK, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // slime set
     public static final Item SLIME_HELMET = registerItem("slime_helmet",
-            new ArmorItem(ModArmorMaterials.SLIME, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item SLIME_CHESTPLATE = registerItem("slime_chestplate",
-            new ArmorItem(ModArmorMaterials.SLIME, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item SLIME_LEGGINGS = registerItem("slime_leggings",
-            new ArmorItem(ModArmorMaterials.SLIME, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item SLIME_BOOTS = registerItem("slime_boots",
-            new ArmorItem(ModArmorMaterials.SLIME, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // obsidian set
     public static final Item OBSIDIAN_HELMET = registerItem("obsidian_helmet",
-            new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item OBSIDIAN_CHESTPLATE = registerItem("obsidian_chestplate",
-            new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item OBSIDIAN_LEGGINGS = registerItem("obsidian_leggings",
-            new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item OBSIDIAN_BOOTS = registerItem("obsidian_boots",
-            new ArmorItem(ModArmorMaterials.OBSIDIAN, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // lapis set
     public static final Item LAPIS_HELMET = registerItem("lapis_helmet",
-            new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.LAPIS, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item LAPIS_CHESTPLATE = registerItem("lapis_chestplate",
-            new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.LAPIS, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item LAPIS_LEGGINGS = registerItem("lapis_leggings",
-            new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.LAPIS, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item LAPIS_BOOTS = registerItem("lapis_boots",
-            new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.LAPIS, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // redstone set
@@ -376,16 +377,16 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item REDSTONE_HELMET = registerItem("redstone_helmet",
-            new ArmorItem(ModArmorMaterials.REDSTONE_MIXTURE, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.REDSTONE_MIXTURE, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item REDSTONE_CHESTPLATE = registerItem("redstone_chestplate",
-            new ArmorItem(ModArmorMaterials.REDSTONE_MIXTURE, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.REDSTONE_MIXTURE, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item REDSTONE_LEGGINGS = registerItem("redstone_leggings",
-            new ArmorItem(ModArmorMaterials.REDSTONE_MIXTURE, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.REDSTONE_MIXTURE, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item REDSTONE_BOOTS = registerItem("redstone_boots",
-            new ArmorItem(ModArmorMaterials.REDSTONE_MIXTURE, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.REDSTONE_MIXTURE, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // hardened ice set
@@ -395,30 +396,30 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item HARDENED_ICE_HELMET = registerItem("hardened_ice_helmet",
-            new ModArmorHardenedIce(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.HEAD,
+            new ModArmorHardenedIce(ModArmorMaterials.HARDENED_ICE_SHARD, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item HARDENED_ICE_CHESTPLATE = registerItem("hardened_ice_chestplate",
-            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item HARDENED_ICE_LEGGINGS = registerItem("hardened_ice_leggings",
-            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item HARDENED_ICE_BOOTS = registerItem("hardened_ice_boots",
-            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.HARDENED_ICE_SHARD, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // copper set
     public static final Item COPPER_HELMET = registerItem("copper_helmet",
-            new ArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.HEAD,
+            new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item COPPER_CHESTPLATE = registerItem("copper_chestplate",
-            new ArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item COPPER_LEGGINGS = registerItem("copper_leggings",
-            new ArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item COPPER_BOOTS = registerItem("copper_boots",
-            new ArmorItem(ModArmorMaterials.COPPER, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.COPPER, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // ender set
@@ -426,16 +427,16 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item ENDER_HELMET = registerItem("ender_helmet",
-            new ModArmorEnder(ModArmorMaterials.HEART_OF_THE_END, EquipmentSlot.HEAD,
+            new ModArmorEnder(ModArmorMaterials.HEART_OF_THE_END, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item ENDER_CHESTPLATE = registerItem("ender_chestplate",
-            new ArmorItem(ModArmorMaterials.HEART_OF_THE_END, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.HEART_OF_THE_END, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item ENDER_LEGGINGS = registerItem("ender_leggings",
-            new ArmorItem(ModArmorMaterials.HEART_OF_THE_END, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.HEART_OF_THE_END, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item ENDER_BOOTS = registerItem("ender_boots",
-            new ArmorItem(ModArmorMaterials.HEART_OF_THE_END, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.HEART_OF_THE_END, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // marine set
@@ -443,29 +444,29 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item MARINE_DIAMOND_HELMET = registerItem("marine_diamond_helmet",
-            new ModArmorMarineDiamond(ModArmorMaterials.MARINE_DIAMOND, EquipmentSlot.HEAD,
+            new ModArmorMarineDiamond(ModArmorMaterials.MARINE_DIAMOND, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item MARINE_DIAMOND_CHESTPLATE = registerItem("marine_diamond_chestplate",
-            new ArmorItem(ModArmorMaterials.MARINE_DIAMOND, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.MARINE_DIAMOND, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item MARINE_DIAMOND_LEGGINGS = registerItem("marine_diamond_leggings",
-            new ArmorItem(ModArmorMaterials.MARINE_DIAMOND, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.MARINE_DIAMOND, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item MARINE_DIAMOND_BOOTS = registerItem("marine_diamond_boots",
-            new ArmorItem(ModArmorMaterials.MARINE_DIAMOND, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.MARINE_DIAMOND, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
     // emerald set
     public static final Item EMERALD_HELMET = registerItem("emerald_helmet",
-            new ModArmorEmerald(ModArmorMaterials.EMERALD, EquipmentSlot.HEAD,
+            new ModArmorEmerald(ModArmorMaterials.EMERALD, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item EMERALD_CHESTPLATE = registerItem("emerald_chestplate",
-            new ArmorItem(ModArmorMaterials.EMERALD, EquipmentSlot.CHEST,
+            new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item EMERALD_LEGGINGS = registerItem("emerald_leggings",
-            new ArmorItem(ModArmorMaterials.EMERALD, EquipmentSlot.LEGS,
+            new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.LEGGINGS,
                     new FabricItemSettings()));
     public static final Item EMERALD_BOOTS = registerItem("emerald_boots",
-            new ArmorItem(ModArmorMaterials.EMERALD, EquipmentSlot.FEET,
+            new ArmorItem(ModArmorMaterials.EMERALD, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
     // ---+ ITEMS REGISTRATION +---
@@ -635,7 +636,7 @@ public class ModItems {
     }
 
     // 1.19.3
-    public static void addToItemGroup(ItemGroup group, Item item) {
+    public static void addToItemGroup(RegistryKey<ItemGroup> group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
     }
 
