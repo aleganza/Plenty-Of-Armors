@@ -232,6 +232,34 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.WARPED, ArmorItem.Type.BOOTS,
                     new FabricItemSettings()));
 
+    // bamboo set
+    public static final Item BAMBOO_HELMET = registerItem("bamboo_helmet",
+            new ArmorItem(ModArmorMaterials.BAMBOO, ArmorItem.Type.HELMET,
+                    new FabricItemSettings()));
+    public static final Item BAMBOO_CHESTPLATE = registerItem("bamboo_chestplate",
+            new ArmorItem(ModArmorMaterials.BAMBOO, ArmorItem.Type.CHESTPLATE,
+                    new FabricItemSettings()));
+    public static final Item BAMBOO_LEGGINGS = registerItem("bamboo_leggings",
+            new ArmorItem(ModArmorMaterials.BAMBOO, ArmorItem.Type.LEGGINGS,
+                    new FabricItemSettings()));
+    public static final Item BAMBOO_BOOTS = registerItem("bamboo_boots",
+            new ArmorItem(ModArmorMaterials.BAMBOO, ArmorItem.Type.BOOTS,
+                    new FabricItemSettings()));
+
+    // cherry set
+    public static final Item CHERRY_HELMET = registerItem("cherry_helmet",
+            new ArmorItem(ModArmorMaterials.CHERRY, ArmorItem.Type.HELMET,
+                    new FabricItemSettings()));
+    public static final Item CHERRY_CHESTPLATE = registerItem("cherry_chestplate",
+            new ArmorItem(ModArmorMaterials.CHERRY, ArmorItem.Type.CHESTPLATE,
+                    new FabricItemSettings()));
+    public static final Item CHERRY_LEGGINGS = registerItem("cherry_leggings",
+            new ArmorItem(ModArmorMaterials.CHERRY, ArmorItem.Type.LEGGINGS,
+                    new FabricItemSettings()));
+    public static final Item CHERRY_BOOTS = registerItem("cherry_boots",
+            new ArmorItem(ModArmorMaterials.CHERRY, ArmorItem.Type.BOOTS,
+                    new FabricItemSettings()));
+
     // mangrove set
     public static final Item MANGROVE_HELMET = registerItem("mangrove_helmet",
             new ArmorItem(ModArmorMaterials.MANGROVE, ArmorItem.Type.HELMET,
@@ -549,6 +577,16 @@ public class ModItems {
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, WARPED_CHESTPLATE);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, WARPED_LEGGINGS);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, WARPED_BOOTS);
+
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, BAMBOO_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, BAMBOO_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, BAMBOO_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, BAMBOO_BOOTS);
+
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CHERRY_HELMET);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CHERRY_CHESTPLATE);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CHERRY_LEGGINGS);
+        addToItemGroup(ModItemGroup.PLENTYOFARMOR, CHERRY_BOOTS);
 
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, MANGROVE_HELMET);
         addToItemGroup(ModItemGroup.PLENTYOFARMOR, MANGROVE_CHESTPLATE);

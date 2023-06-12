@@ -58,6 +58,12 @@ public enum ModArmorMaterials implements ArmorMaterial {
     WARPED("warped", 7, new int[]{1, 2, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.WARPED_PLANKS});
     }),
+    BAMBOO("bamboo", 5, new int[]{1, 1, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Items.BAMBOO_PLANKS});
+    }),
+    CHERRY("cherry", 5, new int[]{1, 1, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Items.CHERRY_PLANKS});
+    }),
     MANGROVE("mangrove", 5, new int[]{1, 1, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.MANGROVE_PLANKS});
     }),
