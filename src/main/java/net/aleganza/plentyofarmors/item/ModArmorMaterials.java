@@ -162,10 +162,10 @@ public enum ModArmorMaterials implements ArmorMaterial {
     public int getDurability(ArmorItem.Type slot) {
         int type = -1;
 
-        if(slot.getEquipmentSlot() == EquipmentSlot.HEAD) type = 0;
-        if(slot.getEquipmentSlot() == EquipmentSlot.CHEST) type = 1;
-        if(slot.getEquipmentSlot() == EquipmentSlot.LEGS) type = 2;
-        if(slot.getEquipmentSlot() == EquipmentSlot.FEET) type = 3;
+        if(slot.getEquipmentSlot() == EquipmentSlot.FEET) type = 0;
+        if(slot.getEquipmentSlot() == EquipmentSlot.LEGS) type = 1;
+        if(slot.getEquipmentSlot() == EquipmentSlot.CHEST) type = 2;
+        if(slot.getEquipmentSlot() == EquipmentSlot.HEAD) type = 3;
 
         return BASE_DURABILITY[type] * this.durabilityMultiplier;
     }
@@ -173,10 +173,10 @@ public enum ModArmorMaterials implements ArmorMaterial {
     public int getProtection(ArmorItem.Type slot) {
         int type = -1;
 
-        if(slot.getEquipmentSlot() == EquipmentSlot.HEAD) type = 0;
-        if(slot.getEquipmentSlot() == EquipmentSlot.CHEST) type = 1;
-        if(slot.getEquipmentSlot() == EquipmentSlot.LEGS) type = 2;
-        if(slot.getEquipmentSlot() == EquipmentSlot.FEET) type = 3;
+        if(slot.getEquipmentSlot() == EquipmentSlot.FEET) type = 0;
+        if(slot.getEquipmentSlot() == EquipmentSlot.LEGS) type = 1;
+        if(slot.getEquipmentSlot() == EquipmentSlot.CHEST) type = 2;
+        if(slot.getEquipmentSlot() == EquipmentSlot.HEAD) type = 3;
 
         return this.protectionAmounts[type];
     }

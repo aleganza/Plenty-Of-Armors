@@ -1,11 +1,17 @@
 {
-  "type": "minecraft:smithing",
-  "addition": {
-    "item": "plentyofarmors:stardusite_ingot"
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "plentyofarmors:stardusite_ingot"
+    },
+    "O": {
+      "item": "minecraft:netherite_helmet"
+    }
   },
-  "base": {
-    "item": "minecraft:netherite_helmet"
-  },
+  "pattern": [
+    " X ",
+    " O "
+  ],
   "result": {
     "item": "plentyofarmors:stardusite_helmet"
   }
