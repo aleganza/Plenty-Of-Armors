@@ -4,7 +4,6 @@ import net.aleganza.plentyofarmors.PlentyOfArmors;
 import net.aleganza.plentyofarmors.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -472,10 +471,10 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item MARINE_DIAMOND_HELMET = registerItem("marine_diamond_helmet",
-            new ModArmorMarineDiamond(ModArmorMaterials.MARINE_DIAMOND, ArmorItem.Type.HELMET,
+            new ModArmorMarineDiamond1(ModArmorMaterials.MARINE_DIAMOND, ArmorItem.Type.HELMET,
                     new FabricItemSettings()));
     public static final Item MARINE_DIAMOND_CHESTPLATE = registerItem("marine_diamond_chestplate",
-            new ArmorItem(ModArmorMaterials.MARINE_DIAMOND, ArmorItem.Type.CHESTPLATE,
+            new ModArmorMarineDiamond2(ModArmorMaterials.MARINE_DIAMOND, ArmorItem.Type.CHESTPLATE,
                     new FabricItemSettings()));
     public static final Item MARINE_DIAMOND_LEGGINGS = registerItem("marine_diamond_leggings",
             new ArmorItem(ModArmorMaterials.MARINE_DIAMOND, ArmorItem.Type.LEGGINGS,

@@ -3,7 +3,6 @@ package net.aleganza.plentyofarmors.item.custom;
 import com.google.common.collect.ImmutableMap;
 import net.aleganza.plentyofarmors.item.ModArmorMaterials;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,17 +13,17 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class ModArmorEmerald extends ArmorItem {
+public class ModArmorMarineDiamond2 extends ArmorItem {
 
     public static final int effectDuration = 400;
     public static final int amplifier = 0;
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.EMERALD,
-                            new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, effectDuration, amplifier)).build();
+                    .put(ModArmorMaterials.MARINE_DIAMOND,
+                            new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, effectDuration, amplifier)).build();
 
-    public ModArmorEmerald(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
+    public ModArmorMarineDiamond2(ArmorMaterial material, Type slot, Settings settings) {
         super(material, slot, settings);
     }
 

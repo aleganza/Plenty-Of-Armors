@@ -9,9 +9,9 @@
     }
   },
   "pattern": [
-    "RCR",
+    " C ",
     "CRC",
-    "RCR"
+    " C "
   ],
   "result": {
     "item": "plentyofarmors:redstone_mixture",
