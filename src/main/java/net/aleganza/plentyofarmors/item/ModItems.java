@@ -443,7 +443,7 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     public static final Item MARINE_DIAMOND_HELMET = registerItem("marine_diamond_helmet",
-            new ModArmorMarineDiamond(ModArmorMaterials.MARINE_DIAMOND, EquipmentSlot.HEAD,
+            new ModArmorMarineDiamond1(ModArmorMaterials.MARINE_DIAMOND, EquipmentSlot.HEAD,
                     new FabricItemSettings()));
     public static final Item MARINE_DIAMOND_CHESTPLATE = registerItem("marine_diamond_chestplate",
             new ArmorItem(ModArmorMaterials.MARINE_DIAMOND, EquipmentSlot.CHEST,
