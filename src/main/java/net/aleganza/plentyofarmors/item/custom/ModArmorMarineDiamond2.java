@@ -14,17 +14,17 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class ModArmorEmerald extends ArmorItem {
+public class ModArmorMarineDiamond2 extends ArmorItem {
 
     public static final int effectDuration = 400;
     public static final int amplifier = 0;
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.EMERALD,
-                            new StatusEffectInstance(StatusEffects.HERO_OF_THE_VILLAGE, effectDuration, amplifier)).build();
+                    .put(ModArmorMaterials.MARINE_DIAMOND,
+                            new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, effectDuration, amplifier)).build();
 
-    public ModArmorEmerald(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ModArmorMarineDiamond2(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
     }
 
