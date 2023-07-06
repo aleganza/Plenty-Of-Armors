@@ -20,6 +20,6 @@
 <br>
 
 Compatible **Minecraft versions**:
-**1.19.2**, **1.19.3**
+**1.19.2**, **1.19.3**, **1.20**, **1.20.1**
 
 Requires **Fabric API**.
