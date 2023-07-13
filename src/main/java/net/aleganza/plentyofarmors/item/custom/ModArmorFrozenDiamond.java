@@ -18,7 +18,7 @@ import java.util.Map;
 public class ModArmorFrozenDiamond extends ArmorItem {
 
     public static final int effectDuration = 400;
-    public static final int amplifier = 1;
+    public static final int amplifier = 2;
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
