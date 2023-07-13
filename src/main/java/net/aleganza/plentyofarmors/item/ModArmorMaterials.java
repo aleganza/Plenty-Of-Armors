@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial {
 
     // ---+ MOD ARMOR +---
-    ENDER_NETHERITE("ender_netherite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 1.0F, () -> {
+    ENDER_NETHERITE("ender_netherite", 37, new int[]{4, 7, 9, 4}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 1.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.NETHERITE_CHESTPLATE});
     }),
     FROZEN_DIAMOND("frozen_diamond", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
@@ -46,7 +46,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     QUARTZ("quartz", 12, new int[]{2, 3, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.QUARTZ});
     }),
-    STARDUSITE("stardusite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
+    STARDUSITE("stardusite", 37, new int[]{4, 7, 9, 4}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.STARDUSITE_INGOT});
     }),
     CACTUS("cactus", 7, new int[]{1, 2, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
@@ -91,7 +91,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     OBSIDIAN("obsidian", 21, new int[]{2, 5, 6, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.OBSIDIAN});
     }),
-    LAPIS("lapis", 13, new int[]{2, 4, 5, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
+    LAPIS("lapis", 13, new int[]{2, 3, 5, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.LAPIS_LAZULI});
     }),
     REDSTONE_MIXTURE("redstone", 12, new int[]{2, 3, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
@@ -106,7 +106,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     EMERALD("emerald", 23, new int[]{2, 5, 7, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.EMERALD});
     }),
-    MARINE_DIAMOND("marine_diamond", 35, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
+    MARINE_DIAMOND("marine_diamond", 35, new int[]{4, 7, 9, 4}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.MARINE_DIAMOND});
     }),
     HEART_OF_THE_END("ender", 35, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
