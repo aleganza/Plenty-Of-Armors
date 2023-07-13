@@ -18,7 +18,7 @@ import java.util.Map;
 public class ModArmorHardenedIce extends ArmorItem {
 
     public static final int effectDuration = 400;
-    public static final int amplifier = 0;
+    public static final int amplifier = 1;
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
