@@ -46,7 +46,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     QUARTZ("quartz", 12, new int[]{2, 3, 5, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.QUARTZ});
     }),
-    STARDUSITE("stardusite", 37, new int[]{4, 7, 9, 4}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.1F, () -> {
+    STARDUSITE("stardusite", 37, new int[]{5, 8, 10, 5}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.1F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.STARDUSITE_INGOT});
     }),
     CACTUS("cactus", 7, new int[]{1, 2, 2, 1}, 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
