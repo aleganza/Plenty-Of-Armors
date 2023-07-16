@@ -13,7 +13,12 @@
 	<img src="https://img.shields.io/github/v/release/aleganza/Plenty-Of-Armors?color=1F8DA9"> 
 </a>
 <a href="https://www.curseforge.com/minecraft/mc-mods/plenty-of-armors"> 
-	<img src="https://cf.way2muchnoise.eu/661930.svg" alt="many downloads"> 
+	<img src="https://cf.way2muchnoise.eu/661930.svg" alt="curseforge downloads"> 
+</a>
+
+</a>
+<a href="https://modrinth.com/mod/plenty-of-armors"> 
+	<img src="https://img.shields.io/modrinth/dt/plenty-of-armors?color=00AF5C&label=downloads&logo=modrinth" alt="modrinth downloads"> 
 </a>
 </div>
 
