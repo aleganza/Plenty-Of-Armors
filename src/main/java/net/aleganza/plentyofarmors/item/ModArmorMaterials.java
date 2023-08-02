@@ -44,7 +44,7 @@ public enum ModArmorMaterials implements StringIdentifiable, ArmorMaterial {
         map.put(Type.LEGGINGS, 5);
         map.put(Type.CHESTPLATE, 7);
         map.put(Type.HELMET, 3);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.1F, () -> {
+    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.1F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.IRON_CHESTPLATE});
     }),
     ECHO_SHARD("echo_shard", 35, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
@@ -244,7 +244,7 @@ public enum ModArmorMaterials implements StringIdentifiable, ArmorMaterial {
         map.put(ArmorItem.Type.LEGGINGS, 4);
         map.put(ArmorItem.Type.CHESTPLATE, 5);
         map.put(ArmorItem.Type.HELMET, 2);
-    }), 9, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F, 0.0F, () -> {
+    }), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.COPPER_INGOT});
     }),
     EMERALD("emerald", 23, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
@@ -252,7 +252,7 @@ public enum ModArmorMaterials implements StringIdentifiable, ArmorMaterial {
         map.put(ArmorItem.Type.LEGGINGS, 5);
         map.put(ArmorItem.Type.CHESTPLATE, 7);
         map.put(ArmorItem.Type.HELMET, 3);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0F, 0.0F, () -> {
+    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.EMERALD});
     }),
     MARINE_DIAMOND("marine_diamond", 35, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
@@ -268,7 +268,7 @@ public enum ModArmorMaterials implements StringIdentifiable, ArmorMaterial {
         map.put(ArmorItem.Type.LEGGINGS, 6);
         map.put(ArmorItem.Type.CHESTPLATE, 8);
         map.put(ArmorItem.Type.HELMET, 3);
-    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0F, 0.0F, () -> {
+    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.HEART_OF_THE_END});
     });
 
