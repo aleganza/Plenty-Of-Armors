@@ -1,5 +1,5 @@
 # 🚩 Plenty Of Armors | v1.3.0
-#### *Aug 2, 2023*
+#### *Aug 3, 2023*
 -- *For Minecraft 1.19.2, 1.19.3, 1.20.1* --
 
 ### 🛡️ ARMOR SHIELDS:
