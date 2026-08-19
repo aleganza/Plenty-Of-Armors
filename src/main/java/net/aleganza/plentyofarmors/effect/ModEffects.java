@@ -5,39 +5,40 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
 
 public class ModEffects {
-    public static StatusEffect FROST_WALKER;
-    public static StatusEffect FIRE_WALKER;
-    public static StatusEffect THORNS;
-    /*public static StatusEffect SWIFT_SNEAK;*/
-    /*public static StatusEffect BOUNCING;*/
-    /*public static StatusEffect XP_ENHANCER;*/
+    public static RegistryEntry<StatusEffect> FROST_WALKER;
+    public static RegistryEntry<StatusEffect> FIRE_WALKER;
+    public static RegistryEntry<StatusEffect> THORNS;
+    /*public static RegistryEntry<StatusEffect> SWIFT_SNEAK;*/
+    /*public static RegistryEntry<StatusEffect> BOUNCING;*/
+    /*public static RegistryEntry<StatusEffect> XP_ENHANCER;*/
 
-    public static StatusEffect registerFrostWalker(String name) {
-        return Registry.register(Registries.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
+    public static RegistryEntry<StatusEffect> registerFrostWalker(String name) {
+        return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(PlentyOfArmors.MOD_ID, name),
                 new FrostWalkerEffect(StatusEffectCategory.NEUTRAL, 0x5fb2d9));
     }
-    public static StatusEffect registerHeatWalker(String name) {
-        return Registry.register(Registries.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
+    public static RegistryEntry<StatusEffect> registerHeatWalker(String name) {
+        return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(PlentyOfArmors.MOD_ID, name),
                 new FireWalkerEffect(StatusEffectCategory.NEUTRAL, 0x9e3c28));
     }
-    public static StatusEffect registerThorns(String name) {
-        return Registry.register(Registries.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
+    public static RegistryEntry<StatusEffect> registerThorns(String name) {
+        return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(PlentyOfArmors.MOD_ID, name),
                 new ThornsEffect(StatusEffectCategory.BENEFICIAL, 0x289e33));
     }
     /*public static StatusEffect registerSwiftSneak(String name) {
-        return Registry.register(Registries.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
+        return Registry.register(Registries.STATUS_EFFECT, Identifier.of(PlentyOfArmors.MOD_ID, name),
                 new SwiftSneakEffect(StatusEffectCategory.NEUTRAL, 0x065769));
     }*/
     /*public static StatusEffect registerBouncing(String name) {
-        return Registry.register(Registries.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
+        return Registry.register(Registries.STATUS_EFFECT, Identifier.of(PlentyOfArmors.MOD_ID, name),
                 new BouncingEffect(StatusEffectCategory.BENEFICIAL, 0xf6f121));
     }
     public static StatusEffect registerXPEnhancer(String name) {
-        return Registry.register(Registries.STATUS_EFFECT, new Identifier(PlentyOfArmors.MOD_ID, name),
+        return Registry.register(Registries.STATUS_EFFECT, Identifier.of(PlentyOfArmors.MOD_ID, name),
                 new XPEnhancerEffect(StatusEffectCategory.BENEFICIAL, 0xf6f121));
     }*/
 

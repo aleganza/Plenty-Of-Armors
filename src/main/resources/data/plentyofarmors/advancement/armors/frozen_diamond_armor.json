@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "plentyofarmors:frozen_diamond_chestplate"
+    },
+    "title": {
+      "translate": "advancements.plentyofarmors.frozen_diamond_armor.title"
+    },
+    "description": {
+      "translate": "advancements.plentyofarmors.frozen_diamond_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+    "parent": "plentyofarmors:armors/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions":{
+          "items":[
+            {
+              "items":[
+                "plentyofarmors:frozen_diamond_helmet"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:frozen_diamond_chestplate"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:frozen_diamond_leggings"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:frozen_diamond_boots"
+              ]
+            }
+          ]
+        }
+      }
+  }
+}

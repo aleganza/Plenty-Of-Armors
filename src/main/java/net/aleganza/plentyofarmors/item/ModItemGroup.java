@@ -15,11 +15,11 @@ import net.minecraft.util.Identifier;
 public class ModItemGroup {
 
     /*public static ItemGroup PLENTYOFARMOR;*/
-    public static final RegistryKey<ItemGroup> PLENTYOFARMOR = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(PlentyOfArmors.MOD_ID, "plentyofarmors"));
+    public static final RegistryKey<ItemGroup> PLENTYOFARMOR = RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.of(PlentyOfArmors.MOD_ID, "plentyofarmors"));
 
 
     public static void registerItemGroup() {
-        /*PLENTYOFARMOR = FabricItemGroup.builder(new Identifier(PlentyOfArmors.MOD_ID, "plentyofarmors"))
+        /*PLENTYOFARMOR = FabricItemGroup.builder(Identifier.of(PlentyOfArmors.MOD_ID, "plentyofarmors"))
                 .displayName(Text.literal("Plenty Of Armors"))
                 .icon(() -> new ItemStack(ModItems.ADV_ICON)).build();*/
         Registry.register(Registries.ITEM_GROUP, PLENTYOFARMOR, FabricItemGroup.builder()

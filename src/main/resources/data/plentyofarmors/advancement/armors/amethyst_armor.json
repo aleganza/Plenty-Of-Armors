@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "plentyofarmors:amethyst_chestplate"
+    },
+    "title": {
+      "translate": "advancements.plentyofarmors.amethyst_armor.title"
+    },
+    "description": {
+      "translate": "advancements.plentyofarmors.amethyst_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+    "parent": "plentyofarmors:armors/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions":{
+          "items":[
+            {
+              "items":[
+                "plentyofarmors:amethyst_helmet"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:amethyst_chestplate"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:amethyst_leggings"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:amethyst_boots"
+              ]
+            }
+          ]
+        }
+      }
+  }
+}

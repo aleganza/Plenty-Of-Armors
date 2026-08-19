@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "plentyofarmors:stardusite_ingot"
+    },
+    "O": {
+      "item": "minecraft:netherite_leggings"
+    }
+  },
+  "pattern": [
+    " X ",
+    " O "
+  ],
+  "result": {
+    "id": "plentyofarmors:stardusite_leggings"
+  }
+}

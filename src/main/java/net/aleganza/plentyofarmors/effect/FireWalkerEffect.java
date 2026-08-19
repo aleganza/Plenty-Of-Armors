@@ -12,7 +12,7 @@ public class FireWalkerEffect extends StatusEffect {
     }
 
     @Override
-    public void applyUpdateEffect(LivingEntity pLivingEntity, int pAmplifier) {
+    public boolean applyUpdateEffect(LivingEntity pLivingEntity, int pAmplifier) {
         if (!pLivingEntity.getWorld().isClient()) {
 
             World world = pLivingEntity.getWorld();
@@ -23,7 +23,7 @@ public class FireWalkerEffect extends StatusEffect {
             ModLibs.solidifyLava(pLivingEntity, world, pos, level);
         }
 
-        super.applyUpdateEffect(pLivingEntity, pAmplifier);
+        return super.applyUpdateEffect(pLivingEntity, pAmplifier);
     }
 
 

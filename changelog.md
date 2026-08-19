@@ -1,3 +1,10 @@
+# 🚩 Plenty Of Armors | v1.4.0+mc1.21.1
+#### *Aug 19, 2026*
+-- *For Minecraft 1.21.1* --
+
+### 🚀 PORTING
+-   Ported the entire mod to Minecraft **1.21.1** (Fabric).
+
 # 🚩 Plenty Of Armors | v1.3.0
 #### *Aug 3, 2023*
 -- *For Minecraft 1.19.2, 1.19.3, 1.20.1* --

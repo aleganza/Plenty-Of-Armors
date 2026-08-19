@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "B": {
+      "item": "minecraft:dragon_breath"
+    }
+  },
+  "pattern": [
+    "BDB",
+    "DED",
+    "BDB"
+  ],
+  "result": {
+    "id": "plentyofarmors:heart_of_the_end",
+    "count": 1
+  }
+}

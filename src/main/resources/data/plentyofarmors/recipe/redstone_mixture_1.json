@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "minecraft:charcoal"
+    }
+  },
+  "pattern": [
+    " C ",
+    "CRC",
+    " C "
+  ],
+  "result": {
+    "id": "plentyofarmors:redstone_mixture",
+    "count": 1
+  }
+}

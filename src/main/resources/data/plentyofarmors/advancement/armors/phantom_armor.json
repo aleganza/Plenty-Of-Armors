@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "plentyofarmors:phantom_chestplate"
+    },
+    "title": {
+      "translate": "advancements.plentyofarmors.phantom_armor.title"
+    },
+    "description": {
+      "translate": "advancements.plentyofarmors.phantom_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+    "parent": "plentyofarmors:armors/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions":{
+          "items":[
+            {
+              "items":[
+                "plentyofarmors:phantom_helmet"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:phantom_chestplate"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:phantom_leggings"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:phantom_boots"
+              ]
+            }
+          ]
+        }
+      }
+  }
+}

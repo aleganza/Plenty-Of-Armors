@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "plentyofarmors:ender_chestplate"
+    },
+    "title": {
+      "translate": "advancements.plentyofarmors.ender_armor.title"
+    },
+    "description": {
+      "translate": "advancements.plentyofarmors.ender_armor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+    "parent": "plentyofarmors:armors/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions":{
+          "items":[
+            {
+              "items":[
+                "plentyofarmors:ender_helmet"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:ender_chestplate"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:ender_leggings"
+              ]
+            },
+            {
+              "items":[
+                "plentyofarmors:ender_boots"
+              ]
+            }
+          ]
+        }
+      }
+  }
+}

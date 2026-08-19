@@ -10,6 +10,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
@@ -20,12 +21,12 @@ public class ModArmorHardenedIce extends ArmorItem {
     public static final int effectDuration = 400;
     public static final int amplifier = 1;
 
-    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
-            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
+    private static final Map<RegistryEntry<ArmorMaterial>, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
+            (new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, StatusEffectInstance>())
                     .put(ModArmorMaterials.HARDENED_ICE_SHARD,
                             new StatusEffectInstance(StatusEffects.LUCK, effectDuration, amplifier)).build();
 
-    public ModArmorHardenedIce(ArmorMaterial material, ArmorItem.Type slot, Settings settings) {
+    public ModArmorHardenedIce(RegistryEntry<ArmorMaterial> material, ArmorItem.Type slot, Settings settings) {
         super(material, slot, settings);
     }
 
@@ -45,8 +46,8 @@ public class ModArmorHardenedIce extends ArmorItem {
     }
 
     private void evaluateArmorEffects(PlayerEntity player) {
-        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
-            ArmorMaterial mapArmorMaterial = ModArmorMaterials.HARDENED_ICE_SHARD;
+        for (Map.Entry<RegistryEntry<ArmorMaterial>, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
+            RegistryEntry<ArmorMaterial> mapArmorMaterial = ModArmorMaterials.HARDENED_ICE_SHARD;
             StatusEffectInstance mapStatusEffect = new StatusEffectInstance(ModEffects.FROST_WALKER,
                     effectDuration, amplifier, false, false, false);
 
@@ -56,7 +57,7 @@ public class ModArmorHardenedIce extends ArmorItem {
         }
     }
 
-    private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial mapArmorMaterial, StatusEffectInstance mapStatusEffect) {
+    private void addStatusEffectForMaterial(PlayerEntity player, RegistryEntry<ArmorMaterial> mapArmorMaterial, StatusEffectInstance mapStatusEffect) {
         boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect.getEffectType());
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
@@ -83,7 +84,7 @@ public class ModArmorHardenedIce extends ArmorItem {
                 && !leggings.isEmpty() && !boots.isEmpty();
     }
 
-    private boolean doesArmorHaveMaterial(ArmorMaterial material, PlayerEntity player) {
+    private boolean doesArmorHaveMaterial(RegistryEntry<ArmorMaterial> material, PlayerEntity player) {
         for (int i=0; i<4; i++) {
             try{
                 ((ArmorItem)player.getInventory().getArmorStack(i).getItem()).getMaterial();
@@ -95,7 +96,7 @@ public class ModArmorHardenedIce extends ArmorItem {
         return true;
     }
 
-    private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
+    private boolean hasCorrectArmorOn(RegistryEntry<ArmorMaterial> material, PlayerEntity player) {
         if (!doesArmorHaveMaterial(material, player)) {
             return false;
         }

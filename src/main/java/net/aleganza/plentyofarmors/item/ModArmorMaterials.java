@@ -1,337 +1,150 @@
 package net.aleganza.plentyofarmors.item;
 
-import java.util.EnumMap;
-import java.util.function.Supplier;
-
 import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
-import net.minecraft.item.ArmorItem.Type;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.Lazy;
-import net.minecraft.util.StringIdentifiable;
-import net.minecraft.util.Util;
+import net.minecraft.util.Identifier;
 
-public enum ModArmorMaterials implements StringIdentifiable, ArmorMaterial {
+import java.util.EnumMap;
+import java.util.IdentityHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Supplier;
 
-    ENDER_NETHERITE("ender_netherite", 37, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 4);
-        map.put(Type.LEGGINGS, 7);
-        map.put(Type.CHESTPLATE, 9);
-        map.put(Type.HELMET, 4);
-    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.NETHERITE_CHESTPLATE});
-    }),
-    FROZEN_DIAMOND("frozen_diamond", 33, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 3);
-        map.put(Type.LEGGINGS, 6);
-        map.put(Type.CHESTPLATE, 8);
-        map.put(Type.HELMET, 3);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.FROZEN_DIAMOND});
-    }),
-    PHANTOM("phantom", 21, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 2);
-        map.put(Type.LEGGINGS, 5);
-        map.put(Type.CHESTPLATE, 6);
-        map.put(Type.HELMET, 3);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.HARDENED_PHANTOM_MEMBRANE});
-    }),
-    REINFORCED_IRON("reinforced_iron", 25, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 3);
-        map.put(Type.LEGGINGS, 5);
-        map.put(Type.CHESTPLATE, 7);
-        map.put(Type.HELMET, 3);
-    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.1F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.IRON_CHESTPLATE});
-    }),
-    ECHO_SHARD("echo_shard", 35, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 3);
-        map.put(Type.LEGGINGS, 6);
-        map.put(Type.CHESTPLATE, 8);
-        map.put(Type.HELMET, 3);
-    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.ECHO_SHARD});
-    }),
-    BRICK("brick", 9, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 3);
-        map.put(Type.CHESTPLATE, 4);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.1F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.BRICK});
-    }),
-    NETHER_BRICK("nether_brick", 11, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 2);
-        map.put(Type.LEGGINGS, 3);
-        map.put(Type.CHESTPLATE, 4);
-        map.put(Type.HELMET, 2);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.1F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.NETHER_BRICK});
-    }),
-    AMETHYST("amethyst", 35, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 3);
-        map.put(Type.LEGGINGS, 6);
-        map.put(Type.CHESTPLATE, 8);
-        map.put(Type.HELMET, 3);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.AMETHYST_GEM});
-    }),
-    CRYING_OBSIDIAN("crying_obsidian", 21, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 2);
-        map.put(Type.LEGGINGS, 5);
-        map.put(Type.CHESTPLATE, 6);
-        map.put(Type.HELMET, 3);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.CRYING_OBSIDIAN});
-    }),
-    QUARTZ("quartz", 12, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 2);
-        map.put(Type.LEGGINGS, 3);
-        map.put(Type.CHESTPLATE, 5);
-        map.put(Type.HELMET, 2);
-    }), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.QUARTZ});
-    }),
-    STARDUSITE("stardusite", 37, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 5);
-        map.put(Type.LEGGINGS, 8);
-        map.put(Type.CHESTPLATE, 10);
-        map.put(Type.HELMET, 5);
-    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.1F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.STARDUSITE_INGOT});
-    }),
-    CACTUS("cactus", 7, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 2);
-        map.put(Type.CHESTPLATE, 2);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Blocks.CACTUS});
-    }),
-    CRIMSON("crimson", 7, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 2);
-        map.put(Type.CHESTPLATE, 2);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.CRIMSON_PLANKS});
-    }),
-    WARPED("warped", 7, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 2);
-        map.put(Type.CHESTPLATE, 2);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.WARPED_PLANKS});
-    }),
-    BAMBOO("bamboo", 5, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 1);
-        map.put(Type.CHESTPLATE, 2);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.BAMBOO_PLANKS});
-    }),
-    CHERRY("cherry", 5, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 1);
-        map.put(Type.CHESTPLATE, 2);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.CHERRY_PLANKS});
-    }),
-    MANGROVE("mangrove", 5, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 1);
-        map.put(Type.CHESTPLATE, 2);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.MANGROVE_PLANKS});
-    }),
-    DARK_OAK("dark_oak", 5, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 1);
-        map.put(Type.CHESTPLATE, 2);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.DARK_OAK_PLANKS});
-    }),
-    JUNGLE("jungle", 5, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 1);
-        map.put(Type.CHESTPLATE, 2);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.JUNGLE_PLANKS});
-    }),
-    BIRCH("birch", 5, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 1);
-        map.put(Type.CHESTPLATE, 2);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.BIRCH_PLANKS});
-    }),
-    SPRUCE("spruce", 5, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 1);
-        map.put(Type.CHESTPLATE, 2);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.SPRUCE_PLANKS});
-    }),
-    ACACIA("acacia", 5, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 1);
-        map.put(Type.CHESTPLATE, 2);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.ACACIA_PLANKS});
-    }),
-    OAK("oak", 5, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 1);
-        map.put(Type.LEGGINGS, 1);
-        map.put(Type.CHESTPLATE, 2);
-        map.put(Type.HELMET, 1);
-    }), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Blocks.OAK_PLANKS});
-    }),
-    SLIME("slime", 7, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 1);
-        map.put(ArmorItem.Type.LEGGINGS, 2);
-        map.put(ArmorItem.Type.CHESTPLATE, 2);
-        map.put(ArmorItem.Type.HELMET, 1);
-    }), 9, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.SLIME_BALL});
-    }),
-    OBSIDIAN("obsidian", 21, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 2);
-        map.put(ArmorItem.Type.LEGGINGS, 5);
-        map.put(ArmorItem.Type.CHESTPLATE, 6);
-        map.put(ArmorItem.Type.HELMET, 3);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.OBSIDIAN});
-    }),
-    LAPIS("lapis", 13, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 2);
-        map.put(ArmorItem.Type.LEGGINGS, 3);
-        map.put(ArmorItem.Type.CHESTPLATE, 5);
-        map.put(ArmorItem.Type.HELMET, 2);
-    }), 25, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.LAPIS_LAZULI});
-    }),
-    REDSTONE_MIXTURE("redstone", 12, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 2);
-        map.put(ArmorItem.Type.LEGGINGS, 3);
-        map.put(ArmorItem.Type.CHESTPLATE, 5);
-        map.put(ArmorItem.Type.HELMET, 2);
-    }), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.REDSTONE_MIXTURE});
-    }),
-    HARDENED_ICE_SHARD("hardened_ice", 23, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 2);
-        map.put(ArmorItem.Type.LEGGINGS, 5);
-        map.put(ArmorItem.Type.CHESTPLATE, 6);
-        map.put(ArmorItem.Type.HELMET, 3);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.HARDENED_ICE_SHARD});
-    }),
-    COPPER("copper", 13, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 2);
-        map.put(ArmorItem.Type.LEGGINGS, 4);
-        map.put(ArmorItem.Type.CHESTPLATE, 5);
-        map.put(ArmorItem.Type.HELMET, 2);
-    }), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.COPPER_INGOT});
-    }),
-    EMERALD("emerald", 23, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 2);
-        map.put(ArmorItem.Type.LEGGINGS, 5);
-        map.put(ArmorItem.Type.CHESTPLATE, 7);
-        map.put(ArmorItem.Type.HELMET, 3);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.EMERALD});
-    }),
-    MARINE_DIAMOND("marine_diamond", 35, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 4);
-        map.put(ArmorItem.Type.LEGGINGS, 7);
-        map.put(ArmorItem.Type.CHESTPLATE, 9);
-        map.put(ArmorItem.Type.HELMET, 4);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.MARINE_DIAMOND});
-    }),
-    HEART_OF_THE_END("ender", 35, (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(ArmorItem.Type.BOOTS, 3);
-        map.put(ArmorItem.Type.LEGGINGS, 6);
-        map.put(ArmorItem.Type.CHESTPLATE, 8);
-        map.put(ArmorItem.Type.HELMET, 3);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.HEART_OF_THE_END});
-    });
+public final class ModArmorMaterials {
 
-    public static final StringIdentifiable.Codec<ArmorMaterials> CODEC = StringIdentifiable.createCodec(ArmorMaterials::values);
-    private static final EnumMap<ArmorItem.Type, Integer> BASE_DURABILITY = (EnumMap)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
-        map.put(Type.BOOTS, 13);
-        map.put(Type.LEGGINGS, 15);
-        map.put(Type.CHESTPLATE, 16);
-        map.put(Type.HELMET, 11);
-    });
-    private final String name;
-    private final int durabilityMultiplier;
-    private final EnumMap<ArmorItem.Type, Integer> protectionAmounts;
-    private final int enchantability;
-    private final SoundEvent equipSound;
-    private final float toughness;
-    private final float knockbackResistance;
-    private final Lazy<Ingredient> repairIngredientSupplier;
+    private static final Map<RegistryEntry<ArmorMaterial>, Integer> DURABILITY_MULTIPLIERS = new IdentityHashMap<>();
 
-    private ModArmorMaterials(String name, int durabilityMultiplier, EnumMap protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier repairIngredientSupplier) {
-        this.name = name;
-        this.durabilityMultiplier = durabilityMultiplier;
-        this.protectionAmounts = protectionAmounts;
-        this.enchantability = enchantability;
-        this.equipSound = equipSound;
-        this.toughness = toughness;
-        this.knockbackResistance = knockbackResistance;
-        this.repairIngredientSupplier = new Lazy(repairIngredientSupplier);
+    public static final RegistryEntry<ArmorMaterial> ENDER_NETHERITE = armorMaterial("ender_netherite", 37,
+            armorDefense(4, 7, 9, 4), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F,
+            () -> Ingredient.ofItems(Items.NETHERITE_CHESTPLATE));
+    public static final RegistryEntry<ArmorMaterial> FROZEN_DIAMOND = armorMaterial("frozen_diamond", 33,
+            armorDefense(3, 6, 8, 3), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F,
+            () -> Ingredient.ofItems(ModItems.FROZEN_DIAMOND));
+    public static final RegistryEntry<ArmorMaterial> PHANTOM = armorMaterial("phantom", 21,
+            armorDefense(2, 5, 6, 3), 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.0F,
+            () -> Ingredient.ofItems(ModItems.HARDENED_PHANTOM_MEMBRANE));
+    public static final RegistryEntry<ArmorMaterial> REINFORCED_IRON = armorMaterial("reinforced_iron", 25,
+            armorDefense(3, 5, 7, 3), 15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.1F,
+            () -> Ingredient.ofItems(Items.IRON_CHESTPLATE));
+    public static final RegistryEntry<ArmorMaterial> ECHO_SHARD = armorMaterial("echo_shard", 35,
+            armorDefense(3, 6, 8, 3), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.ECHO_SHARD));
+    public static final RegistryEntry<ArmorMaterial> BRICK = armorMaterial("brick", 9,
+            armorDefense(1, 3, 4, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.1F,
+            () -> Ingredient.ofItems(Items.BRICK));
+    public static final RegistryEntry<ArmorMaterial> NETHER_BRICK = armorMaterial("nether_brick", 11,
+            armorDefense(2, 3, 4, 2), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.1F,
+            () -> Ingredient.ofItems(Items.NETHER_BRICK));
+    public static final RegistryEntry<ArmorMaterial> AMETHYST = armorMaterial("amethyst", 35,
+            armorDefense(3, 6, 8, 3), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F,
+            () -> Ingredient.ofItems(ModItems.AMETHYST_GEM));
+    public static final RegistryEntry<ArmorMaterial> CRYING_OBSIDIAN = armorMaterial("crying_obsidian", 21,
+            armorDefense(2, 5, 6, 3), 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.CRYING_OBSIDIAN));
+    public static final RegistryEntry<ArmorMaterial> QUARTZ = armorMaterial("quartz", 12,
+            armorDefense(2, 3, 5, 2), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.QUARTZ));
+    public static final RegistryEntry<ArmorMaterial> STARDUSITE = armorMaterial("stardusite", 37,
+            armorDefense(5, 8, 10, 5), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.1F,
+            () -> Ingredient.ofItems(ModItems.STARDUSITE_INGOT));
+    public static final RegistryEntry<ArmorMaterial> CACTUS = armorMaterial("cactus", 7,
+            armorDefense(1, 2, 2, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Blocks.CACTUS));
+    public static final RegistryEntry<ArmorMaterial> CRIMSON = armorMaterial("crimson", 7,
+            armorDefense(1, 2, 2, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.CRIMSON_PLANKS));
+    public static final RegistryEntry<ArmorMaterial> WARPED = armorMaterial("warped", 7,
+            armorDefense(1, 2, 2, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.WARPED_PLANKS));
+    public static final RegistryEntry<ArmorMaterial> BAMBOO = armorMaterial("bamboo", 5,
+            armorDefense(1, 1, 2, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.BAMBOO_PLANKS));
+    public static final RegistryEntry<ArmorMaterial> CHERRY = armorMaterial("cherry", 5,
+            armorDefense(1, 1, 2, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.CHERRY_PLANKS));
+    public static final RegistryEntry<ArmorMaterial> MANGROVE = armorMaterial("mangrove", 5,
+            armorDefense(1, 1, 2, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.MANGROVE_PLANKS));
+    public static final RegistryEntry<ArmorMaterial> DARK_OAK = armorMaterial("dark_oak", 5,
+            armorDefense(1, 1, 2, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.DARK_OAK_PLANKS));
+    public static final RegistryEntry<ArmorMaterial> JUNGLE = armorMaterial("jungle", 5,
+            armorDefense(1, 1, 2, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.JUNGLE_PLANKS));
+    public static final RegistryEntry<ArmorMaterial> BIRCH = armorMaterial("birch", 5,
+            armorDefense(1, 1, 2, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.BIRCH_PLANKS));
+    public static final RegistryEntry<ArmorMaterial> SPRUCE = armorMaterial("spruce", 5,
+            armorDefense(1, 1, 2, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.SPRUCE_PLANKS));
+    public static final RegistryEntry<ArmorMaterial> ACACIA = armorMaterial("acacia", 5,
+            armorDefense(1, 1, 2, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.ACACIA_PLANKS));
+    public static final RegistryEntry<ArmorMaterial> OAK = armorMaterial("oak", 5,
+            armorDefense(1, 1, 2, 1), 5, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Blocks.OAK_PLANKS));
+    public static final RegistryEntry<ArmorMaterial> SLIME = armorMaterial("slime", 7,
+            armorDefense(1, 2, 2, 1), 9, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.SLIME_BALL));
+    public static final RegistryEntry<ArmorMaterial> OBSIDIAN = armorMaterial("obsidian", 21,
+            armorDefense(2, 5, 6, 3), 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.OBSIDIAN));
+    public static final RegistryEntry<ArmorMaterial> LAPIS = armorMaterial("lapis", 13,
+            armorDefense(2, 3, 5, 2), 25, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.LAPIS_LAZULI));
+    public static final RegistryEntry<ArmorMaterial> REDSTONE_MIXTURE = armorMaterial("redstone", 12,
+            armorDefense(2, 3, 5, 2), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(ModItems.REDSTONE_MIXTURE));
+    public static final RegistryEntry<ArmorMaterial> HARDENED_ICE_SHARD = armorMaterial("hardened_ice", 23,
+            armorDefense(2, 5, 6, 3), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F,
+            () -> Ingredient.ofItems(ModItems.HARDENED_ICE_SHARD));
+    public static final RegistryEntry<ArmorMaterial> COPPER = armorMaterial("copper", 13,
+            armorDefense(2, 4, 5, 2), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.COPPER_INGOT));
+    public static final RegistryEntry<ArmorMaterial> EMERALD = armorMaterial("emerald", 23,
+            armorDefense(2, 5, 7, 3), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.EMERALD));
+    public static final RegistryEntry<ArmorMaterial> MARINE_DIAMOND = armorMaterial("marine_diamond", 35,
+            armorDefense(4, 7, 9, 4), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0F, 0.0F,
+            () -> Ingredient.ofItems(ModItems.MARINE_DIAMOND));
+    public static final RegistryEntry<ArmorMaterial> HEART_OF_THE_END = armorMaterial("ender", 35,
+            armorDefense(3, 6, 8, 3), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, 0.0F,
+            () -> Ingredient.ofItems(ModItems.HEART_OF_THE_END));
+
+    private ModArmorMaterials() {
     }
 
-    public int getDurability(ArmorItem.Type type) {
-        return (Integer)BASE_DURABILITY.get(type) * this.durabilityMultiplier;
+    private static RegistryEntry<ArmorMaterial> armorMaterial(String name, int durabilityMultiplier,
+                                                               EnumMap<ArmorItem.Type, Integer> defense,
+                                                               int enchantability,
+                                                               RegistryEntry<SoundEvent> equipSound,
+                                                               float toughness, float knockbackResistance,
+                                                               Supplier<Ingredient> repairIngredient) {
+        RegistryEntry<ArmorMaterial> entry = RegistryEntry.of(new ArmorMaterial(defense, enchantability, equipSound,
+                repairIngredient, List.of(new ArmorMaterial.Layer(Identifier.of("minecraft", name))),
+                toughness, knockbackResistance));
+        DURABILITY_MULTIPLIERS.put(entry, durabilityMultiplier);
+        return entry;
     }
 
-    public int getProtection(ArmorItem.Type type) {
-        return (Integer)this.protectionAmounts.get(type);
+    private static EnumMap<ArmorItem.Type, Integer> armorDefense(int boots, int leggings, int chestplate, int helmet) {
+        EnumMap<ArmorItem.Type, Integer> map = new EnumMap<>(ArmorItem.Type.class);
+        map.put(ArmorItem.Type.BOOTS, boots);
+        map.put(ArmorItem.Type.LEGGINGS, leggings);
+        map.put(ArmorItem.Type.CHESTPLATE, chestplate);
+        map.put(ArmorItem.Type.HELMET, helmet);
+        return map;
     }
 
-    public int getEnchantability() {
-        return this.enchantability;
-    }
-
-    public SoundEvent getEquipSound() {
-        return this.equipSound;
-    }
-
-    public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredientSupplier.get();
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public float getToughness() {
-        return this.toughness;
-    }
-
-    public float getKnockbackResistance() {
-        return this.knockbackResistance;
-    }
-
-    public String asString() {
-        return this.name;
+    public static int durabilityMultiplier(RegistryEntry<ArmorMaterial> material) {
+        Integer multiplier = DURABILITY_MULTIPLIERS.get(material);
+        if (multiplier == null) {
+            throw new IllegalArgumentException("Unknown armor material: " + material);
+        }
+        return multiplier;
     }
 }

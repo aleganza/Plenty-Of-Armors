@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "minecraft:blue_ice"
+    }
+  },
+  "pattern": [
+    "X"
+  ],
+  "result": {
+    "id": "plentyofarmors:ice_shard",
+    "count": 3
+  }
+}
