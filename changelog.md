@@ -1,4 +1,4 @@
-# 🚩 Plenty Of Armors | v1.4.0+mc1.21.1
+# 🚩 Plenty Of Armors | v1.4.0
 #### *Aug 19, 2026*
 -- *For Minecraft 1.21.1* --
 
